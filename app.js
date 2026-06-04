@@ -310,6 +310,18 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'mktflywheel-ai-skill') {
         if (capInput) capInput.value = "Marketing Strategist: Structural cross-channel campaign maps\nBulk Copy: Generate highly tailored landing page ad copies\nSEO Engine: Run immediate organic search keyword audit";
         if (guideInput) guideInput.value = "Ensure product description and ICP details are active\nTest generated copy variations under MFS rules\nCompile campaign map to structured CSV files";
+    } else if (skillId === 'swap-commerce-skill') {
+        if (capInput) capInput.value = "Catalog Syncer: Sync local and global inventory levels and pricing dynamic metadata\nTax Adjuster: Auto-calculate local and international sales tax, duties, and landed cost boundaries\nReturns Router: Streamline post-purchase return sessions, QR code shipping labels, and WMS sync\nVirtual Try-On: Activate visual try-on modules for matching apparel attributes";
+        if (guideInput) guideInput.value = "Validate API connection to Swap-OS credentials before syncing catalog\nConfirm shipping destination coordinates for DDP calculations\nInitiate return workflows only after validating purchase history and token\nRender try-on images and visual assets within secure sandboxed overlays";
+    } else if (skillId === 'character-ai-skill') {
+        if (capInput) capInput.value = "Persona Blueprinting: Build deep psychological traits and speaking mannerisms for customized agents\nSandboxed Simulator: Run safe roleplay and customer-support agent simulations\nSentiment Analytics: Gauge user sentiment and adapt conversation tone in real-time";
+        if (guideInput) guideInput.value = "Keep roleplay agent interactions strictly within sandboxed boundaries\nValidate tone and safety filters before replying to simulation inputs\nSave agent chat logs for post-simulation performance review";
+    } else if (skillId === 'nexad-ai-skill') {
+        if (capInput) capInput.value = "Copywriter Pro: Generate engaging, high-conversion copy for multi-channel digital campaigns\nA/B Variant Generator: Create multiple distinct copy variants for performance testing\nAsset Structure Planner: Design visual and text hierarchies optimized for ad networks";
+        if (guideInput) guideInput.value = "Align ad copy tone with brand tone and target audience specifications\nVerify length limitations for target channels\nCompile generated variants into a structured output format for easy deployment";
+    } else if (skillId === 'tradingagents-skill') {
+        if (capInput) capInput.value = "Trigger Monitor: Check technical indicators and price levels locally in real-time\nTrade Simulator: Run paper trading simulations to backtest strategies safely\nOrder Executer: Securely interface with API endpoints for mock order loop routing";
+        if (guideInput) guideInput.value = "Verify mock portfolio constraints and stop-loss boundaries before simulation\nDo not connect to live broker endpoints; restrict execution to sandboxed environments\nGenerate detailed trade execution report logs on daily boundaries";
     }
 
     // Trigger update
