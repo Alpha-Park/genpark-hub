@@ -17,31 +17,31 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 
 - 🔒 **Local-First & Private**: Your credentials, cookies, and chat history remain on your machine inside the OS Secure Enclave / Local Vault. No cloud vendor data harvesting.
 - 💬 **Zero-New-Interface**: Coordinate everything natively through the apps you already live in—**WhatsApp, Telegram, Slack, and iMessage**.
-- 🌐 **Resident Browser Execution**: Solves the bot-blocking and IP-banning issues that plague cloud agents (e.g., Amazon's ban on Meta Muse) by leveraging your resident browser profile and residential IP.
+- 🌐 **Resident Browser Execution**: Solves the bot-blocking and IP-banning issues that plague commercial cloud agents by leveraging your resident browser profile and residential IP.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
 
-## 🔬 Featured Research: Meta Muse vs. Instinct Deconstruction
+## 🔬 Featured Research: Autonomous Decision Agent Architecture & Distillation
 
-We conducted an exhaustive technical and product deconstruction of the two landmark 2026 personal agents:
-- **Meta Muse** (Meta's cloud Secure VM, headless Chromium, and Sentinel/authd security layer).
-- **Instinct** (Spear Street Technology / Noah Shinn's Reflexion-powered, zero-interface personal life-admin copilot).
+We conducted an exhaustive architectural deconstruction analyzing the state-of-the-art 2026 personal agent paradigms:
+- **Cloud-Sentinel VM Paradigm**: Cloud-isolated sandboxes with permission brokers and tokenized checkout.
+- **Reflex-Concierge Paradigm**: Verbal reinforcement learning (Reflexion) loops with zero-new-interface multi-channel messaging and concierge calling.
 
-📖 **Read the full 15-page architectural report**:  
-👉 [**Meta Muse vs. Instinct: 2026 个人 Agent 范式演进与能力蒸馏**](docs/research/meta-muse-vs-instinct-agent-deconstruction.md)
+📖 **Read the full architectural research report**:  
+👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
 
-### Key Distillations Implemented in GenPark:
-1. **Local-First Security Enclave**: Replaced Meta's cloud VM credential custody with a local hardware-backed vault.
-2. **Reflexion-Driven Decision Engine**: Integrated Noah Shinn's self-reflective trial-and-error loop for autonomous shopping and web navigation.
-3. **Anti-Bot Resident Session Relay**: Bypasses merchant anti-bot protections (such as Amazon's countermeasures) by operating within the user's authentic browser context.
+### Key Architectural Distillations in GenPark:
+1. **Local-First Security Enclave**: Replaced cloud VM credential custody with a local hardware-backed vault.
+2. **Reflexion-Driven Decision Engine**: Integrated self-reflective trial-and-error loops for autonomous shopping and web navigation.
+3. **Anti-Bot Resident Session Relay**: Bypasses merchant anti-bot protections by operating within the user's authentic local browser context.
 4. **Sentinel Human-In-The-Loop (HITL) Gate**: Pre-stages checkout actions and sends one-tap interactive approval cards directly to your WhatsApp or Telegram before committing payments.
 
 ---
 
-## 🛠️ Flagship Skill: Autonomous Decision & Buyer Agent
+## 🛠️ Flagship Skill: ZenChoice (禅选·自主决策与代购智能体)
 
-Based on our research, we officially released the **`personal-decision-buyer-skill`**:
+Based on our architectural research, we officially released **`zenchoice-ai-skill`**:
 
 | Feature | Description |
 | :--- | :--- |
@@ -51,7 +51,7 @@ Based on our research, we officially released the **`personal-decision-buyer-ski
 | **Reflexion Self-Correction** | Automatically detects out-of-stock items or hidden fees and pivots to alternative merchants. |
 | **Two-Phase Staged Checkout** | Stages items into carts and dispatches instant approval buttons to WhatsApp/Telegram. |
 
-👉 View specification: [`skills/personal-decision-buyer-skill/SKILL.md`](skills/personal-decision-buyer-skill/SKILL.md)
+👉 View specification: [`skills/zenchoice-ai-skill/SKILL.md`](skills/zenchoice-ai-skill/SKILL.md)
 
 ---
 
@@ -61,7 +61,7 @@ GenPark comes bundled with production-grade skills:
 
 | Skill | Category | Description |
 | :--- | :--- | :--- |
-| 🛒 [`personal-decision-buyer-skill`](skills/personal-decision-buyer-skill/SKILL.md) | **Personal Agent / Commerce** | Distilled from Meta Muse & Instinct. Multi-site shopping, Reddit sentiment audit, and staged checkout. |
+| 🛒 [`zenchoice-ai-skill`](skills/zenchoice-ai-skill/SKILL.md) | **Personal Agent / Decisions** | ZenChoice autonomous shopping, multi-site comparison, Reddit sentiment audit, and staged checkout. |
 | 💳 [`swap-commerce-skill`](skills/swap-commerce-skill/SKILL.md) | **Commerce** | Autonomous commerce coordinator for catalog sync, cross-border tax, and returns routing. |
 | 🔍 [`trooly-ai-skill`](skills/trooly-ai-skill/SKILL.md) | **Analytics** | Qualitative customer empathy engine and review scraping blueprint builder. |
 | 🚀 [`mktflywheel-ai-skill`](skills/mktflywheel-ai-skill/SKILL.md) | **Marketing** | Autonomous CMO agent loop for cross-channel campaigns, ad copy, and SEO. |
@@ -85,7 +85,7 @@ openclaw gateway --start
 # ✔ Paired Messengers: WhatsApp [active], Telegram [active]
 ```
 
-### 2. Invoke the Decision & Buyer Agent via Messenger
+### 2. Invoke the ZenChoice Agent via Messenger
 Simply text your paired WhatsApp or Telegram bot:
 ```text
 "Find me over-ear noise-canceling headphones under $250 for long flights. 
