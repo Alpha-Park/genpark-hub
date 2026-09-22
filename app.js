@@ -53,14 +53,14 @@ const SIMULATED_STEPS = [
     { type: 'input', text: 'openclaw gateway --start' },
     { type: 'output', text: '🦞 [OpenClaw] Core gateway daemon started successfully.' },
     { type: 'output', text: '🦞 [OpenClaw] Active session bound: https://gateway.openclaw.ai:18789' },
-    { type: 'input', text: 'openclaw run-browser-use --url "github.com/Alpha-Park"' },
-    { type: 'output', text: '🌐 [Browser] Initializing sandboxed local browser environment...' },
-    { type: 'output', text: '🌐 [Browser] Navigating securely to https://github.com/Alpha-Park' },
-    { type: 'output', text: '🌐 [Browser] Analysis complete: Found 39 modular skills and 100+ contributors.' },
-    { type: 'input', text: 'openclaw send-message --channel "whatsapp" --text "System: Alpha-Park has been audited. Growth hub initialized successfully."' },
-    { type: 'output', text: '💬 [Outbound] Connecting to paired WhatsApp device via local daemon...' },
-    { type: 'output', text: '✔ [Outbound] WhatsApp text notification sent successfully.' },
-    { type: 'output', text: '🦞 [OpenClaw] Task executed. Returning control. Session stable.' }
+    { type: 'input', text: 'openclaw run-skill --name "personal-decision-buyer-skill" --query "Find ANC headphones <$250"' },
+    { type: 'output', text: '🛒 [DecisionAgent] Distilling intent: Over-ear, ANC, long flights, budget cap $250.' },
+    { type: 'output', text: '🔍 [ReviewAuditor] Crawled Reddit r/BuyItForLife & 4 retailers. Filtered 12 sponsored reviews.' },
+    { type: 'output', text: '⚖ [DecisionMatrix] Ranked 3 items: Sony XM5 (Score: 0.88), Bose QC (0.86), Sennheiser (0.81).' },
+    { type: 'output', text: '🛍 [CartStager] Best Buy deal ($239.99 w/ coupon) staged in resident browser cart.' },
+    { type: 'input', text: 'openclaw send-message --channel "whatsapp" --template "decision_approval_card"' },
+    { type: 'output', text: '💬 [Sentinel HITL] Interactive purchase card dispatched to WhatsApp: [Approve $239.99].' },
+    { type: 'output', text: '✔ [Outbound] Awaiting user tap. Local credentials safely isolated in OS Vault.' }
 ];
 
 async function initTerminalSimulation() {
@@ -158,6 +158,14 @@ function initPhilosophyTabs() {
    4. Skills Registry Catalog
    ========================================== */
 const SKILLS_DATABASE = [
+    {
+        id: 'personal-decision-buyer-skill',
+        name: 'personal-decision-buyer-skill',
+        description: 'Autonomous personal decision & shopping copilot distilled from Meta Muse and Instinct. Cross-platform product research, Reddit sentiment audit, MAUT trade-off scoring, cart staging, and tokenized checkout via local sandboxed browser.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🛒'
+    },
     {
         id: 'trooly-ai-skill',
         name: 'trooly-ai-skill',
@@ -304,7 +312,10 @@ window.loadSkillToGenerator = function(skillId) {
     if (descInput) descInput.value = skill.description;
 
     // Custom skills map properties to inputs
-    if (skillId === 'trooly-ai-skill') {
+    if (skillId === 'personal-decision-buyer-skill') {
+        if (capInput) capInput.value = "Intent Profiler: Parse implicit user constraints and long-term shopping preferences\nReview Auditor: Scrape live web pricing and Reddit/forum sentiment to filter fake reviews\nDecision Matrix: Rank items via MAUT (Price, Quality, Shipping, Returns)\nReflexion Loop: Self-correct on stockouts, dynamic shipping fees, and coupon failure\nCart Stager & HITL Gate: Stage checkout and push 1-tap confirmation card to WhatsApp/Telegram\nResident Session: Emulate authentic browser cookies to bypass merchant anti-bot blocks";
+        if (guideInput) guideInput.value = "Maintain all credentials strictly within OS local keychain / vault\nEnforce Sentinel HITL confirmation before any payment execution\nAudit merchant price history and verify return policy limits\nLog decision rationale and user feedback to local memory store";
+    } else if (skillId === 'trooly-ai-skill') {
         if (capInput) capInput.value = "Empathy Engine: Build qualitative persona blueprints\nUser Feedback: Auto-scrape reviews across targeted platforms\nFormat Output: Compile empathy graphs and core triggers";
         if (guideInput) guideInput.value = "Confirm target customer niche before execution\nVerify qualitative data density limits\nRender output using structured markdown templates";
     } else if (skillId === 'mktflywheel-ai-skill') {
