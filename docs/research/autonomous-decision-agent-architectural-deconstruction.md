@@ -27,6 +27,11 @@
    - 5.3 Reflexion 驱动的四阶段决策飞轮 (MAUT 效用仲裁)
    - 5.4 商家封禁应对：宿主机真实会话 (Resident Session) vs. 机房 IP
 6. [ZenChoice 生产落地规范 (Skill 规范)](#6-zenchoice-生产落地规范-skill-规范)
+7. [2026年9月下旬前沿架构重大演进与第二代能力蒸馏](#7-2026年9月下旬前沿架构重大演进与第二代能力蒸馏)
+   - 7.1 Agent-to-Agent (A2A) 跨体可信协商网络 (Trusted Agent Mesh)
+   - 7.2 Active Detective 实时反幻觉拦截与 PII 隐私数据防泄盾
+   - 7.3 端侧多模态空间感知与地理围栏决策
+   - 7.4 蒸馏产物：ZenPeer 与 Aegis Guard 双旗舰技能落地
 
 ---
 
@@ -182,6 +187,36 @@ ZenChoice 已经作为标准模块沉淀至 GenPark 开放技能生态，代码�
 [`skills/zenchoice-ai-skill/SKILL.md`](skills/zenchoice-ai-skill/SKILL.md)
 
 任何接入 OpenClaw 本地网关的智能体均可即插即用调用此技能。
+
+---
+
+## 7. 2026年9月下旬前沿架构重大演进与第二代能力蒸馏
+
+在 2026 年 9 月下旬，两套主流前沿 Agent 体系迎来了密集的第二代功能迭代与架构破局，催生了从“单体助理”迈向“群体协作与主动风控”的根本转变：
+
+### 7.1 Agent-to-Agent (A2A) 跨体可信协商网络 (Trusted Agent Mesh)
+* **行业突破**：前沿独角兽体系推出了“Trusted Person Network”（智能体点对点直连协议）。以往用户间组织多人活动、拼单购物、协调行程需要经历极其繁琐的来回沟通；如今两位用户的 Agent 可建立端到端加密通道，代表用户直接开展 A2A 自主协商。
+* **业务闭环**：
+  * **拼单与折扣套利 (Collective Arbitrage)**：检测到多位信任好友均有购买同类商品意愿时，Agent 自动协商拼单以触发批发梯次折扣或免运费门槛。
+  * **零知识日程碰撞 (ZK Schedule Intersection)**：在不暴露各自具体日程内容的前提下，计算最佳聚餐或会面时段。
+  * **双向审批结算**：生成均摊账单并同时推送至双方手机完成人机协同签名。
+
+### 7.2 Active Detective 实时反幻觉拦截与 PII 隐私数据防泄盾
+* **行业教训与风波**：9月中旬起，部分大厂云端 Agent 遭到重大隐私舆论危机，用户反馈 Agent 在自动化结算表单时，曾**未经授权误将用户的真实住址、私人对话片段泄露至第三方卖家**；同时在参数生成时偶发幻觉优惠码，导致事务异常中断。
+* **防御升级：Active Detective**：在 Agent 推理构建工具参数的过程中，引入实时的 Token 级事实对齐探测器。在任何外部网络与浏览器请求实际发出**之前**，先验拦截并抑制无根据的生成实体。
+* **PII 动态脱敏与分级授权**：对物理地址、手机号、银行卡号实行严格的时序隔离，仅在最终结账提交时以最小必要原则动态注入。
+
+### 7.3 端侧多模态空间感知与地理围栏决策
+* **硬件延展**：大厂体系在 9 月下旬的开发者大会上宣布将智能体接入下一代 AI 智能眼镜（多模态视觉感知）；同时通信端引入 iMessage 级别的地理围栏感知，当检测到用户到达特定商圈时，主动触发本地化的消费决策辅助与代订位服务。
+
+### 7.4 蒸馏产物：ZenPeer 与 Aegis Guard 双旗舰技能落地
+针对上述两大演进，GenPark 研发团队迅速完成了二次技术蒸馏，正式发布两大全新生产级 Skill：
+1. **`zenpeer-ai-skill` (ZenPeer)**:  
+   基于 OpenClaw 本地网关的点对点加密 A2A 协议，实现跨用户的去中心化拼单代购、零知识日程预约与共同费用分摊结算。  
+   👉 规范：[`skills/zenpeer-ai-skill/SKILL.md`](skills/zenpeer-ai-skill/SKILL.md)
+2. **`aegis-guard-skill` (Aegis Guard)**:  
+   端侧运行时主动反幻觉侦测与 PII 敏感信息防泄阻断中间件，提供单笔交易限额防火墙与确定性操作状态核验。  
+   👉 规范：[`skills/aegis-guard-skill/SKILL.md`](skills/aegis-guard-skill/SKILL.md)
 
 ---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*

@@ -58,6 +58,10 @@ Operating strictly **local-first** through OpenClaw (`127.0.0.1:18789`), ZenChoi
 - Runs through the user's local residential internet connection and established browser profile.
 - Completely avoids the data center IP blocking that halts cloud-hosted commercial scrapers.
 
+### 7. Mesh Interoperability with ZenPeer & Aegis Guard
+- **Collaborative Group Arbitrage**: Hands off collective buying opportunities to [`zenpeer-ai-skill`](../zenpeer-ai-skill/SKILL.md) to negotiate peer bulk discounts and split billing.
+- **Runtime Hallucination & PII Shield**: All form fields, promo codes, and payment tokens are dynamically validated by [`aegis-guard-skill`](../aegis-guard-skill/SKILL.md) before execution.
+
 ---
 
 ## Standard Decision Matrix Payload Schema

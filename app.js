@@ -54,12 +54,13 @@ const SIMULATED_STEPS = [
     { type: 'output', text: '🦞 [OpenClaw] Core gateway daemon started successfully.' },
     { type: 'output', text: '🦞 [OpenClaw] Active session bound: https://gateway.openclaw.ai:18789' },
     { type: 'input', text: 'openclaw run-skill --name "zenchoice-ai-skill" --query "Find ANC headphones <$250"' },
-    { type: 'output', text: '🛒 [DecisionAgent] Distilling intent: Over-ear, ANC, long flights, budget cap $250.' },
+    { type: 'output', text: '🛒 [ZenChoice] Intent extracted: Over-ear, ANC, long flights, budget cap $250.' },
     { type: 'output', text: '🔍 [ReviewAuditor] Crawled Reddit r/BuyItForLife & 4 retailers. Filtered 12 sponsored reviews.' },
-    { type: 'output', text: '⚖ [DecisionMatrix] Ranked 3 items: Sony XM5 (Score: 0.88), Bose QC (0.86), Sennheiser (0.81).' },
-    { type: 'output', text: '🛍 [CartStager] Best Buy deal ($239.99 w/ coupon) staged in resident browser cart.' },
-    { type: 'input', text: 'openclaw send-message --channel "whatsapp" --template "decision_approval_card"' },
-    { type: 'output', text: '💬 [Sentinel HITL] Interactive purchase card dispatched to WhatsApp: [Approve $239.99].' },
+    { type: 'input', text: 'openclaw a2a-mesh --negotiate "zenpeer-ai-skill" --peer "sarah@openclaw"' },
+    { type: 'output', text: '🤝 [ZenPeer A2A] Discovered Sarah wants Bose QC. Negotiated BOGO bundle: -$56.85 each.' },
+    { type: 'output', text: '🛡️ [AegisGuard] Pre-execution scan: Hallucination 0.00. Redacted physical address PII.' },
+    { type: 'input', text: 'openclaw send-message --channel "whatsapp" --template "a2a_approval_card"' },
+    { type: 'output', text: '💬 [Sentinel HITL] Interactive card pushed to WhatsApp: [Approve Bundle $222.15].' },
     { type: 'output', text: '✔ [Outbound] Awaiting user tap. Local credentials safely isolated in OS Vault.' }
 ];
 
@@ -165,6 +166,22 @@ const SKILLS_DATABASE = [
         category: 'commerce',
         developer: '@Alpha-Park',
         logo: '🛒'
+    },
+    {
+        id: 'zenpeer-ai-skill',
+        name: 'zenpeer-ai-skill',
+        description: 'Agent-to-Agent (A2A) peer negotiation protocol. Decentralized collective buying arbitrage, zero-knowledge schedule alignment, and P2P expense splitting.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🤝'
+    },
+    {
+        id: 'aegis-guard-skill',
+        name: 'aegis-guard-skill',
+        description: 'Active Detective runtime security and PII shield. Real-time in-flight hallucination suppression, PII address redaction, and spending boundary firewall.',
+        category: 'analytics',
+        developer: '@Alpha-Park',
+        logo: '🛡️'
     },
     {
         id: 'trooly-ai-skill',
@@ -315,6 +332,12 @@ window.loadSkillToGenerator = function(skillId) {
     if (skillId === 'zenchoice-ai-skill') {
         if (capInput) capInput.value = "Intent Profiler: Parse implicit user constraints and long-term shopping preferences\nReview Auditor: Scrape live web pricing and Reddit/forum sentiment to filter fake reviews\nDecision Matrix: Rank items via MAUT (Price, Quality, Shipping, Returns)\nReflexion Loop: Self-correct on stockouts, dynamic shipping fees, and coupon failure\nCart Stager & HITL Gate: Stage checkout and push 1-tap confirmation card to WhatsApp/Telegram\nResident Session: Emulate authentic browser cookies to bypass merchant anti-bot blocks";
         if (guideInput) guideInput.value = "Maintain all credentials strictly within OS local keychain / vault\nEnforce Sentinel HITL confirmation before any payment execution\nAudit merchant price history and verify return policy limits\nLog decision rationale and user feedback to local memory store";
+    } else if (skillId === 'zenpeer-ai-skill') {
+        if (capInput) capInput.value = "Peer Handshake: End-to-end encrypted ED25519 agent discovery tunnel\nCollective Buyer: Cross-user cart bundling and BOGO discount arbitrage\nZK Schedule Aligner: Zero-knowledge meeting/dining overlap calculation\nP2P Split Settler: Proportional bill division with dual-HITL approval gate";
+        if (guideInput) guideInput.value = "Validate peer public key signature before exchanging negotiation proposals\nNever expose raw calendar entries or private contact details to peer daemons\nRequire mutual authorization from both users before locking shared reservations";
+    } else if (skillId === 'aegis-guard-skill') {
+        if (capInput) capInput.value = "Active Detective: Real-time in-flight token hallucination suppression\nPII Shield: Redact residential street addresses, CVVs, and chat history traces\nSanity Firewall: Single transaction limits and auto-renewal trap detector\nAudit Logger: Local append-only cryptographic tamper-proof ledger";
+        if (guideInput) guideInput.value = "Run pre-execution inspection in <15ms before browser form submission\nNever transmit audit logs or telemetry off the host machine\nEnforce strict human confirmation for any transaction exceeding policy ceiling";
     } else if (skillId === 'trooly-ai-skill') {
         if (capInput) capInput.value = "Empathy Engine: Build qualitative persona blueprints\nUser Feedback: Auto-scrape reviews across targeted platforms\nFormat Output: Compile empathy graphs and core triggers";
         if (guideInput) guideInput.value = "Confirm target customer niche before execution\nVerify qualitative data density limits\nRender output using structured markdown templates";
