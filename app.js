@@ -168,6 +168,22 @@ const SKILLS_DATABASE = [
         logo: '🛒'
     },
     {
+        id: 'zenprocure-ai-skill',
+        name: 'zenprocure-ai-skill',
+        description: 'Dedicated 0% ad curation and universal native in-chat checkout. Curated Triad paralysis-breaker, anti-sponsorship filtering, and post-purchase price-drop guarantee.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🎯'
+    },
+    {
+        id: 'zenbridge-ai-skill',
+        name: 'zenbridge-ai-skill',
+        description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '⚡'
+    },
+    {
         id: 'zenpeer-ai-skill',
         name: 'zenpeer-ai-skill',
         description: 'Agent-to-Agent (A2A) peer negotiation protocol. Decentralized collective buying arbitrage, zero-knowledge schedule alignment, and P2P expense splitting.',
@@ -332,6 +348,12 @@ window.loadSkillToGenerator = function(skillId) {
     if (skillId === 'zenchoice-ai-skill') {
         if (capInput) capInput.value = "Intent Profiler: Parse implicit user constraints and long-term shopping preferences\nReview Auditor: Scrape live web pricing and Reddit/forum sentiment to filter fake reviews\nDecision Matrix: Rank items via MAUT (Price, Quality, Shipping, Returns)\nReflexion Loop: Self-correct on stockouts, dynamic shipping fees, and coupon failure\nCart Stager & HITL Gate: Stage checkout and push 1-tap confirmation card to WhatsApp/Telegram\nResident Session: Emulate authentic browser cookies to bypass merchant anti-bot blocks";
         if (guideInput) guideInput.value = "Maintain all credentials strictly within OS local keychain / vault\nEnforce Sentinel HITL confirmation before any payment execution\nAudit merchant price history and verify return policy limits\nLog decision rationale and user feedback to local memory store";
+    } else if (skillId === 'zenprocure-ai-skill') {
+        if (capInput) capInput.value = "Anti-Ad Filter: 100% elimination of sponsored listings and affiliate bias\nCurated Triad: Synthesize Benchmark, Pragmatist, and Enthusiast picks\nUniversal Checkout: Headless 1-tap checkout directly in chat\nPrice-Drop Guardian: Post-purchase refund claim and return label automation";
+        if (guideInput) guideInput.value = "Strictly refuse commercial affiliate kickbacks or sponsored ranking manipulation\nAlways highlight core durability trade-offs for each curated option\nOnly commit universal checkout after explicit single-tap approval in messenger";
+    } else if (skillId === 'zenbridge-ai-skill') {
+        if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
+        if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
     } else if (skillId === 'zenpeer-ai-skill') {
         if (capInput) capInput.value = "Peer Handshake: End-to-end encrypted ED25519 agent discovery tunnel\nCollective Buyer: Cross-user cart bundling and BOGO discount arbitrage\nZK Schedule Aligner: Zero-knowledge meeting/dining overlap calculation\nP2P Split Settler: Proportional bill division with dual-HITL approval gate";
         if (guideInput) guideInput.value = "Validate peer public key signature before exchanging negotiation proposals\nNever expose raw calendar entries or private contact details to peer daemons\nRequire mutual authorization from both users before locking shared reservations";

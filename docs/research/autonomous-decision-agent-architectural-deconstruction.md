@@ -32,6 +32,11 @@
    - 7.2 Active Detective 实时反幻觉拦截与 PII 隐私数据防泄盾
    - 7.3 端侧多模态空间感知与地理围栏决策
    - 7.4 蒸馏产物：ZenPeer 与 Aegis Guard 双旗舰技能落地
+8. [2026年10月新一轮裂变：PAP 开放协议、专精采购 Agent 与 Agent-vs-Agent 博弈](#8-2026年10月新一轮裂变pap-开放协议专精采购-agent-与-agent-vs-agent-博弈)
+   - 8.1 Personal Agent Protocol (PAP) 协议体系与商户握手标准
+   - 8.2 专精型采购 Agent 范式：零广告策展与原生通用结算
+   - 8.3 智能体攻防博弈 (Agent vs. Agent：买方 Agent vs. 卖方防御 AI)
+   - 8.4 第三代能力蒸馏：ZenBridge 与 ZenProcure 落地规范
 
 ---
 
@@ -217,6 +222,38 @@ ZenChoice 已经作为标准模块沉淀至 GenPark 开放技能生态，代码�
 2. **`aegis-guard-skill` (Aegis Guard)**:  
    端侧运行时主动反幻觉侦测与 PII 敏感信息防泄阻断中间件，提供单笔交易限额防火墙与确定性操作状态核验。  
    👉 规范：[`skills/aegis-guard-skill/SKILL.md`](skills/aegis-guard-skill/SKILL.md)
+
+---
+
+## 8. 2026年10月新一轮裂变：PAP 开放协议、专精采购 Agent 与 Agent-vs-Agent 博弈
+
+进入 2026 年 10 月，个人 Agent 赛道从“技术验证”全面演变为“商用制度与生态阵营重构”：
+
+### 8.1 Personal Agent Protocol (PAP) 协议体系与商户握手标准
+* **诞生背景（2026年10月6日 Sierra 峰会）**：由多家企业级头部平台与主流 Agent 厂商联合发起（包括 Shopify、Stripe、Walmart、Genesys 等加盟），旨在彻底终结过去 Agent 靠暴力网页抓取导致商户封杀的混乱局面。
+* **技术基石**：
+  * **发现机制**：商户在根域名部署 `/.well-known/poppy.json`，声明支持的 Agent 操作元数据与接口规范。
+  * **基于 OAuth 的权限会话**：区分访客模式（Guest Mode：查库存、运费）与认证模式（Authenticated Mode：代预订、代加购），提供确定性的结构化 JSON-LD 数据交换。
+* **阵营割裂**：以 Amazon 为代表的围墙巨头依然缺席 PAP，并强化防爬屏障，形成了“开放协议生态 vs. 封闭围墙花园”的行业对立格局。
+
+### 8.2 专精型采购 Agent 范式：零广告策展与原生通用结算
+* **痛点突破**：通用生活助理面临“选择困难症（Analysis Paralysis）”与“商业广告污染”。以 2026 年崭露头角、由零售老兵操刀的专精导购 Agent（如行业前沿的采购代理模型）为代表，确立了新标准：
+  1. **0% 广告中立性**：严禁竞价广告与返利倾向，纯粹基于耐久度事实与独立评测提炼结论；
+  2. **精准三元组推荐 (Curated Triad)**：拒绝输出冗长的 50 个商品瀑布流，仅交付【基准标杆款】、【务实性价比款】与【极致发烧款】3 个经过严格验证的选项；
+  3. **原生聊天内通用结账 (Universal In-Chat Checkout)**：无需跳出至外部网站反复注册账号或填写收货地址，在当前会话内单键完成代币化结算。
+
+### 8.3 智能体攻防博弈 (Agent vs. Agent：买方 Agent vs. 卖方防御 AI)
+* **博弈加剧**：商户侧普遍部署了销售防御 AI（Seller AI），针对访问平台的个人 Agent 进行差异化挽留、防比价混淆或动态溢价。
+* **买方 Agent 的应对**：必须具备识别“虚假紧迫感（仅剩1件）”与“伪折扣套路”的反忽悠博弈策略，并在商户不开放 API 时，自适应降级至宿主机真实浏览器环境完成操作。
+
+### 8.4 第三代能力蒸馏：ZenBridge 与 ZenProcure 落地规范
+为吸收 10 月份的协议化与专精化突破，GenPark 架构团队正式发布两大扩展技能：
+1. **`zenbridge-ai-skill` (ZenBridge 协议桥接器)**:  
+   提供 PAP (`/.well-known/poppy.json`) 结构化握手与本地宿主会话（Resident Browser）的双轨自适应路由，兼顾 100% 互联网覆盖与合规高速调用。  
+   👉 规范：[`skills/zenbridge-ai-skill/SKILL.md`](skills/zenbridge-ai-skill/SKILL.md)
+2. **`zenprocure-ai-skill` (ZenProcure 禅购采购器)**:  
+   提供绝对零广告的精准三元组商品策展、聊天内无跳转通用结账，以及购买后 14-30 天自动价格保护索赔。  
+   👉 规范：[`skills/zenprocure-ai-skill/SKILL.md`](skills/zenprocure-ai-skill/SKILL.md)
 
 ---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*
