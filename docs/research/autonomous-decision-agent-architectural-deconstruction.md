@@ -37,6 +37,11 @@
    - 8.2 专精型采购 Agent 范式：零广告策展与原生通用结算
    - 8.3 智能体攻防博弈 (Agent vs. Agent：买方 Agent vs. 卖方防御 AI)
    - 8.4 第三代能力蒸馏：ZenBridge 与 ZenProcure 落地规范
+9. [供给侧大变革：M2AI (Marketing-to-AI) 与 Agentic Pages (DeepLumen 范式蒸馏)](#9-供给侧大变革m2ai-marketing-to-ai-与-agentic-pages-deeplumen-范式蒸馏)
+   - 9.1 传统电商的黄昏：人眼审美 vs. 机器结构化理解的鸿沟
+   - 9.2 DeepLumen 核心理论：M2AI 与 Agentic Pages 影子页面架构
+   - 9.3 GEO 与 AEO：生成式引擎优化与智能体推荐引用锚点
+   - 9.4 供给侧商户基础设施落地：ZenLumen 生产级规范
 
 ---
 
@@ -254,6 +259,35 @@ ZenChoice 已经作为标准模块沉淀至 GenPark 开放技能生态，代码�
 2. **`zenprocure-ai-skill` (ZenProcure 禅购采购器)**:  
    提供绝对零广告的精准三元组商品策展、聊天内无跳转通用结账，以及购买后 14-30 天自动价格保护索赔。  
    👉 规范：[`skills/zenprocure-ai-skill/SKILL.md`](skills/zenprocure-ai-skill/SKILL.md)
+
+---
+
+## 9. 供给侧大变革：M2AI (Marketing-to-AI) 与 Agentic Pages (DeepLumen 范式蒸馏)
+
+截至 2026 年 10 月中旬，Agentic Commerce 的技术浪潮正式完成从“需求侧买方 Agent”向**“供给侧商户基础设施”**的闭环迁移。以 **DeepLumen** 为代表的企业级开拓者确立了供给侧技术基准：
+
+### 9.1 传统电商的黄昏：人眼审美 vs. 机器结构化理解的鸿沟
+* **矛盾爆发**：过去 30 年的独立站与电商网页，本质是围绕“人类视觉感官”进行堆砌（大量高分辨率轮播 Banner、情绪营销煽情文案、繁复的 JavaScript 动效与跟卖弹窗）。
+* **机器视角的困境**：当消费者的自主 Agent（如 ChatGPT、Perplexity、Claude 或 GenPark）访问这些网页时，面临着严重的**Token 浪费、DOM 节点过度膨胀、关键参数被样式掩盖、甚至被防爬防火墙误杀**。商户如果不做机器适配，将直接在 AI 推荐与采购环节中被“隐形过滤”。
+
+### 9.2 DeepLumen 核心理论：M2AI 与 Agentic Pages 影子页面架构
+* **M2AI (Marketing-to-AI)**：DeepLumen 提出的核心战略。电商营销的核心客群正在从“人类消费者”转变为“人类的 AI 代行代理人”。品牌的营销工作必须从“说服人眼”转向“高效输入给算法”。
+* **Agentic Pages（智能体专属影子页面）**：
+  * 在人类视觉店铺背后，部署一套面向爬虫与推理模型的轻量影子分发层（`/agentic/products/[sku]`）；
+  * 剥离所有 CSS、跟踪探针与促销噪音，交付经由加密签名的纯结构化数据：包含毫秒级仓库现货库存、精准落地到手成本（含税费运费）、多维度规格矩阵以及清晰的退换货免责条款。
+
+### 9.3 GEO 与 AEO：生成式引擎优化与智能体推荐引用锚点
+* **告别传统 Google 蓝链 SEO**：
+  * **GEO (Generative Engine Optimization)**：针对大模型回答机制，注入高事实密度的客观实体图谱（Schema.org JSON-LD），让大模型在横向对比时拥有最高确定性的事实锚点。
+  * **AEO (Answer / Agent Engine Optimization)**：提供客观竞品参数对照表（如说明自家咖啡机与竞品的加热技术差异），使得各家 AI 导购在综合提炼时，优先将该品牌作为“标杆基准（The Benchmark）”推荐给买家。
+* **Agentic GMV 归因分析**：传统 GA4 无法识别无头 Agent 浏览。DeepLumen 构建了专属的 AI 流量追踪探针，精准归因来自大模型对话推荐与 Agent 结算的订单成交。
+
+### 9.4 供给侧商户基础设施落地：ZenLumen 生产级规范
+GenPark 架构团队全面吸纳 DeepLumen 的 M2AI 理念，在平台推出商户侧专属基础设施技能：  
+**`zenlumen-ai-skill` (ZenLumen 禅明·M2AI 商户智能基建)**：
+* 一键将 Shopify / WooCommerce / 自建站编译为具备 Agentic Pages、GEO 事实锚点与 PAP (`/.well-known/poppy.json`) 端点的现代 Agent-Ready 商铺；
+* 配套智能防爬防火墙，精准识别并放行合规买方 Agent，拦截恶意 DDoS 爬虫。  
+👉 规范：[`skills/zenlumen-ai-skill/SKILL.md`](skills/zenlumen-ai-skill/SKILL.md)
 
 ---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*

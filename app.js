@@ -176,6 +176,14 @@ const SKILLS_DATABASE = [
         logo: '🎯'
     },
     {
+        id: 'zenlumen-ai-skill',
+        name: 'zenlumen-ai-skill',
+        description: 'M2AI (Marketing-to-AI) & Agentic Commerce merchant infrastructure distilled from DeepLumen. Agentic Pages compiler, GEO/AEO semantic optimizer, and agent traffic attribution.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '💡'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -351,6 +359,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenprocure-ai-skill') {
         if (capInput) capInput.value = "Anti-Ad Filter: 100% elimination of sponsored listings and affiliate bias\nCurated Triad: Synthesize Benchmark, Pragmatist, and Enthusiast picks\nUniversal Checkout: Headless 1-tap checkout directly in chat\nPrice-Drop Guardian: Post-purchase refund claim and return label automation";
         if (guideInput) guideInput.value = "Strictly refuse commercial affiliate kickbacks or sponsored ranking manipulation\nAlways highlight core durability trade-offs for each curated option\nOnly commit universal checkout after explicit single-tap approval in messenger";
+    } else if (skillId === 'zenlumen-ai-skill') {
+        if (capInput) capInput.value = "Agentic Page Compiler: Transform storefront into token-efficient /agentic/ shadow catalog\nGEO/AEO Optimizer: Inject Schema.org JSON-LD and comparative benchmark tables\nPAP Endpoint Synthesizer: Auto-deploy /.well-known/poppy.json OAuth manifest\nAgent Traffic Attributor: Track headless AI crawler visits and agentic GMV conversion\nSmart Agent Firewall: Protect bandwidth and pricing while welcoming verified buyer agents";
+        if (guideInput) guideInput.value = "Compile shadow endpoints with zero CSS/JS presentation overhead\nEnsure landed cost includes real-time tax and shipping commitments\nVerify PAP merchant certificates and refresh Poppy schema weekly\nMaintain strict local audit logging for incoming agent queries";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
