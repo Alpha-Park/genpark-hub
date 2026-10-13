@@ -192,6 +192,30 @@ const SKILLS_DATABASE = [
         logo: '💡'
     },
     {
+        id: 'zennile-ai-skill',
+        name: 'zennile-ai-skill',
+        description: 'Multi-rail agent distribution and sovereign checkout gateway distilled from Nile. Context cards compiler, multi-rail ACP/UCP/MCP/Skills broadcasting, and sovereign checkout routing.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🌊'
+    },
+    {
+        id: 'zenfermat-ai-skill',
+        name: 'zenfermat-ai-skill',
+        description: 'Closed-loop funnel optimization and adaptive conversion agent distilled from FERMÀT. Behavior-to-intent resolution, dynamic landing generation, and SaaS stack consolidation.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '⚡'
+    },
+    {
+        id: 'zengenius-ai-skill',
+        name: 'zengenius-ai-skill',
+        description: 'Real-time PDP seller agent and sensory micro-telemetry engine distilled from Product Genius. Touchscreen/trackpad sensory analysis, in-scroll story cards, and ad intent feedback.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🧠'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -373,6 +397,15 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenlumen-ai-skill') {
         if (capInput) capInput.value = "Agentic Page Compiler: Transform storefront into token-efficient /agentic/ shadow catalog\nGEO/AEO Optimizer: Inject Schema.org JSON-LD and comparative benchmark tables\nPAP Endpoint Synthesizer: Auto-deploy /.well-known/poppy.json OAuth manifest\nAgent Traffic Attributor: Track headless AI crawler visits and agentic GMV conversion\nSmart Agent Firewall: Protect bandwidth and pricing while welcoming verified buyer agents";
         if (guideInput) guideInput.value = "Compile shadow endpoints with zero CSS/JS presentation overhead\nEnsure landed cost includes real-time tax and shipping commitments\nVerify PAP merchant certificates and refresh Poppy schema weekly\nMaintain strict local audit logging for incoming agent queries";
+    } else if (skillId === 'zennile-ai-skill') {
+        if (capInput) capInput.value = "Context Card Compiler: Structure raw catalog feeds into high-density 'Who it's for, When to recommend, Why it fits' vectors\nMulti-Rail Distributor: Broadcast product endpoints across ACP, UCP, MCP, and Agent Skills rails\nSovereign Checkout Router: Enforce headless checkout handoff directly to merchant's domain\nAgent Attribution Engine: Track LLM referral traffic, prompt intent categorizations, and GEO rankings";
+        if (guideInput) guideInput.value = "Maintain context card payload size below 400 tokens per SKU\nAlways preserve sovereign checkout routing without third-party commission hijacking\nRefresh inventory levels and pricing across all broadcast rails within 10 minutes\nKeep customer identity and payment tokens strictly within merchant's native store";
+    } else if (skillId === 'zenfermat-ai-skill') {
+        if (capInput) capInput.value = "Shopper Intent Resolver: Unify upstream ad angles with on-site micro-behavior to uncover purchase barriers\nRevenue Recovery Ranker: Prioritize high-yield funnel mutations and component adjustments\nDynamic Experience Synthesizer: Generate brand-native, 1:1 tailored landing pages in under 50ms\nClosed-Loop Governor: Run multi-armed bandit allocations and consolidate fragmented CRO SaaS stacks";
+        if (guideInput) guideInput.value = "Enforce strict compliance with merchant design tokens and brand typography\nMaintain sub-50ms latency for edge hydration to eliminate cumulative layout shifts\nRequire 95%+ statistical significance before locking in winning experience variants\nProvide clear visual diffs for all AI-generated storefront adjustments";
+    } else if (skillId === 'zengenius-ai-skill') {
+        if (capInput) capInput.value = "Sensory Telemetry Engine: Capture millisecond linger and skip velocity on trackpad and touchscreens\nStory Card Sequencer: Dynamically sequence artisan heritage, lab proof, and upsell cards inside scroll streams\nIn-Scroll Search Harness: Embed proactive semantic discovery pills directly inside natural scroll flow\nAd Telemetry Bridge: Feed high-fidelity AI session intent scores back to Meta CAPI and Google Ads";
+        if (guideInput) guideInput.value = "Execute sensory event listeners client-side with zero main-thread blocking (<5ms)\nVerify that all story card claims reflect authentic merchant specifications\nCapture interaction telemetry anonymously without storing biometrics or keystrokes\nBlend cards naturally into vertical scroll without intrusive modal popups";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
