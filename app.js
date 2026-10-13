@@ -176,6 +176,14 @@ const SKILLS_DATABASE = [
         logo: '🎯'
     },
     {
+        id: 'zenviba-ai-skill',
+        name: 'zenviba-ai-skill',
+        description: 'Scene-aware aesthetic styling and inspiration-to-shopping agent distilled from ViBA. Features personal styling room, Angel & Devil dual-persona critique, and instant Look-to-SKU procurement.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🎨'
+    },
+    {
         id: 'zenlumen-ai-skill',
         name: 'zenlumen-ai-skill',
         description: 'M2AI (Marketing-to-AI) & Agentic Commerce merchant infrastructure distilled from DeepLumen. Agentic Pages compiler, GEO/AEO semantic optimizer, and agent traffic attribution.',
@@ -359,6 +367,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenprocure-ai-skill') {
         if (capInput) capInput.value = "Anti-Ad Filter: 100% elimination of sponsored listings and affiliate bias\nCurated Triad: Synthesize Benchmark, Pragmatist, and Enthusiast picks\nUniversal Checkout: Headless 1-tap checkout directly in chat\nPrice-Drop Guardian: Post-purchase refund claim and return label automation";
         if (guideInput) guideInput.value = "Strictly refuse commercial affiliate kickbacks or sponsored ranking manipulation\nAlways highlight core durability trade-offs for each curated option\nOnly commit universal checkout after explicit single-tap approval in messenger";
+    } else if (skillId === 'zenviba-ai-skill') {
+        if (capInput) capInput.value = "Scene Context Encoder: Translate real-life occasions, weather, and dress codes into vibe vectors\nDual-Persona Stylist: Angel (affirmative validation) & Devil (brutal honesty roast) fashion critique\nVirtual Styling Room: Assemble multi-layered outfits adhering to visual harmony rules\nLook-to-SKU Mapper: Resolve aesthetic moodboards to shoppable merchant SKUs via zenlumen & zenprocure\nVibe Journal Tracker: Maintain private local aesthetic taste evolution vector in OpenClaw storage";
+        if (guideInput) guideInput.value = "Preserve private outfit selfies and body metrics strictly within local OpenClaw storage\nFilter fashion recommendations to verified authentic merchant inventory with zero ad bias\nProvide side-by-side Angel and Devil critiques before triggering staged checkout cards\nEnsure selected garment silhouettes match user comfort and occasion formality boundaries";
     } else if (skillId === 'zenlumen-ai-skill') {
         if (capInput) capInput.value = "Agentic Page Compiler: Transform storefront into token-efficient /agentic/ shadow catalog\nGEO/AEO Optimizer: Inject Schema.org JSON-LD and comparative benchmark tables\nPAP Endpoint Synthesizer: Auto-deploy /.well-known/poppy.json OAuth manifest\nAgent Traffic Attributor: Track headless AI crawler visits and agentic GMV conversion\nSmart Agent Firewall: Protect bandwidth and pricing while welcoming verified buyer agents";
         if (guideInput) guideInput.value = "Compile shadow endpoints with zero CSS/JS presentation overhead\nEnsure landed cost includes real-time tax and shipping commitments\nVerify PAP merchant certificates and refresh Poppy schema weekly\nMaintain strict local audit logging for incoming agent queries";
