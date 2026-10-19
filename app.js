@@ -296,6 +296,14 @@ const SKILLS_DATABASE = [
         logo: '💎'
     },
     {
+        id: 'zenman-ai-skill',
+        name: 'zenman-ai-skill',
+        description: 'Agent-to-human micro-procurement and physical task escrow gateway distilled from Payman AI. Enables AI shopping agents to hire verified local humans for offline inspections, in-person pickups, and real-world verifications via deterministic escrow contracts and non-LLM policy guardrails.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🤝'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -516,6 +524,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenklar-ai-skill') {
         if (capInput) capInput.value = "Liquidity Schedule Router: Align 0%-APR 4-installment payment schedules with verified income paycheck deposit dates\nDispute Freeze Engine: Issue binding hold requests to payment gateways upon order return or merchant dispute initiation\nFX & VAT Free Arbitrageur: Neutralize predatory Dynamic Currency Conversion (DCC) markups and auto-compile digital VAT refund forms\nFinancial Wellness Sentinel: Enforce 30-day discretionary spending ceilings and mandatory cooling-off periods on impulse purchases";
         if (guideInput) guideInput.value = "Prioritize 0%-APR financing and never recommend predatory revolving credit or penalty-prone debt\nKeep all bank balances, income schedules, and credit thresholds encrypted strictly in local hardware vault\nTrigger instant payment pause (hold_intent) the moment zensierra logs an order cancellation or return\nReject merchant DCC conversion proposals in favor of native interbank clearing rates";
+    } else if (skillId === 'zenman-ai-skill') {
+        if (capInput) capInput.value = "Human Task Dispatcher: Decompose physical in-store inspections, pickups, and verifications into geo-fenced micro-gigs\nDeterministic Escrow Engine: Lock bounty funds in programmatic smart escrow until multi-modal proof is validated\nAgent Financial Firewall: Enforce non-LLM hard spending limits, payee whitelists, and anti-jailbreak transaction ceilings\nImmutable Proof Ledger: Anchor user commands, contractor signatures, and GPS-tagged proof photos in tamper-proof store";
+        if (guideInput) guideInput.value = "Never grant probabilistic LLMs direct transfer authority; all disbursements must pass the non-LLM policy firewall\nRequire cryptographically verified multi-modal evidence (GPS EXIF + store receipt OCR) before escrow release\nRoute high-bounty tasks (> $50.00) to paired mobile messenger for interactive human-in-the-loop signoff\nStore all tasker communications and location data strictly within local OpenClaw encrypted storage";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
