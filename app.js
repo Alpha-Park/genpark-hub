@@ -328,6 +328,14 @@ const SKILLS_DATABASE = [
         logo: '🌐'
     },
     {
+        id: 'zenpass-ai-skill',
+        name: 'zenpass-ai-skill',
+        description: 'Portable personal AI context passport and sovereign identity protocol distilled from Egoist Machines (YC S26). Eliminates agent context silos with user-owned sizing, tastes, allergies, zero-knowledge claims, and scoped "Sign in with ZenPass" permissions.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🪪'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -560,6 +568,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenchannel-ai-skill') {
         if (capInput) capInput.value = "Universal Catalog Indexer: Normalize heterogeneous web schemas into 100M+ unified canonical product graph\nMultimodal Entity De-Duplicator: Cluster identical physical SKUs across retailers using vision embeddings and title semantics\nOpen MCP Search Engine: Expose search_products, lookup_product_url, and compare_merchant_offers tool endpoints\nUniversal Affiliate Clearing Hub: Auto-inject compliant affiliate tracking tokens and attribute commission splits via x-user-id";
         if (guideInput) guideInput.value = "Guarantee live inventory validation with TTL < 5 minutes before recommending offers\nMaintain strict relevance and landed-price ranking neutrality without affiliate bias\nProcess reference images and body sizing ephemerally within local sandboxed session\nHand off confirmed candidate SKUs directly to zenrye or zenfirm for instant checkout execution";
+    } else if (skillId === 'zenpass-ai-skill') {
+        if (capInput) capInput.value = "Sovereign Context Vault: Encrypt sizing, allergies, taste vectors, and spending limits in local hardware enclave\nSign in with ZenPass Broker: Issue scoped, time-bounded permission tokens for external buyer agents and merchant bots\nZero-Knowledge Claim Generator: Prove age, location zip, and budget thresholds cryptographically without exposing raw PII\nBi-Directional Context Harmonizer: Propose preference patches from active sessions and enforce paired-messenger HITL approval";
+        if (guideInput) guideInput.value = "Store all master context attributes exclusively within OS Secure Enclave / local vault\nStrictly enforce the principle of least privilege; deny any broad unscoped context requests\nRequire explicit one-tap user confirmation on mobile messenger before committing profile mutations\nLog every read and write access attempt to the append-only local audit ledger";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";

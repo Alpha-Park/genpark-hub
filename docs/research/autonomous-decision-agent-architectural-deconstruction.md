@@ -150,6 +150,12 @@
     - 27.3 多模态混合图文检索与会话上下文穿透 (Hybrid Retrieval & Threading)
     - 27.4 商业变现与分佣网络原生清算 (Universal Affiliate & Attribution Rail)
     - 27.5 ZenChannel 技能落地：全网商品知识图谱与开放 MCP 检索智能体
+28. [跨智能体个人上下文主权与便携式 AI 护照：终结孤岛冷启动与零知识偏好授权 (Egoist Machines 范式蒸馏)](#28-跨智能体个人上下文主权与便携式-ai-护照终结孤岛冷启动与零知识偏好授权-egoist-machines-范式蒸馏)
+    - 28.1 智能体孤岛困境：重复冷启动与数据被大厂“扣为人质”
+    - 28.2 Egoist Machines 核心范式：主权反转与便携式 AI Passport
+    - 28.3 细粒度权限作用域与零知识证明声明 (Scoped Permissions & ZK-Claims)
+    - 28.4 双向画像进化与人类在环确认 (Bi-Directional Evolution & HITL Gate)
+    - 28.5 ZenPass 技能落地：主权上下文护照与便携偏好智能体
 
 ---
 
@@ -1020,6 +1026,43 @@ GenPark 生态全面解构并工程化沉淀 Channel3 的全网商品图谱与�
 * 内置全网联盟营销分佣中枢与用户级归因透传，实现商业闭环的自然对齐；
 * 输出无缝对齐 `zenrye-ai-skill`（无头结账）与 `zenfirm-ai-skill`（协议结账）进行即刻代购。  
 👉 规范：[`skills/zenchannel-ai-skill/SKILL.md`](skills/zenchannel-ai-skill/SKILL.md)
+
+---
+
+## 28. 跨智能体个人上下文主权与便携式 AI 护照：终结孤岛冷启动与零知识偏好授权 (Egoist Machines 范式蒸馏)
+
+在智能体代行决策生态日益繁荣的背景下，所有消费级个人 Agent 面临一个根本性的人机协作矛盾：**用户个人上下文的数据孤岛化 (The Context Silo Dilemma) 与信任割裂**。由 YC S26 孵化的用户主权数据基建先锋 **Egoist Machines (由 Erin Meryl McGurk 与 David Khachaturov 创立)** 所开创的“AI Passport（便携式 AI 护照）架构、细粒度零知识偏好授权与本地加密飞地主权”，为终结智能体重复冷启动、捍卫消费者个人数据所有权树立了全新行业范式：
+
+### 28.1 智能体孤岛困境：重复冷启动与数据被大厂“扣为人质”
+* **每个新 Agent 都是一张“白纸”**：消费者在 ChatGPT 中耗费数月建立的日常穿搭审美、尺码偏好、过敏史与饮食禁忌，在切换到 Claude、Perplexity 或品牌零售导购 Agent 时彻底归零，用户被迫陷入一遍又一遍回答冗长问卷或手动输入 prompt 的疲态；
+* **用户画像沦为商业囚徒**：传统 SaaS 和中心化大模型平台将用户的消费习惯与偏好锁定在其封闭云端，作为维系自身护城河的商业资产，用户一旦离开即丧失所有定制化资产；
+* **过度索权带来的隐私裸奔**：当用户尝试新的导购或比价 Agent 时，第三方往往要求完整的会话或账户读取权限，导致家庭住址、真实卡号、私人聊天与身体隐私面临严重泄露风险。
+
+### 28.2 Egoist Machines 核心范式：主权反转与便携式 AI Passport
+Egoist Machines 提出了激进的“上下文主权反转”理念：
+* **用户真正拥有个人上下文 (User-Owned Canonical Context)**：将个人身材三围（Bust/Waist/Inseam）、鞋码标准、皮肤与材质过敏原（如仅纯棉/纯羊毛）、负向黑名单品牌（Never-Recommend Brands）、家庭成员配置与月度弹性预算，收敛为标准化的用户可读 JSON 格式，存储于用户自主掌控的硬件环境；
+* **"Sign in with AI Passport" 标准授权握手**：如同金融领域的 Plaid 或现代身份鉴权的 OAuth 2.0，任何第三方个人决策 Agent 或商户系统只需发起标准化 API 请求，即可申请读取指定字段的短期访问令牌；
+* **本地化加密飞地 (Local-First Enclave)**：核心上下文数据完全保存在端侧受硬件保护的加密存储区中，绝不上传第三方中心化云端，彻底消除单点数据泄露隐患。
+
+### 28.3 细粒度权限作用域与零知识证明声明 (Scoped Permissions & ZK-Claims)
+* **最小必要权限原则 (Principle of Least Privilege)**：买鞋只需授予 `scope: sizing.footwear`，挑选大衣只需授予 `scope: sizing.outerwear, allergies.fabrics`，坚决杜绝无关字段的非必要暴露；
+* **零知识偏好声明 (Zero-Knowledge Preference Proofs)**：当海外电商需要验证买家法定年龄或预算等级时，ZenPass 本地生成密码学零知识证明（如 `user.is_adult == true`、`user.budget_ceiling >= order_total`），无需暴露用户的确切出生年月日或银行账户余额；
+* **阅后即焚与时效熔断**：下发的访问令牌具有严格的 TTL 生命周期（如 30 分钟下单会话结束后自动注销），阻断任何后台持久追踪。
+
+### 28.4 双向画像进化与人类在环确认 (Bi-Directional Evolution & HITL Gate)
+* **增量进化建议 (Propose-Patch)**：当个人导购 Agent（如 `zenviba` 或 `zenchoice`）在购物决策过程中发掘出用户的新特征（如“用户在春季极度排斥涤纶面料”）时，系统并不静默篡改，而是向主权中心提交变更提议（`propose_patch`）；
+* **即时通讯双向确认卡片**：OpenClaw 守护进程通过配对的 WhatsApp / Telegram 向用户推送交互式审核卡片，由用户单键点击“批准/驳回”，确保用户始终对其 AI 人格拥有最高决定权；
+* **不可篡改访问审计日志 (Access Audit Ledger)**：本地记录每一家 Agent 在何时读取了何种作用域，赋予消费者前所未有的数据透明度。
+
+### 28.5 ZenPass 技能落地：主权上下文护照与便携偏好智能体
+GenPark 深度融合 Egoist Machines 的 AI Passport 范式，正式推出：  
+**`zenpass-ai-skill` (ZenPass 禅牒·主权上下文护照与便携偏好智能体)**：
+* 构建用户本地加密的主权上下文度牒，收敛三围尺码、材质过敏、审美向量与预算底线；
+* 原生实现“Sign in with ZenPass”细粒度权限握手协议，终结多 Agent 重复冷启动；
+* 支持零知识属性证明（ZK-Claims），在零泄漏 PII 前提下完成商户合规验证；
+* 贯穿双向画像进化流与人类在环审核门禁，所有偏好演进均需手机端单键批准；
+* 作为 GenPark 31 个技能包的“灵魂底座”，无缝赋能 `zenchoice`、`zenviba`、`zenchannel` 等全套导购与代购生态。  
+👉 规范：[`skills/zenpass-ai-skill/SKILL.md`](skills/zenpass-ai-skill/SKILL.md)
 
 ---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*
