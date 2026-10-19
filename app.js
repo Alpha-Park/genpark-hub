@@ -272,6 +272,14 @@ const SKILLS_DATABASE = [
         logo: '🌐'
     },
     {
+        id: 'zenfirm-ai-skill',
+        name: 'zenfirm-ai-skill',
+        description: 'Protocol-agnostic agentic checkout broker and Merchant-of-Record (MoR) protector distilled from Firmly and Perplexity Buy with Pro. Unifies MCP, ACP, UCP, TAP, and PAP rails for native in-chat checkout with passkey authorization.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🏛️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -483,6 +491,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenwild-ai-skill') {
         if (capInput) capInput.value = "Share of Model Radar: Audit brand recommendation rank and sentiment across ChatGPT, Claude, Rufus, and Perplexity\nCitation Graph Miner: Reverse-engineer Reddit, review sites, and YouTube discussions driving competitor agent recommendations\nAgents.json Synthesizer: Deploy and maintain standard /.well-known/agents.json machine-readable manifests\nPDP Attribute Enricher: Auto-inject 40+ structured Schema.org attributes to prevent agent retrieval disqualification";
         if (guideInput) guideInput.value = "Adhere strictly to white-hat citation and attribute surfacing without synthetic review manipulation\nValidate agents.json and Schema.org JSON-LD syntax against W3C linters before live deployment\nPerform weekly Share of Model benchmarking to track foundation model weight updates\nExpose verified inventory and return policies directly to AI buyer agents via open endpoints";
+    } else if (skillId === 'zenfirm-ai-skill') {
+        if (capInput) capInput.value = "Universal Protocol Broker: Transpile between MCP, ACP, UCP, TAP, and PAP commerce standards\nIn-Chat Checkout Engine: Render compact interactive checkout cards and execute 1-tap purchases in messenger\nMerchant MoR Protector: Ensure merchant retains Merchant of Record status, direct customer LTV, and CRM ownership\nPasskey Biometric Gate: Authorize transaction settlement via device-bound FIDO2 credentials in <400ms";
+        if (guideInput) guideInput.value = "Maintain absolute protocol neutrality without forcing proprietary vendor lock-in\nRoute customer payments directly to merchant-owned accounts to safeguard brand sovereignty\nRequire explicit biometric passkey confirmation on paired mobile messenger before finalizing transactions\nEnsure full landed cost (tax, shipping, duties) is verified within 500ms before settlement";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";

@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-23%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-24%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -35,6 +35,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - ⛰️ **Deterministic Post-Purchase Resolution**: Zero-hallucination OMS/WMS API mutations for pre-dispatch order cancellation, carrier rerouting, and automated returns.
 - 🧭 **WebMCP & Network Tokenization**: Replaces brittle Computer Use visual screenshots with browser-native `navigator.modelContext` tool calls and Visa Intelligent Commerce network tokens.
 - 🌐 **GEO & Share of Model (SoM) Engine**: Audits product recommendation visibility across foundation LLMs, reverse-engineers Reddit/review citation graphs, and deploys `/.well-known/agents.json` manifests.
+- 🏛️ **Protocol-Agnostic Checkout & MoR Sovereignty**: Unifies fragmented MCP, ACP, UCP, TAP, and PAP rails while protecting merchant brand sovereignty and direct Merchant-of-Record customer relationships.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -58,6 +59,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Deterministic Actions & Enterprise PAP Arbitration (Sierra Distillation)**: Moving beyond conversational bots with schema-driven mutations, zero-hallucination refund policies, and A2A enterprise dispute handshakes.
 - **WebMCP & Network Tokenized Payments (Nekuda Distillation)**: Eliminating DOM screenshot guessing with client-side tool discovery, in-page JavaScript execution, and merchant-bound network token settlement.
 - **GEO, AEO & agents.json Standard (Wildcard Distillation)**: Transitioning from keyword SEO to Share of Model (SoM) radar, citation graph reverse-engineering, and machine-actionable `agents.json` catalog enrichment.
+- **Protocol-Agnostic Checkout & MoR Sovereignty (Firmly & Perplexity Distillation)**: Unifying fragmented agent protocols (MCP, ACP, UCP, TAP, PAP), in-chat 'Buy with Pro' checkout, and safeguarding merchant data sovereignty.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -83,6 +85,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 18. **Deterministic Action Engine & Enterprise Dispute Settlement**: Commits binding order mutations and automated returns via verified API receipts and cryptographic PAP handshakes.
 19. **Browser-Native WebMCP & Tokenized Network Rails**: Calls in-page tools via `navigator.modelContext` and transacts via domain-bound Visa network cryptograms without storing raw PANs.
 20. **Generative Engine Optimization & agents.json Deployment**: Monitors LLM recommendation frequency, enriches PDP attributes with 40+ structured dimensions, and exposes verified `agents.json` endpoints.
+21. **Universal Protocol Harmonizer & Sovereign MoR Protector**: Transpiles heterogeneous agent commerce standards on the fly and routes transactions directly to merchant-owned gateways with passkey biometrics.
 
 ---
 
@@ -106,6 +109,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | ⛰️ [`zensierra-ai-skill`](skills/zensierra-ai-skill/SKILL.md) | **ZenSierra (禅岳)** | Deterministic action engine, automated order cancellation/address modification, QR return label generator, and enterprise PAP arbitration. |
 | 🧭 [`zenkuda-ai-skill`](skills/zenkuda-ai-skill/SKILL.md) | **ZenKuda (禅枢)** | Web Model Context Protocol (WebMCP) client, autonomous DOM polyfill synthesizer, and Visa Intelligent Commerce network token bridge. |
 | 🌐 [`zenwild-ai-skill`](skills/zenwild-ai-skill/SKILL.md) | **ZenWild (禅野)** | Generative Engine Optimization (GEO/AEO) command center, Share of Model radar, citation graph miner, and `agents.json` synthesizer. |
+| 🏛️ [`zenfirm-ai-skill`](skills/zenfirm-ai-skill/SKILL.md) | **ZenFirm (禅磐)** | Protocol-agnostic checkout broker (MCP/ACP/UCP/TAP/PAP), Perplexity 'Buy with Pro' in-chat engine, and Merchant-of-Record (MoR) protector. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -132,6 +136,7 @@ GenPark comes bundled with production-grade skills:
 | ⛰️ [`zensierra-ai-skill`](skills/zensierra-ai-skill/SKILL.md) | **Commerce / Post-Purchase & PAP** | Distilled from Sierra. Deterministic action execution, zero-hallucination returns, OMS/carrier mutations, and enterprise PAP dispute settlement. |
 | 🧭 [`zenkuda-ai-skill`](skills/zenkuda-ai-skill/SKILL.md) | **Commerce / WebMCP & Network Tokens** | Distilled from Nekuda. Native browser tool calling (`navigator.modelContext`), synthetic DOM adapters, and domain-bound network tokenization. |
 | 🌐 [`zenwild-ai-skill`](skills/zenwild-ai-skill/SKILL.md) | **Commerce / GEO & agents.json** | Distilled from Wildcard. Share of Model (SoM) audit across LLMs, Reddit citation mining, PDP attribute enrichment, and `agents.json` protocol. |
+| 🏛️ [`zenfirm-ai-skill`](skills/zenfirm-ai-skill/SKILL.md) | **Commerce / Protocol & MoR Checkout** | Distilled from Firmly & Perplexity. Protocol-agnostic checkout broker, in-chat native buying, and merchant brand sovereignty preservation. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |

@@ -104,6 +104,12 @@
     - 20.3 `agents.json` 开放协议：商户能力与可信 SKU 声明标准
     - 20.4 自动化 PDP 属性充实与反幻觉自愈循环
     - 20.5 ZenWild 技能落地：GEO 语义雷达与 agents.json 部署中枢
+21. [协议无关型智能体结算中枢与主权商户直连：终结协议碎片化与大模型管道化 (Firmly & Perplexity 范式蒸馏)](#21-协议无关型智能体结算中枢与主权商户直连终结协议碎片化与大模型管道化-firmly--perplexity-范式蒸馏)
+    - 21.1 智能体商业的“巴别塔”危机：MCP、ACP、UCP、TAP、PAP 协议大混战
+    - 21.2 Firmly 核心架构：多协议归一化适配器 (Protocol-Agnostic Broker)
+    - 21.3 Perplexity "Buy with Pro" 落地解构：搜索即结算与 Passkey 零跳转支付
+    - 21.4 商户主权守护：保卫 MoR (Merchant of Record) 与直接客群关系
+    - 21.5 ZenFirm 技能落地：全协议泛在结算适配器与主权订单中枢
 
 ---
 
@@ -708,7 +714,47 @@ GenPark 生态全面收录 Wildcard 的 GEO/AEO 评估体系与 `agents.json` �
 👉 规范：[`skills/zenwild-ai-skill/SKILL.md`](skills/zenwild-ai-skill/SKILL.md)
 
 ---
+
+## 21. 协议无关型智能体结算中枢与主权商户直连：终结协议碎片化与大模型管道化 (Firmly & Perplexity 范式蒸馏)
+
+随着 Perplexity 推出 **"Buy with Pro"** 原生搜索内结算功能，以及各大基础大模型竞相从“信息检索助手”演进为“交易型买手”，Agentic Commerce 迎来了爆发期，但也带来了两大前所未有的结构性矛盾：**协议碎片化造成的“巴别塔”危机**，以及**独立品牌对于被 AI 平台“管道化”与剥夺客户主权的深度恐惧**。由硅谷前沿结算基础设施独角兽 **Firmly (`firmly.ai`)** 与 Perplexity 深度合作打造的协议无关型智能体商业中枢，为解决这一死结提供了工业级标准：
+
+### 21.1 智能体商业的“巴别塔”危机：MCP、ACP、UCP、TAP、PAP 协议大混战
+* **协议林立与集成噩梦**：当前智能体商业领域割裂为数个互不兼容的协议阵营：
+  * **MCP** (Anthropic 模型上下文协议)：偏向本地与后端 Tool 调用；
+  * **ACP** (OpenAI & Stripe Agentic Commerce Protocol)：偏向支付意图与代币化通道；
+  * **UCP** (Google & Shopify 通用商业协议)：偏向商品结构化目录与购物车同步；
+  * **TAP** (Visa 可信智能体协议)：偏向卡组织级别签名与风控白名单；
+  * **PAP** (Sierra & Meta 个人智能体协议)：偏向企业级售后与 A2A 协商。
+* **商户研发成本灾难**：中小型独立品牌与零售商若为每个新兴 AI 平台分别开发适配插件，工程维护成本将极其高昂，导致海量优质独立站被迫放弃接入 AI 导购生态。
+
+### 21.2 Firmly 核心架构：多协议归一化适配器 (Protocol-Agnostic Broker)
+Firmly 打破了协议孤岛，构建了底层的无感适配网关：
+* **单次接入、全轨互通**：商户无需重写现有电商中台（Shopify、WooCommerce、Salesforce、自建系统），Firmly 在中间层自动完成协议翻译与归一化；
+* **双向动态路由 (Bidirectional Dynamic Transpilation)**：无论消费者调用的是运行 MCP 的本地终端、运行 ACP 的 ChatGPT 还是遵循 UCP 的外部智能体，请求在网关处统一编译为商户底层原生结账 API，实现 100% 协议穿透。
+
+### 21.3 Perplexity "Buy with Pro" 落地解构：搜索即结算与 Passkey 零跳转支付
+Perplexity 的商业突破验证了在会话流内完成闭环的惊人转化率（转化率相比传统跳转外链提升 3 倍以上）：
+* **会话内嵌入式决策与结算**：用户直接在对话气泡中看到精准符合复杂诉求的商品卡片，包含实时税费、运费与阶梯折扣；
+* **FIDO2 / Passkey 毫秒级生物认证**：与 PayPal 及主流生物凭据直连，用户无需填写长篇地址与信用卡，仅需设备端指纹/面容（TouchID/FaceID）轻触一次，系统在 400ms 内完成加密鉴权与资金确认，完成“搜索即结算”。
+
+### 21.4 商户主权守护：保卫 MoR (Merchant of Record) 与直接客群关系
+针对电商商户最核心的战略恐惧——“沦为大模型平台无名供应链”，Firmly 确立了坚定的主权底线：
+* **保留法定商户地位 (Merchant of Record, MoR)**：资金直接清算至商户自身银行账户，信用卡对账单上清晰显示商户自有品牌名称；
+* **第一方客户数据完全保留**：用户的会员积分、复购邮件许可与售后跟踪完全归属于商户自身 CRM，彻底打破传统平台型中心化电商对客群资产的垄断剥夺。
+
+### 21.5 ZenFirm 技能落地：全协议泛在结算适配器与主权订单中枢
+GenPark 生态深度整合 Firmly 的协议中立体系与 Perplexity 的原生结算范式，正式发布：  
+**`zenfirm-ai-skill` (ZenFirm 禅磐·协议无关型智能体结算与商户主权网关)**：
+* 自动归一化 MCP、ACP、UCP、TAP、PAP 异构协议，打破 Agentic Commerce 孤岛；
+* 原生实现类似 Perplexity 'Buy with Pro' 的 IM 对话内一键式生物授权即刻结账；
+* 100% 捍卫独立商户 MoR 法定主体与客户终身价值 (LTV) 资产，拒绝大平台管道化；
+* 提供毫秒级端侧协议转换与本地安全私钥签名，保障资金与隐私绝对安全。  
+👉 规范：[`skills/zenfirm-ai-skill/SKILL.md`](skills/zenfirm-ai-skill/SKILL.md)
+
+---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*
+
 
 
 
