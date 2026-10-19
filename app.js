@@ -288,6 +288,14 @@ const SKILLS_DATABASE = [
         logo: '🌿'
     },
     {
+        id: 'zenklar-ai-skill',
+        name: 'zenklar-ai-skill',
+        description: 'Personal consumer financial orchestrator and liquidity guardrail agent distilled from Klarna AI Assistant. Synchronizes 0%-APR installment schedules with paycheck cycles, freezes dispute invoices during returns, and enforces anti-impulse spending guardrails.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '💎'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -505,6 +513,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenphia-ai-skill') {
         if (capInput) capInput.value = "True Value Matrix: Evaluate purchases across price integrity, material durability, ESG verification, and net cost-per-wear (CPW)\nSecondary Resale Forecaster: Model 3-year depreciation curves based on millions of Vestiaire, RealReal, and Poshmark transactions\nGreenwashing Shield: Audit marketing claims against third-party certifications (OEKO-TEX, GOTS, B-Corp) with zero tolerance for fake eco-tags\nEthical Dupe Engine: Discover affordable, responsibly crafted alternatives to luxury items without resorting to sweatshop knockoffs";
         if (guideInput) guideInput.value = "Reject flat-price bias; always calculate realized Cost-Per-Wear (CPW) and residual liquidation value\nPenalize brand claims lacking cryptographic or accredited third-party ESG certification\nAlert users to secondary market liquidity and projected salvage depreciation before checkout\nStore all wardrobe profiles, sizing, and style preferences encrypted within OpenClaw local vault";
+    } else if (skillId === 'zenklar-ai-skill') {
+        if (capInput) capInput.value = "Liquidity Schedule Router: Align 0%-APR 4-installment payment schedules with verified income paycheck deposit dates\nDispute Freeze Engine: Issue binding hold requests to payment gateways upon order return or merchant dispute initiation\nFX & VAT Free Arbitrageur: Neutralize predatory Dynamic Currency Conversion (DCC) markups and auto-compile digital VAT refund forms\nFinancial Wellness Sentinel: Enforce 30-day discretionary spending ceilings and mandatory cooling-off periods on impulse purchases";
+        if (guideInput) guideInput.value = "Prioritize 0%-APR financing and never recommend predatory revolving credit or penalty-prone debt\nKeep all bank balances, income schedules, and credit thresholds encrypted strictly in local hardware vault\nTrigger instant payment pause (hold_intent) the moment zensierra logs an order cancellation or return\nReject merchant DCC conversion proposals in favor of native interbank clearing rates";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
