@@ -248,6 +248,14 @@ const SKILLS_DATABASE = [
         logo: '🛒'
     },
     {
+        id: 'zensierra-ai-skill',
+        name: 'zensierra-ai-skill',
+        description: 'Deterministic action execution and autonomous post-purchase resolution agent distilled from Sierra. Operates verified schema-driven API mutations for order cancellations, shipping modifications, automated returns, and Enterprise PAP brand negotiations.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '⛰️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -450,6 +458,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zencart-ai-skill') {
         if (capInput) capInput.value = "Federated Cart Manager: Maintain unified real-time cart state across Shopify, Amazon, and DTC stores\nPrice-Drop Radar: Continuously monitor historical price baselines and alert on genuine flash sales\nKnapsack Shipping Optimizer: Solve multi-merchant split orders to hit free-shipping tiers and maximize coupon stacking\nPost-Purchase Price Arbitrageur: Auto-monitor 14/30-day merchant price guarantees and claim automated refunds";
         if (guideInput) guideInput.value = "Require explicit HITL confirmation on paired WhatsApp/Telegram before any multi-store purchase\nRe-verify merchant inventory and variant availability within 60s before order dispatch\nSecure all cart sessions, receipts, and order tracking links in local encrypted storage\nFilter price-drop alerts to genuine discounts exceeding 10% or $15.00 to prevent notification fatigue";
+    } else if (skillId === 'zensierra-ai-skill') {
+        if (capInput) capInput.value = "Deterministic Action Engine: Execute binding API mutations for order cancellations, address changes, and subscription pauses\nAutomated Return Arbitrator: Interpret return policies, generate instant QR/carrier return labels, and monitor refunds\nEnterprise PAP Client: Engage in cryptographic Agent-to-Agent negotiation with brand customer support agents\nNon-Hallucinatory Outcome Auditor: Commit actions only upon verified HTTP receipts and maintain append-only resolution ledger";
+        if (guideInput) guideInput.value = "Enforce zero hallucination tolerance; require verified API receipts before reporting order status\nValidate merchant return window eligibility before filing dispute or return requests\nSecurely archive dispute resolution audit trails in local OpenClaw encrypted storage\nAlert operator immediately if merchant requires human-in-the-loop escalation or identity re-verification";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
