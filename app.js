@@ -216,6 +216,22 @@ const SKILLS_DATABASE = [
         logo: '🧠'
     },
     {
+        id: 'zenfire-ai-skill',
+        name: 'zenfire-ai-skill',
+        description: 'KYA (Know Your Agent) identity verification and spend-capped programmatic wallet infrastructure distilled from Skyfire. Cryptographic human delegation proofs, anti-403 WAF handshake, and virtual card/USDC dual-rail settlement.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🔥'
+    },
+    {
+        id: 'zenrye-ai-skill',
+        name: 'zenrye-ai-skill',
+        description: 'Universal zero-opt-in headless checkout engine distilled from Rye. Smashes the checkout wall across any Shopify, Amazon, or open-web store via self-healing funnels, residential session relays, and dynamic coupon arbitrage.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🌾'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -406,6 +422,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zengenius-ai-skill') {
         if (capInput) capInput.value = "Sensory Telemetry Engine: Capture millisecond linger and skip velocity on trackpad and touchscreens\nStory Card Sequencer: Dynamically sequence artisan heritage, lab proof, and upsell cards inside scroll streams\nIn-Scroll Search Harness: Embed proactive semantic discovery pills directly inside natural scroll flow\nAd Telemetry Bridge: Feed high-fidelity AI session intent scores back to Meta CAPI and Google Ads";
         if (guideInput) guideInput.value = "Execute sensory event listeners client-side with zero main-thread blocking (<5ms)\nVerify that all story card claims reflect authentic merchant specifications\nCapture interaction telemetry anonymously without storing biometrics or keystrokes\nBlend cards naturally into vertical scroll without intrusive modal popups";
+    } else if (skillId === 'zenfire-ai-skill') {
+        if (capInput) capInput.value = "KYA Identity Attester: Issue cryptographic proof-of-delegation tokens bound to human principal\nProgrammatic Budget Wallet: Sandbox funds with hard transaction ceilings and merchant whitelists\nAnti-403 Gateway Negotiator: Transmit X-Agent-KYA-Token headers to satisfy merchant WAF anti-bot checks\nCrypto Transaction Auditor: Maintain append-only cryptographic ledger and dispatch real-time mobile push notifications";
+        if (guideInput) guideInput.value = "Instantly abort transaction if total exceeds authorized ceiling by even $0.01\nKeep private keys and master card seeds strictly within OS local Secure Enclave\nRequire interactive dual-HITL approval on paired messenger for transactions over $100.00\nImmediately revoke and destroy ephemeral payment tokens upon order confirmation";
+    } else if (skillId === 'zenrye-ai-skill') {
+        if (capInput) capInput.value = "Universal Product Resolver: Parse variant IDs, live stock, and base pricing across any arbitrary e-commerce URL\nSelf-Healing Checkout Driver: Navigate dynamic checkout DOMs, payment iframes, and address forms autonomously\nResidential Session Relay: Route requests via resident browser profiles to neutralize bot heuristics\nCost and Coupon Arbitrageur: Auto-test verified merchant discount codes and calculate exact zip-code tax/shipping";
+        if (guideInput) guideInput.value = "Strictly enforce max-authorized price ceilings before final checkout submission\nAlways dispatch interactive approval card with full landed cost to messenger prior to ordering\nCapture confirmed order ID, tracking URL, and merchant receipt PDF directly to user thread\nNever log plain-text CVV or raw payment credentials in unencrypted storage";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
