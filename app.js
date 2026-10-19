@@ -232,6 +232,22 @@ const SKILLS_DATABASE = [
         logo: '🌾'
     },
     {
+        id: 'zendream-ai-skill',
+        name: 'zendream-ai-skill',
+        description: 'Multimodal conversational aesthetic discovery and style vector graph engine distilled from Daydream. Multi-modal intent alignment, "Say More" iterative prompt refinement, 50+ dimension aesthetic vectors, and in-store merchant search agents.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '✨'
+    },
+    {
+        id: 'zencart-ai-skill',
+        name: 'zencart-ai-skill',
+        description: 'Federated cross-merchant universal cart and dynamic price arbitrage radar distilled from Google Universal Cart and Carted. Cross-domain unified basket, live price-drop radar, knapsack shipping optimization, and automated post-purchase refund claims.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🛒'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -428,6 +444,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenrye-ai-skill') {
         if (capInput) capInput.value = "Universal Product Resolver: Parse variant IDs, live stock, and base pricing across any arbitrary e-commerce URL\nSelf-Healing Checkout Driver: Navigate dynamic checkout DOMs, payment iframes, and address forms autonomously\nResidential Session Relay: Route requests via resident browser profiles to neutralize bot heuristics\nCost and Coupon Arbitrageur: Auto-test verified merchant discount codes and calculate exact zip-code tax/shipping";
         if (guideInput) guideInput.value = "Strictly enforce max-authorized price ceilings before final checkout submission\nAlways dispatch interactive approval card with full landed cost to messenger prior to ordering\nCapture confirmed order ID, tracking URL, and merchant receipt PDF directly to user thread\nNever log plain-text CVV or raw payment credentials in unencrypted storage";
+    } else if (skillId === 'zendream-ai-skill') {
+        if (capInput) capInput.value = "Multimodal Aesthetic Seeker: Translate natural language prompts and reference photos into structured style vectors\nSay More Refinement Engine: Dynamically steer recommendations via conversational feedback in <50ms\nAesthetic Vector Graph: Deconstruct SKUs into 50+ dimensional sensory and silhouette attributes\nIn-Store Search SDK: Replace static merchant search bars with brand-native conversational AI stylists";
+        if (guideInput) guideInput.value = "Maintain 100% taste-neutral recommendations without commercial placement bias\nKeep vector mutation latency below 50ms for instantaneous conversational feedback\nAnalyze user selfies and moodboard photos strictly within local OpenClaw enclave\nHand off confirmed candidate SKUs directly to zenrye or zenprocure for one-tap checkout";
+    } else if (skillId === 'zencart-ai-skill') {
+        if (capInput) capInput.value = "Federated Cart Manager: Maintain unified real-time cart state across Shopify, Amazon, and DTC stores\nPrice-Drop Radar: Continuously monitor historical price baselines and alert on genuine flash sales\nKnapsack Shipping Optimizer: Solve multi-merchant split orders to hit free-shipping tiers and maximize coupon stacking\nPost-Purchase Price Arbitrageur: Auto-monitor 14/30-day merchant price guarantees and claim automated refunds";
+        if (guideInput) guideInput.value = "Require explicit HITL confirmation on paired WhatsApp/Telegram before any multi-store purchase\nRe-verify merchant inventory and variant availability within 60s before order dispatch\nSecure all cart sessions, receipts, and order tracking links in local encrypted storage\nFilter price-drop alerts to genuine discounts exceeding 10% or $15.00 to prevent notification fatigue";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
