@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-27%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-28%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -39,6 +39,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - 🌿 **Multi-Dimensional True Value & Resale Forecasting**: Evaluates goods beyond flat prices—scoring fabric longevity, true cost-per-wear (CPW), certified ESG transparency, and secondary market resale curves.
 - 💎 **Consumer Financial Wellness & Liquidity Sentinel**: Coordinates paycheck-aligned 0%-APR installment schedules, freezes dispute invoices during returns, and enforces anti-impulse spending cooling-off periods.
 - 🤝 **Agent-to-Human Micro-Procurement & Escrow**: Empowers agents to hire verified local humans for offline store inspections, in-person pickups, and real-world verifications via deterministic escrow contracts.
+- 🏮 **Dedicated Marketplace Co-Pilot & Cursor Navigation**: Spins up 1-on-1 virtual boutique curators with autonomous cursor navigation, cross-session collector memory, and bilateral offer negotiation for non-commodity passion goods.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -66,6 +67,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Multi-Dimensional Value & Circular Resale Forecasting (Phia Distillation)**: Overcoming flat-price bias with 5-dimension holistic value scoring, ESG supply-chain anti-greenwashing audit, and secondary market depreciation forecasting across Vestiaire/RealReal.
 - **Consumer Financial Liquidity & Dispute Freeze Shield (Klarna Distillation)**: Aligning purchases with authentic paycheck cash-flow cycles, instant dispute hold requests to payment gateways, and FX currency arbitrage.
 - **Agent-to-Human Micro-Procurement & Physical Escrow (Payman Distillation)**: Smashes the physical last-mile barrier by decoupling probabilistic LLM reasoning from deterministic banking rails, dispatching real-world human gigs, and validating multi-modal physical proof.
+- **Marketplace Co-Pilot & Bilateral Negotiation (Palisade Distillation)**: Replacing static search bars in passion marketplaces with autonomous virtual cursor co-browsing, cross-session collector portfolio memory, and comp-backed offer negotiation.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -95,6 +97,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 22. **Multi-Dimensional Value Matrix & Resale Forecasting**: Replaces naive price comparison with net Cost-Per-Wear (CPW) calculations, third-party ESG certificate verification, and 3-year secondary market liquidation curves.
 23. **Paycheck-Aligned Cash Flow & Dispute Invoice Freeze**: Replaces blind checkout debits with paycheck-synchronized 0%-APR installment modeling and zero-lag dispute invoice pauses during returns.
 24. **Agent-to-Human Physical Task Escrow**: Bridges digital decisions with real-world human footwork via geo-fenced micro-tasks, deterministic non-LLM policy firewalls, and tamper-proof proof ledgers.
+25. **Virtual Cursor Co-Browsing & Bilateral Collector Negotiation**: Navigates non-commodity passion marketplaces with visible co-browsing cursors, condition defect highlighting, and comp-backed bilateral negotiation.
 
 ---
 
@@ -122,6 +125,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | 🌿 [`zenphia-ai-skill`](skills/zenphia-ai-skill/SKILL.md) | **ZenPhia (禅菲)** | Multi-dimensional value matrix (CPW), verified ESG anti-greenwashing shield, and secondary market resale depreciation forecaster. |
 | 💎 [`zenklar-ai-skill`](skills/zenklar-ai-skill/SKILL.md) | **ZenKlar (禅澄)** | Personal consumer financial orchestrator, paycheck-synchronized 0%-APR scheduler, dispute invoice freeze shield, and DCC FX arbitrage. |
 | 🤝 [`zenman-ai-skill`](skills/zenman-ai-skill/SKILL.md) | **ZenMan (禅幔)** | Agent-to-human micro-procurement, real-world task escrow, non-LLM financial policy firewall, and multi-modal proof verification. |
+| 🏮 [`zenpal-ai-skill`](skills/zenpal-ai-skill/SKILL.md) | **ZenPal (禅伴)** | Dedicated marketplace sales agent, virtual cursor co-browsing, persistent collector memory, and bilateral comp-backed negotiation. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -152,6 +156,7 @@ GenPark comes bundled with production-grade skills:
 | 🌿 [`zenphia-ai-skill`](skills/zenphia-ai-skill/SKILL.md) | **Commerce / Circular Value & Resale** | Distilled from Phia. 5-dimension true value matrix, verified sustainable supply-chain audit, ethical dupe finder, and predictive resale curves. |
 | 💎 [`zenklar-ai-skill`](skills/zenklar-ai-skill/SKILL.md) | **Commerce / Personal Finance & Liquidity** | Distilled from Klarna. Paycheck-aligned 0%-APR installment planner, instant dispute payment pause shield, and anti-impulse guardrails. |
 | 🤝 [`zenman-ai-skill`](skills/zenman-ai-skill/SKILL.md) | **Commerce / Agent-to-Human & Physical Escrow** | Distilled from Payman AI. Agent-to-human task dispatch, deterministic smart escrow, non-LLM policy guardrails, and offline footwork proxy. |
+| 🏮 [`zenpal-ai-skill`](skills/zenpal-ai-skill/SKILL.md) | **Commerce / Marketplace & Collector Negotiation** | Distilled from Palisade. Virtual cursor co-pilot, cross-session collector memory, macro flaw inspector, and bilateral offer engine. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |
