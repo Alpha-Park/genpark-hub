@@ -312,6 +312,14 @@ const SKILLS_DATABASE = [
         logo: '🏮'
     },
     {
+        id: 'zenpango-ai-skill',
+        name: 'zenpango-ai-skill',
+        description: 'Agentic post-purchase operating system and reverse logistics arbiter distilled from Pango (YC S26). Unifies WMS, dynamic carrier routing, and customer support into an autonomous state machine with returnless refund unit economics and anti-wardrobing shields.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '📦'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -538,6 +546,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpal-ai-skill') {
         if (capInput) capInput.value = "Virtual Cursor Co-Pilot: Navigate non-commodity storefronts with visible autonomous cursor and macro flaw zoom\nCollector Memory Engine: Maintain cross-session registry of owned portfolio, grading tolerances, and past rejected offers\nBilateral Negotiation Arbiter: Formulate comp-backed opening bids and evaluate seller counter-offers in real-time\nOmnichannel Watchdog: Track seller reserve drops and alert collector via WhatsApp/Telegram for instant in-chat counter-offers";
         if (guideInput) guideInput.value = "Proactively spotlight physical defects (whitening, scratches, patina) before discussing pricing or checkout\nKeep user collection registries, private purchase history, and max willingness-to-pay encrypted locally\nGround every negotiation offer in verified secondary market transaction comps (PSA APR, eBay Sold)\nRequire explicit human confirmation on paired messenger before dispatching legally binding purchase bids";
+    } else if (skillId === 'zenpango-ai-skill') {
+        if (capInput) capInput.value = "Post-Purchase State Machine: Unify fragmented WMS, carrier, and support silos onto an event-driven fulfillment graph\nDynamic Carrier Router: Continuously re-evaluate regional carrier SLA, weather, and hub congestion for on-time delivery\nReturnless Refund Arbiter: Calculate net salvage value vs. reverse freight to trigger instantaneous returnless refunds\nAnti-Wardrobing Shield: Audit historical return frequency, claim patterns, and product condition telemetry to block return abuse";
+        if (guideInput) guideInput.value = "Prioritize size/color exchanges and store credit incentives before executing cash refunds\nTrigger automated returnless refunds whenever return shipping + restock exceeds item resale value\nStore all RMA tracking tokens, carrier manifests, and customer dispute ledgers in local encrypted storage\nAlert merchant operator immediately if return abuse velocity exceeds safety threshold";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
