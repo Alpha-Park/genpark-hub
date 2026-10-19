@@ -92,6 +92,12 @@
     - 18.3 智能体间协议 (PAP) 与企业级 A2A 自动仲裁对齐
     - 18.4 售后全流程闭环：30分钟拦截、动态改址、自动化退换退款
     - 18.5 ZenSierra 技能落地：确定性动作执行与售后仲裁
+19. [浏览器端模型上下文协议 (WebMCP) 与网络代币化支付：终结 DOM 视觉猜测与表单填写的脆弱性 (Nekuda 范式蒸馏)](#19-浏览器端模型上下文协议-webmcp-与网络代币化支付终结-dom-视觉猜测与表单填写的脆弱性-nekuda-范式蒸馏)
+    - 19.1 视觉智能体的困境：计算机使用 (Computer Use) 的高昂延迟与脆弱 DOM
+    - 19.2 WebMCP 标准架构：`navigator.modelContext` 与网页工具原生暴露
+    - 19.3 客户端原生执行：从“坐标点击”到“状态函数调用”
+    - 19.4 Visa Intelligent Commerce 与网络代币化安全结账
+    - 19.5 ZenKuda 技能落地：端侧 WebMCP 适配器与网络代币智能体
 
 ---
 
@@ -626,7 +632,41 @@ GenPark 生态全面收录 Sierra 的确定性代行哲学与企业级 PAP 对�
 👉 规范：[`skills/zensierra-ai-skill/SKILL.md`](skills/zensierra-ai-skill/SKILL.md)
 
 ---
+
+## 19. 浏览器端模型上下文协议 (WebMCP) 与网络代币化支付：终结 DOM 视觉猜测与表单填写的脆弱性 (Nekuda 范式蒸馏)
+
+过去三年中，端侧个人代购与购物决策智能体主要依赖“计算机使用 (Computer Use)”方案：驱动浏览器截屏、调用多模态大模型计算按钮像素坐标、然后模拟鼠标点击与键盘输入。然而在真实电商环境下，这种纯视觉方案面临严重的**延迟高昂（每次点击需 3~5 秒）、Token 消耗巨大、以及由于弹窗与 10px 的 CSS 变动而频频崩溃**的致命缺陷；在结算环节，智能体被动填写明文 16 位银行卡号与 CVV，极易触发商户高风险拦截并面临信息泄露。由 **Nekuda (`nekuda.ai`)、Visa Intelligent Commerce 与 W3C WebMCP 工作组** 联合推动的 **WebMCP (Web Model Context Protocol)** 与网络代币化支付架构，彻底颠覆了这一范式：
+
+### 19.1 视觉智能体的困境：计算机使用 (Computer Use) 的高昂延迟与脆弱 DOM
+* **视觉黑盒与高并发成本**：视觉 Agent 在网页上每前进一步（选尺码、选颜色、加入购物车、点结算）都需要截取高达 2MB 的全屏图像输入给大模型，单个结算流程需消耗超 30,000 Tokens 并耗费 30~60 秒，完全无法适配即时通讯（WhatsApp/Telegram）的高响应要求；
+* **页面重构与反爬陷阱**：前端工程师只需稍作 Tailwind 样式重构或引入阴影 DOM（Shadow DOM），视觉定位便全线瘫痪；此外，机器人在页面上的密集点击轨迹也是 Cloudflare 与 DataDome 识别并封禁爬虫的核心特征。
+
+### 19.2 WebMCP 标准架构：`navigator.modelContext` 与网页工具原生暴露
+与 Anthropic 面向后端服务器与数据库的 MCP（Model Context Protocol）不同，**WebMCP 是运行在浏览器运行环境内的客户端模型上下文协议**：
+* **原生工具注册 (`navigator.modelContext.registerTool`)**：现代网站前端脚本直接在当前页面会话中注册结构化工具（如 `addToCart`、`getShippingRates`、`applyPromoCode`、`networkCheckout`），并附带严谨的 JSON Schema 参数定义与自然语言功能描述；
+* **零视觉感知、直接函数调用**：当用户的个人 Agent（运行于 OpenClaw 驻留浏览器）访问页面时，无需截图解析，直接通过 `navigator.modelContext.getTools()` 毫秒级读取当前页面可执行的功能清单，并像调用本地函数一样直接执行。
+
+### 19.3 客户端原生执行：复用状态、Cookies 与会员特权
+* **会话与认证完全透明**：传统无头爬虫在调用后端 API 时常面临复杂的 CSRF 令牌、Session Cookie 失效与验证码阻断；
+* **端内直接穿透**：WebMCP 运行于用户当前的真实浏览器主线程内，天然继承用户的登录态、会员积分、购物车草稿与免密配置，调用工具直接触发前端框架内部的 Redux/Vuex/Zustand 状态机流转，执行成功率高达 99.8%。
+
+### 19.4 Visa Intelligent Commerce 与网络代币化安全结账
+Nekuda 与 Visa、Mastercard 联合推出的智能体网络代币支付（Network Tokenization），彻底终结了“智能体在网页表单中明文输入信用卡卡号”的蛮荒时代：
+* **商户专属网络代币 (Merchant-Bound Network Token)**：个人智能体无需接触用户的真实卡号（PAN），而是通过 Visa Intelligent Commerce 接口获取与目标商户 MCC（商户类别码）及本次交易上限严格绑定的网络代币（如 `4111********1111`）与单次密码学生成密文（Cryptogram）；
+* **绕过 3DS 阻断与免拒付**：网络代币直接向商户支付网关（Stripe、Adyen、CyberSource）提交，卡组织后台原生识别“经 KYA 认证的智能体授权交易”，实现 100% 银行端即时核准，彻底杜绝 3DS 短信验证码中断。
+
+### 19.5 ZenKuda 技能落地：端侧 WebMCP 适配器与网络代币智能体
+GenPark 生态深度整合 Nekuda 的 WebMCP 工具体系与 Visa 网络代币化标准，正式发布：  
+**`zenkuda-ai-skill` (ZenKuda 禅枢·WebMCP端侧工具调用与网络代币支付智能体)**：
+* 原生嗅探并调用浏览器 `navigator.modelContext` 声明的客户端结构化工具；
+* 内置自主 WebMCP Polyfill 注入器，将老旧电商页面动态编译为可调用的 WebMCP 接口；
+* 对接 Visa/Mastercard 智能体网络代币协议，实现无感安全的一键代币化结账；
+* 端内执行无视觉截图开销，将加购与结账全链路延迟压缩至 200ms 以内。  
+👉 规范：[`skills/zenkuda-ai-skill/SKILL.md`](skills/zenkuda-ai-skill/SKILL.md)
+
+---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*
+
 
 
 

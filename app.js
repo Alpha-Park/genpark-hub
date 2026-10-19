@@ -256,6 +256,14 @@ const SKILLS_DATABASE = [
         logo: '⛰️'
     },
     {
+        id: 'zenkuda-ai-skill',
+        name: 'zenkuda-ai-skill',
+        description: 'Web Model Context Protocol (WebMCP) client and network-tokenized payment agent distilled from Nekuda and Visa Intelligent Commerce. Bypasses Computer-Use visual scraping via navigator.modelContext tool calling and domain-bound network token settlement.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🧭'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -461,6 +469,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zensierra-ai-skill') {
         if (capInput) capInput.value = "Deterministic Action Engine: Execute binding API mutations for order cancellations, address changes, and subscription pauses\nAutomated Return Arbitrator: Interpret return policies, generate instant QR/carrier return labels, and monitor refunds\nEnterprise PAP Client: Engage in cryptographic Agent-to-Agent negotiation with brand customer support agents\nNon-Hallucinatory Outcome Auditor: Commit actions only upon verified HTTP receipts and maintain append-only resolution ledger";
         if (guideInput) guideInput.value = "Enforce zero hallucination tolerance; require verified API receipts before reporting order status\nValidate merchant return window eligibility before filing dispute or return requests\nSecurely archive dispute resolution audit trails in local OpenClaw encrypted storage\nAlert operator immediately if merchant requires human-in-the-loop escalation or identity re-verification";
+    } else if (skillId === 'zenkuda-ai-skill') {
+        if (capInput) capInput.value = "WebMCP Tool Inspector: Interrogate navigator.modelContext for in-page client tool definitions\nSynthetic DOM Polyfill: Inject executable client adapters on legacy storefronts to expose structured tools\nNetwork Token Transactor: Acquire domain-bound Visa/Mastercard network cryptograms and transmit directly to gateways\nSession State Synchronizer: Maintain shared cart and cookie states seamlessly across mobile and desktop daemons";
+        if (guideInput) guideInput.value = "Prioritize navigator.modelContext native tools over visual computer-use and heuristic DOM clicking\nBind payment network tokens strictly to destination merchant domain and transaction ceiling\nNever cache or expose plain-text primary account numbers (PAN) or CVVs in memory or logs\nKeep tool invocation latency under 100ms to guarantee instantaneous user response";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";

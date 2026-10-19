@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-21%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-22%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -33,6 +33,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - ✨ **Multimodal Conversational Aesthetic Search**: "Say More" iterative prompt refinement and 50+ vector aesthetic style knowledge graph.
 - 🛒 **Federated Universal Basket & Price Radar**: Cross-merchant cart synchronization, real-time price-drop sentinel, and automated post-purchase refund claiming.
 - ⛰️ **Deterministic Post-Purchase Resolution**: Zero-hallucination OMS/WMS API mutations for pre-dispatch order cancellation, carrier rerouting, and automated returns.
+- 🧭 **WebMCP & Network Tokenization**: Replaces brittle Computer Use visual screenshots with browser-native `navigator.modelContext` tool calls and Visa Intelligent Commerce network tokens.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -54,6 +55,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Multimodal Conversational Discovery & Style Embeddings (Daydream Distillation)**: Liberating shopping from rigid keywords with "Say More" iterative prompt steering and 50+ aesthetic vector dimensions.
 - **Federated Universal Cart & Dynamic Price Arbitrage (Universal Cart / Carted Distillation)**: Unifying cross-merchant carts, knapsack shipping optimization, and automated post-purchase price matching.
 - **Deterministic Actions & Enterprise PAP Arbitration (Sierra Distillation)**: Moving beyond conversational bots with schema-driven mutations, zero-hallucination refund policies, and A2A enterprise dispute handshakes.
+- **WebMCP & Network Tokenized Payments (Nekuda Distillation)**: Eliminating DOM screenshot guessing with client-side tool discovery, in-page JavaScript execution, and merchant-bound network token settlement.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -77,6 +79,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 16. **Multimodal Style Knowledge Graph & "Say More" Steering**: Resolves real-life occasions and vibes into vector deltas for millisecond discovery updates.
 17. **Federated Multi-Store Cart & Retroactive Price Protection**: Aggregates disparate merchant carts and monitors 14/30-day price drops to recover refunds automatically.
 18. **Deterministic Action Engine & Enterprise Dispute Settlement**: Commits binding order mutations and automated returns via verified API receipts and cryptographic PAP handshakes.
+19. **Browser-Native WebMCP & Tokenized Network Rails**: Calls in-page tools via `navigator.modelContext` and transacts via domain-bound Visa network cryptograms without storing raw PANs.
 
 ---
 
@@ -98,6 +101,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | ✨ [`zendream-ai-skill`](skills/zendream-ai-skill/SKILL.md) | **ZenDream (禅织)** | Multimodal conversational aesthetic search, "Say More" iterative refinement engine, and 50+ dimensional style vector graph. |
 | 🛒 [`zencart-ai-skill`](skills/zencart-ai-skill/SKILL.md) | **ZenCart (禅车)** | Federated cross-merchant universal cart, real-time price drop radar, knapsack shipping optimization, and post-purchase price matching. |
 | ⛰️ [`zensierra-ai-skill`](skills/zensierra-ai-skill/SKILL.md) | **ZenSierra (禅岳)** | Deterministic action engine, automated order cancellation/address modification, QR return label generator, and enterprise PAP arbitration. |
+| 🧭 [`zenkuda-ai-skill`](skills/zenkuda-ai-skill/SKILL.md) | **ZenKuda (禅枢)** | Web Model Context Protocol (WebMCP) client, autonomous DOM polyfill synthesizer, and Visa Intelligent Commerce network token bridge. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -122,6 +126,7 @@ GenPark comes bundled with production-grade skills:
 | ✨ [`zendream-ai-skill`](skills/zendream-ai-skill/SKILL.md) | **Commerce / Conversational Discovery** | Distilled from Daydream. Multimodal aesthetic seeker, "Say More" iterative steering, 50+ vector dimensions, and in-store AI stylist. |
 | 🛒 [`zencart-ai-skill`](skills/zencart-ai-skill/SKILL.md) | **Commerce / Unified Cart & Arbitrage** | Distilled from Universal Cart & Carted. Cross-merchant federated cart, dynamic price radar, knapsack shipping optimizer, and automated refund claims. |
 | ⛰️ [`zensierra-ai-skill`](skills/zensierra-ai-skill/SKILL.md) | **Commerce / Post-Purchase & PAP** | Distilled from Sierra. Deterministic action execution, zero-hallucination returns, OMS/carrier mutations, and enterprise PAP dispute settlement. |
+| 🧭 [`zenkuda-ai-skill`](skills/zenkuda-ai-skill/SKILL.md) | **Commerce / WebMCP & Network Tokens** | Distilled from Nekuda. Native browser tool calling (`navigator.modelContext`), synthetic DOM adapters, and domain-bound network tokenization. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |
