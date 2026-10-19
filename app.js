@@ -280,6 +280,14 @@ const SKILLS_DATABASE = [
         logo: '🏛️'
     },
     {
+        id: 'zenphia-ai-skill',
+        name: 'zenphia-ai-skill',
+        description: 'Multi-dimensional value matrix and circular sustainability decision agent distilled from Phia (Phoebe Gates & Sophia Kianni). Evaluates purchases beyond flat price—scoring fabric longevity, cost-per-wear (CPW), verified ESG supply chains, and secondary market resale depreciation curves (Vestiaire/RealReal).',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🌿'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -494,6 +502,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenfirm-ai-skill') {
         if (capInput) capInput.value = "Universal Protocol Broker: Transpile between MCP, ACP, UCP, TAP, and PAP commerce standards\nIn-Chat Checkout Engine: Render compact interactive checkout cards and execute 1-tap purchases in messenger\nMerchant MoR Protector: Ensure merchant retains Merchant of Record status, direct customer LTV, and CRM ownership\nPasskey Biometric Gate: Authorize transaction settlement via device-bound FIDO2 credentials in <400ms";
         if (guideInput) guideInput.value = "Maintain absolute protocol neutrality without forcing proprietary vendor lock-in\nRoute customer payments directly to merchant-owned accounts to safeguard brand sovereignty\nRequire explicit biometric passkey confirmation on paired mobile messenger before finalizing transactions\nEnsure full landed cost (tax, shipping, duties) is verified within 500ms before settlement";
+    } else if (skillId === 'zenphia-ai-skill') {
+        if (capInput) capInput.value = "True Value Matrix: Evaluate purchases across price integrity, material durability, ESG verification, and net cost-per-wear (CPW)\nSecondary Resale Forecaster: Model 3-year depreciation curves based on millions of Vestiaire, RealReal, and Poshmark transactions\nGreenwashing Shield: Audit marketing claims against third-party certifications (OEKO-TEX, GOTS, B-Corp) with zero tolerance for fake eco-tags\nEthical Dupe Engine: Discover affordable, responsibly crafted alternatives to luxury items without resorting to sweatshop knockoffs";
+        if (guideInput) guideInput.value = "Reject flat-price bias; always calculate realized Cost-Per-Wear (CPW) and residual liquidation value\nPenalize brand claims lacking cryptographic or accredited third-party ESG certification\nAlert users to secondary market liquidity and projected salvage depreciation before checkout\nStore all wardrobe profiles, sizing, and style preferences encrypted within OpenClaw local vault";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
