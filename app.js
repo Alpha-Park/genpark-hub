@@ -336,6 +336,14 @@ const SKILLS_DATABASE = [
         logo: '🪪'
     },
     {
+        id: 'zenpact-ai-skill',
+        name: 'zenpact-ai-skill',
+        description: 'Autonomous bilateral algorithmic price negotiation and dynamic bargaining agent distilled from Nibble and Pactum AI. Engages merchant pricing bots in game-theoretic concession rounds with BATNA walk-away limits, non-price variable trading, and anti-gouging shields.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🤝'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -571,6 +579,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpass-ai-skill') {
         if (capInput) capInput.value = "Sovereign Context Vault: Encrypt sizing, allergies, taste vectors, and spending limits in local hardware enclave\nSign in with ZenPass Broker: Issue scoped, time-bounded permission tokens for external buyer agents and merchant bots\nZero-Knowledge Claim Generator: Prove age, location zip, and budget thresholds cryptographically without exposing raw PII\nBi-Directional Context Harmonizer: Propose preference patches from active sessions and enforce paired-messenger HITL approval";
         if (guideInput) guideInput.value = "Store all master context attributes exclusively within OS Secure Enclave / local vault\nStrictly enforce the principle of least privilege; deny any broad unscoped context requests\nRequire explicit one-tap user confirmation on mobile messenger before committing profile mutations\nLog every read and write access attempt to the append-only local audit ledger";
+    } else if (skillId === 'zenpact-ai-skill') {
+        if (capInput) capInput.value = "Game-Theoretic Bargaining Driver: Execute automated multi-round concession protocols against merchant pricing bots\nBATNA Reservation Modeler: Calculate strict walk-away prices based on real-time cross-merchant alternative baselines\nMulti-Issue Concession Trader: Offer fulfillment flexibility (slow ground delivery, off-peak shifts) and add-ons to extract cash discounts\nAnti-Gouging Shield: Suppress fake scarcity countdowns and neutralize device-type dynamic price discrimination";
+        if (guideInput) guideInput.value = "Never exceed user's strict max willingness-to-pay ceiling under any negotiation outcome\nMaintain monotonic concession schedules without revealing final reservation price prematurely\nAdhere strictly to merchant API rate limits without aggressive request flooding\nHand off finalized negotiated promotion codes directly to zenrye or zenfirm for instant checkout execution";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
