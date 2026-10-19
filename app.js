@@ -320,6 +320,14 @@ const SKILLS_DATABASE = [
         logo: '📦'
     },
     {
+        id: 'zenchannel-ai-skill',
+        name: 'zenchannel-ai-skill',
+        description: 'Universal open product knowledge graph and Model Context Protocol (MCP) search infrastructure distilled from Channel3 (YC S25). Empowers AI shopping agents with 100M+ normalized products, multimodal text/image discovery, variant de-duplication, and native affiliate attribution clearing.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🌐'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -549,6 +557,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpango-ai-skill') {
         if (capInput) capInput.value = "Post-Purchase State Machine: Unify fragmented WMS, carrier, and support silos onto an event-driven fulfillment graph\nDynamic Carrier Router: Continuously re-evaluate regional carrier SLA, weather, and hub congestion for on-time delivery\nReturnless Refund Arbiter: Calculate net salvage value vs. reverse freight to trigger instantaneous returnless refunds\nAnti-Wardrobing Shield: Audit historical return frequency, claim patterns, and product condition telemetry to block return abuse";
         if (guideInput) guideInput.value = "Prioritize size/color exchanges and store credit incentives before executing cash refunds\nTrigger automated returnless refunds whenever return shipping + restock exceeds item resale value\nStore all RMA tracking tokens, carrier manifests, and customer dispute ledgers in local encrypted storage\nAlert merchant operator immediately if return abuse velocity exceeds safety threshold";
+    } else if (skillId === 'zenchannel-ai-skill') {
+        if (capInput) capInput.value = "Universal Catalog Indexer: Normalize heterogeneous web schemas into 100M+ unified canonical product graph\nMultimodal Entity De-Duplicator: Cluster identical physical SKUs across retailers using vision embeddings and title semantics\nOpen MCP Search Engine: Expose search_products, lookup_product_url, and compare_merchant_offers tool endpoints\nUniversal Affiliate Clearing Hub: Auto-inject compliant affiliate tracking tokens and attribute commission splits via x-user-id";
+        if (guideInput) guideInput.value = "Guarantee live inventory validation with TTL < 5 minutes before recommending offers\nMaintain strict relevance and landed-price ranking neutrality without affiliate bias\nProcess reference images and body sizing ephemerally within local sandboxed session\nHand off confirmed candidate SKUs directly to zenrye or zenfirm for instant checkout execution";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
