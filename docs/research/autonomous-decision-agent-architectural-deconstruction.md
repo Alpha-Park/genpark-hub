@@ -98,6 +98,12 @@
     - 19.3 客户端原生执行：从“坐标点击”到“状态函数调用”
     - 19.4 Visa Intelligent Commerce 与网络代币化安全结账
     - 19.5 ZenKuda 技能落地：端侧 WebMCP 适配器与网络代币智能体
+20. [生成式引擎优化 (GEO/AEO) 与智能体声量份额 (Share of Model)：重构 AI 导购可见性与 agents.json 标准 (Wildcard 范式蒸馏)](#20-生成式引擎优化-geoaeo-与智能体声量份额-share-of-model重构-ai-导购可见性与-agentsjson-标准-wildcard-范式蒸馏)
+    - 20.1 传统 SEO 的终结：从“蓝色链接点击”到“大模型唯一推荐 (Winner-Takes-All)”
+    - 20.2 智能体声量份额 (Share of Model) 与知识图谱引用逆向分析
+    - 20.3 `agents.json` 开放协议：商户能力与可信 SKU 声明标准
+    - 20.4 自动化 PDP 属性充实与反幻觉自愈循环
+    - 20.5 ZenWild 技能落地：GEO 语义雷达与 agents.json 部署中枢
 
 ---
 
@@ -665,7 +671,45 @@ GenPark 生态深度整合 Nekuda 的 WebMCP 工具体系与 Visa 网络代币�
 👉 规范：[`skills/zenkuda-ai-skill/SKILL.md`](skills/zenkuda-ai-skill/SKILL.md)
 
 ---
+
+## 20. 生成式引擎优化 (GEO/AEO) 与智能体声量份额 (Share of Model)：重构 AI 导购可见性与 agents.json 标准 (Wildcard 范式蒸馏)
+
+随着以 ChatGPT、Claude、Perplexity、Amazon Rufus 及 GenPark/OpenClaw 为代表的生成式 AI 智能体全面接管消费者的决策与采购，传统基于 Google 关键字竞价、反向链接与网页排名的 SEO 体系正在经历毁灭性坍塌。当用户发出 *"帮我选一台 \$1500 以内、续航超 15 小时、机身低于 1.3kg 且支持双雷电4接口的轻薄本，并直接下单"* 时，AI 智能体直接合成唯一答案或策展三元组（Curated Triad）。**如果品牌在 LLM 的隐空间表征中缺乏高可信度的实体锚点，或者商户端缺乏机器可读的属性断言，品牌将彻底在智能体购物时代“隐形”**。由 Y Combinator (W25) 重点孵化的 **Wildcard (`wild-card.ai`)** 与其开创的 **`agents.json` 开放协议**，树立了面向 AI 导购可见性与生成式引擎优化（GEO/AEO）的工业级指挥中枢：
+
+### 20.1 传统 SEO 的终结：从“蓝色链接点击”到“大模型唯一推荐 (Winner-Takes-All)”
+* **流量中介彻底消失**：传统电商时代，即使品牌排在第 3~5 位，依然能分流 10%~15% 的点击；而在 Agentic Commerce 时代，智能体面对用户的高维约束直接完成剪枝过滤，推荐结果呈现极端的“赢者通吃 (Winner-Takes-All)”；
+* **声量份额 (Share of Model, SoM) 替代声量份额 (Share of Voice)**：传统营销看广告展示频次（SoV），而智能体营销衡量的是**在各大主流基础模型及垂直购物 Agent 的生成结果中，品牌的被推荐率、置信度得分与正面评价权重**。
+
+### 20.2 智能体声量份额 (Share of Model) 与知识图谱引用逆向分析
+Wildcard 颠覆了盲目刷外链的旧模式，构建了系统化的模型逆向探测雷达：
+* **多模型高频高意图探测 (Multi-Model Intent Probing)**：定时向 ChatGPT、Claude、Perplexity、Rufus 注入成千上万个复合场景消费意图，量化评估各垂直类目 SKU 的命中率与推荐位次；
+* **知识引用图谱溯源 (Citation Graph Reverse-Mining)**：深度追踪大模型推荐竞品背后的真实信息源——究竟是 Reddit 论坛（r/BuyItForLife）长期的口碑发酵、YouTube 拆解视频的测试数据，还是特定专业媒体的横评。一旦定位负面口碑锚点或属性缺失，立即触发针对性修正策略。
+
+### 20.3 `agents.json` 开放协议：商户能力与可信 SKU 声明标准
+为了杜绝 AI 爬虫在未结构化的 HTML 标签中盲目乱猜与幻觉，Wildcard 规范化了 `/.well-known/agents.json` 协议规范：
+* **机器原生清单文件**：商户在根域名下暴露标准的 JSON 拓扑清单，明示：
+  1. 当前商户支持的 Agent 交互接口（PAP、WebMCP、REST Shadow Catalog）；
+  2. 实时库存同步频率与无门槛退换货 Policy 形式化定义；
+  3. 全球直邮关税（DDP）承诺与最低落地价（Landed Cost）计算端点；
+* **免抓取高信誉认证**：通过数字签名验证的 `agents.json` 获得各大基础模型爬虫最高爬取优先级与 RAG 召回置信度加权。
+
+### 20.4 自动化 PDP 属性充实与反幻觉自愈循环
+传统商品详情页（PDP）往往充斥着营销辞藻，缺乏机器决策所需的硬核参数：
+* **细粒度属性自动提取与注入**：从供应商物料清单（BOM）、专业检测报告中提取 40+ 个机器决策属性（如面料克重、防水级别、承重极限、质保范围、维修配件可用性），自动生成合规 Schema.org JSON-LD 注入页面底座；
+* **反幻觉自愈屏障**：确保买方 Agent 在执行多属性交集过滤（如“抗风雨且无氟碳化物涂层”）时，本品牌商品绝对不会因为数据缺失被系统性误杀。
+
+### 20.5 ZenWild 技能落地：GEO 语义雷达与 agents.json 部署中枢
+GenPark 生态全面收录 Wildcard 的 GEO/AEO 评估体系与 `agents.json` 协议标准，正式发布：  
+**`zenwild-ai-skill` (ZenWild 禅野·生成式引擎优化GEO与智能体声量中枢)**：
+* 全网多大模型 Share of Model (SoM) 自动化穿透巡检与引用雷达；
+* 逆向挖掘 Reddit、专业评测与社群口碑图谱，定位竞争对手推荐优势根因；
+* 自动化生成并托管 `/.well-known/agents.json`，为 AI 导购提供机器可读入口；
+* 深度充实商户 PDP 结构化属性，杜绝参数缺失导致的智能体筛除，稳夺推荐首位。  
+👉 规范：[`skills/zenwild-ai-skill/SKILL.md`](skills/zenwild-ai-skill/SKILL.md)
+
+---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*
+
 
 
 

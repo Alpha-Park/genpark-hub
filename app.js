@@ -264,6 +264,14 @@ const SKILLS_DATABASE = [
         logo: '🧭'
     },
     {
+        id: 'zenwild-ai-skill',
+        name: 'zenwild-ai-skill',
+        description: 'Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), and Share of Model (SoM) command center distilled from Wildcard. Audits recommendation visibility across LLMs, mines Reddit citation graphs, and deploys agents.json manifests.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🌐'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -472,6 +480,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenkuda-ai-skill') {
         if (capInput) capInput.value = "WebMCP Tool Inspector: Interrogate navigator.modelContext for in-page client tool definitions\nSynthetic DOM Polyfill: Inject executable client adapters on legacy storefronts to expose structured tools\nNetwork Token Transactor: Acquire domain-bound Visa/Mastercard network cryptograms and transmit directly to gateways\nSession State Synchronizer: Maintain shared cart and cookie states seamlessly across mobile and desktop daemons";
         if (guideInput) guideInput.value = "Prioritize navigator.modelContext native tools over visual computer-use and heuristic DOM clicking\nBind payment network tokens strictly to destination merchant domain and transaction ceiling\nNever cache or expose plain-text primary account numbers (PAN) or CVVs in memory or logs\nKeep tool invocation latency under 100ms to guarantee instantaneous user response";
+    } else if (skillId === 'zenwild-ai-skill') {
+        if (capInput) capInput.value = "Share of Model Radar: Audit brand recommendation rank and sentiment across ChatGPT, Claude, Rufus, and Perplexity\nCitation Graph Miner: Reverse-engineer Reddit, review sites, and YouTube discussions driving competitor agent recommendations\nAgents.json Synthesizer: Deploy and maintain standard /.well-known/agents.json machine-readable manifests\nPDP Attribute Enricher: Auto-inject 40+ structured Schema.org attributes to prevent agent retrieval disqualification";
+        if (guideInput) guideInput.value = "Adhere strictly to white-hat citation and attribute surfacing without synthetic review manipulation\nValidate agents.json and Schema.org JSON-LD syntax against W3C linters before live deployment\nPerform weekly Share of Model benchmarking to track foundation model weight updates\nExpose verified inventory and return policies directly to AI buyer agents via open endpoints";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
