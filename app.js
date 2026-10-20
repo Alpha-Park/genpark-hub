@@ -344,6 +344,14 @@ const SKILLS_DATABASE = [
         logo: '🤝'
     },
     {
+        id: 'zenpine-ai-skill',
+        name: 'zenpine-ai-skill',
+        description: 'Autonomous recurring subscription auditor, dark-pattern cancellation driver, and consumer rights refund recovery agent distilled from Pine AI. Enforces FTC Click-to-Cancel rules, extracts zero-usage refund recovery, and compiles FCBA chargeback arbitration packages.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🌲'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -582,6 +590,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpact-ai-skill') {
         if (capInput) capInput.value = "Game-Theoretic Bargaining Driver: Execute automated multi-round concession protocols against merchant pricing bots\nBATNA Reservation Modeler: Calculate strict walk-away prices based on real-time cross-merchant alternative baselines\nMulti-Issue Concession Trader: Offer fulfillment flexibility (slow ground delivery, off-peak shifts) and add-ons to extract cash discounts\nAnti-Gouging Shield: Suppress fake scarcity countdowns and neutralize device-type dynamic price discrimination";
         if (guideInput) guideInput.value = "Never exceed user's strict max willingness-to-pay ceiling under any negotiation outcome\nMaintain monotonic concession schedules without revealing final reservation price prematurely\nAdhere strictly to merchant API rate limits without aggressive request flooding\nHand off finalized negotiated promotion codes directly to zenrye or zenfirm for instant checkout execution";
+    } else if (skillId === 'zenpine-ai-skill') {
+        if (capInput) capInput.value = "Recurring Audit Radar: Parse transaction streams and bank feeds to flag dormant zombie subscriptions\nDark-Pattern Cancellation Driver: Autonomously penetrate multi-step cancellation mazes and retention surveys\nFTC Click-to-Cancel Enforcer: Cite federal/EU statutory cooling-off rights to legally nullify cancellation phone calls\nZero-Usage Refund Demander: Break merchant 'no-refund' boilerplates using verified non-usage telemetry and auto-compile FCBA chargeback packages";
+        if (guideInput) guideInput.value = "Always require explicit human approval card on paired messenger before executing service cancellations\nNever fabricate or exaggerate non-usage activity logs in legal dispute demands\nEncrypt all bank statements, transaction histories, and card identifiers strictly in local Secure Enclave\nTrack merchant refund clearing and escalate to credit card issuer chargeback if unpaid after 7 business days";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";

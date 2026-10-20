@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-32%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-33%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -44,6 +44,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - 🌐 **Universal Open Product Graph & MCP Search**: Smashes walled-garden data monopolies with 100M+ multimodal de-duplicated SKUs, native MCP tools, and zero-config affiliate attribution.
 - 🪪 **Sovereign AI Context Passport**: User-owned portable sizing, allergy, taste vectors, and ZK preference proofs across multiple agents.
 - 🤝 **Autonomous Algorithmic Negotiation**: Levels the playing field against merchant dynamic pricing bots with BATNA boundary modeling, game-theoretic bargaining rounds, and multi-issue concession trading.
+- 🌲 **Autonomous Subscription & Chargeback Shield**: Audits recurring zombie fees, penetrates dark-pattern cancellation funnels, enforces FTC Click-to-Cancel rules, and auto-compiles FCBA refund packages.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -76,6 +77,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Universal Product Knowledge Graph & Open MCP Search (Channel3 Distillation)**: Breaking proprietary data moats with 100M+ normalized products, multimodal entity de-duplication, and open MCP tool interfaces.
 - **Portable Context Sovereignty & AI Passport (Egoist Machines Distillation)**: Reclaiming personal context from cloud silos with portable sizing, taste vectors, zero-knowledge claims, and "Sign in with ZenPass" protocol.
 - **Bilateral Algorithmic Negotiation & Bargaining (Nibble & Pactum Distillation)**: Smashes static pricing monopolies with game-theoretic concession protocols, BATNA reservation limits, and anti-gouging defenses.
+- **Autonomous Subscription Audit & Dark-Pattern Cancellation (Pine AI Distillation)**: Smashes negative-option billing traps, zero-usage refund recovery, and FCBA chargeback arbitration.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -110,6 +112,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 27. **Universal Open Product Knowledge Graph & Open MCP Search**: Democratizes real-time product search across 100M+ SKUs, resolving cross-merchant variants, multimodal visual deltas, and automated affiliate attribution clearing.
 28. **Portable Context Sovereignty & AI Passport**: Solves the multi-agent cold-start dilemma by keeping personal sizing, tastes, and budgets in a user-owned local enclave with zero-knowledge scoped handshakes.
 29. **Autonomous Algorithmic Negotiation & Bargaining**: Engages merchant haggle-bots in automated game-theoretic bargaining rounds, trading non-price concessions to secure maximum discounts without exceeding budget ceilings.
+30. **Autonomous Subscription Audit & Dark-Pattern Cancellation**: Automatically penetrates obfuscated cancellation funnels, cites FTC Click-to-Cancel statutes, and compiles FCBA evidence packets to recover accidental recurring charges.
 
 ---
 
@@ -142,6 +145,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | 🌐 [`zenchannel-ai-skill`](skills/zenchannel-ai-skill/SKILL.md) | **ZenChannel (禅渠)** | Universal open product graph, multimodal SKU de-duplication, native MCP search server, and affiliate attribution rail. |
 | 🪪 [`zenpass-ai-skill`](skills/zenpass-ai-skill/SKILL.md) | **ZenPass (禅牒)** | Sovereign AI context passport, portable sizing & taste profile, scoped permission broker, and ZK preference proofs. |
 | 🤝 [`zenpact-ai-skill`](skills/zenpact-ai-skill/SKILL.md) | **ZenPact (禅约)** | Bilateral algorithmic negotiation agent, BATNA reservation modeling, multi-issue concession trading, and anti-gouging shield. |
+| 🌲 [`zenpine-ai-skill`](skills/zenpine-ai-skill/SKILL.md) | **ZenPine (禅松)** | Autonomous subscription auditor, dark-pattern cancellation driver, zero-usage refund recovery, and FCBA chargeback shield. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -177,6 +181,7 @@ GenPark comes bundled with production-grade skills:
 | 🌐 [`zenchannel-ai-skill`](skills/zenchannel-ai-skill/SKILL.md) | **Commerce / Product Graph & MCP Search** | Distilled from Channel3. 100M+ normalized product catalog, multimodal text+image discovery, variant de-duplication, and open MCP tools. |
 | 🪪 [`zenpass-ai-skill`](skills/zenpass-ai-skill/SKILL.md) | **Personal Agent / Identity & Context Sovereignty** | Distilled from Egoist Machines. User-owned AI passport, cross-agent context portability, zero-knowledge claims, and audit ledger. |
 | 🤝 [`zenpact-ai-skill`](skills/zenpact-ai-skill/SKILL.md) | **Commerce / Dynamic Bargaining & Negotiation** | Distilled from Nibble & Pactum. Game-theoretic automated bargaining, BATNA reservation pricing, non-price concession trading, and anti-urgency shields. |
+| 🌲 [`zenpine-ai-skill`](skills/zenpine-ai-skill/SKILL.md) | **Personal Finance / Subscription & Consumer Protection** | Distilled from Pine AI. Zombie subscription discovery, FTC Click-to-Cancel automation, zero-usage refund recovery, and retention bill discount negotiation. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |
