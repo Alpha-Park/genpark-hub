@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-36%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-37%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -48,6 +48,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - 📞 **Autonomous Outbound PSTN Voice Procurement**: Smashes the offline API void by dialing local retail counters, pharmacies, and desks with sub-600ms turn-taking, behind-the-counter holds, and live messenger audio handoff.
 - ⚡ **Dual-Surface Omnichannel Merchant Engine**: Simultaneously renders emotion-rich adaptive visual PDPs for humans and sub-300-token structured context endpoints for buyer AI agents with zero-hallucination engineering specs.
 - 📜 **Cryptographic Intent Mandates & AP2 Payment Rails**: Eliminates LLM probabilistic payment risk with signed three-tier mandates (IntentMandate, CartMandate, PaymentMandate), SD-JWT selective disclosure, and passkey biometric anchoring.
+- 🎯 **Enterprise Agentic Commerce Optimization (ACO) & Synthetic Swarms**: Deploys the 5 Cs framework (Completeness, Context, Citations, Correctness, Acquisition) and digital twin buyer persona swarms to benchmark and maximize Share of Model (SoM).
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -84,6 +85,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Autonomous PSTN Voice Telephony & Offline Procurement (Bland & Retell Distillation)**: Smashes the 'offline API void' across non-digital local stores with sub-600ms speech-to-speech turn-taking, behind-the-counter holds, and live messenger drop-in handoff.
 - **Dual-Surface Merchant Architecture & Real-Time Objection Disassembly (Kinect Distillation)**: Solves the human emotion vs. machine token dichotomy with dual-surface storefront rendering, factory CAD truth graphs, and M2M buyer agent negotiation.
 - **Cryptographic Intent Mandates & AP2 Protocol (Google AP2 & Agentcard Distillation)**: Mathematically verifiable Proof-of-Intent (PoI), three-tier signed mandates (Intent/Cart/Payment), SD-JWT privacy proofs, and multi-rail network token/passkey settlement.
+- **Enterprise Agentic Commerce Optimization & Synthetic Shopper Swarms (Azoma Distillation)**: Transitioning from SEO to the 5 Cs of ACO, digital twin buyer persona simulations, and automated LLM hallucination correction manifests.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -122,6 +124,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 31. **Autonomous PSTN Telephony & In-Store Stock Holds**: Dials physical phone lines to verify on-shelf inventory, traverses IVRs, and secures retail holds with live messenger audio handoff.
 32. **Dual-Surface Omnichannel Engine & Objection Resolver**: Dynamically splits storefront delivery into human visual storytelling and machine-readable context cards with zero-hallucination engineering specs.
 33. **Cryptographic Intent Mandate & Agent Payments Protocol (AP2)**: Anchors autonomous payments in tamper-evident SD-JWT and passkey credentials, halting checkout if landed price exceeds budget ceiling by $0.01.
+34. **Enterprise Agentic Commerce Optimization (ACO) & Synthetic Shopper Simulation**: Deploys multi-archetype digital twin buyer personas against foundation models to audit Share of Model (SoM) and issues cryptographic truth patches for model hallucinations.
 
 ---
 
@@ -158,6 +161,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | 📞 [`zenvoice-ai-skill`](skills/zenvoice-ai-skill/SKILL.md) | **ZenVoice (禅语)** | Autonomous outbound PSTN voice procurement, sub-600ms speech turn-taking, behind-the-counter physical hold extraction, and live messenger drop-in handoff. |
 | ⚡ [`zenkinect-ai-skill`](skills/zenkinect-ai-skill/SKILL.md) | **ZenKinect (禅动)** | Dual-surface omnichannel merchant engine, human adaptive PDP storytelling, sub-300-token machine catalog, and real-time objection resolver. |
 | 🔏 [`zenmandate-ai-skill`](skills/zenmandate-ai-skill/SKILL.md) | **ZenMandate (禅符)** | Cryptographic intent mandate engine, Google AP2 protocol integration, three-tier signed mandates, and pre-flight budget circuit breakers. |
+| 🎯 [`zenzoma-ai-skill`](skills/zenzoma-ai-skill/SKILL.md) | **ZenZoma (禅域)** | Enterprise Agentic Commerce Optimization (ACO) engine, 5 Cs framework, digital twin shopper swarm simulation, and LLM hallucination correction. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -197,6 +201,7 @@ GenPark comes bundled with production-grade skills:
 | 📞 [`zenvoice-ai-skill`](skills/zenvoice-ai-skill/SKILL.md) | **Commerce / PSTN Voice Telephony** | Distilled from Bland AI & Retell AI. Outbound phone dialing, sub-600ms speech turn-taking, physical store shelf verification, and DTMF payments. |
 | ⚡ [`zenkinect-ai-skill`](skills/zenkinect-ai-skill/SKILL.md) | **Commerce / Dual-Surface Merchant Engine** | Distilled from Kinect (YC Spring 2026). Dual human/machine storefront synthesizer, real-time objection resolver, and brand truth knowledge graph. |
 | 🔏 [`zenmandate-ai-skill`](skills/zenmandate-ai-skill/SKILL.md) | **Commerce / Cryptographic Mandates & AP2** | Distilled from Google Agent Payments Protocol (AP2) and Agentcard. Three-tier signed mandates, SD-JWT selective disclosure, and passkey delegation. |
+| 🎯 [`zenzoma-ai-skill`](skills/zenzoma-ai-skill/SKILL.md) | **Marketing / Agentic Commerce Optimization (ACO)** | Distilled from Azoma (Ecomtent). 5 Cs ACO framework, synthetic buyer persona stress-testing, automated LLM hallucination correction manifests, and Share of Model analytics. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |

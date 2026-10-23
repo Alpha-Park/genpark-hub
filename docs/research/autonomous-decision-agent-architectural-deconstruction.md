@@ -184,6 +184,12 @@
     - 33.3 选择性披露 (SD-JWT) 与 Passkey 硬件级意图签名
     - 33.4 结账前置熔断器与多支付轨道泛在结算 (Network Token / Passkey Vault / x402)
     - 33.5 ZenMandate 技能落地：加密意图授权与 AP2 协议智能体
+34. [企业级智能体商业优化 (ACO) 与合成买家画像模拟：5C 优化体系与大模型幻觉溯源修正 (Azoma 范式蒸馏)](#34-企业级智能体商业优化-aco-与合成买家画像模拟5c-优化体系与大模型幻觉溯源修正-azoma-范式蒸馏)
+    - 34.1 传统 SEO 的死亡：从“抢占蓝色链接”到“赢得唯一推荐候选”
+    - 34.2 Azoma 核心范式：Agentic Commerce Optimization (ACO) 与 5C 框架
+    - 34.3 数字孪生买家画像群模拟 (Digital Twin Shopper Swarms)
+    - 34.4 大模型虚假事实嗅探与自动化修正补丁
+    - 34.5 ZenZoma 技能落地：企业级 ACO 与合成买家模拟智能体
 
 ---
 
@@ -1266,6 +1272,45 @@ GenPark 生态深度整合 Google AP2 与 Agentcard 的签名契约体系，正�
 * 前置数学策略熔断器，0 容忍阻断任何未经授权的加价、搭售与 SKU 篡改；
 * 全面兼容 Google AP2、Visa Network Token、Passkey Vault 与 Web3 x402 泛在支付轨道。  
 👉 规范：[`skills/zenmandate-ai-skill/SKILL.md`](skills/zenmandate-ai-skill/SKILL.md)
+
+---
+
+## 34. 企业级智能体商业优化 (ACO) 与合成买家画像模拟：5C 优化体系与大模型幻觉溯源修正 (Azoma 范式蒸馏)
+
+随着个人 AI 导购与自主代购智能体（如 ChatGPT、Gemini、Amazon Rufus、Meta Muse 及 Walmart Sparky）成为大众交易的前置入口，整个电商的流量与销售分配规则发生了一场**根本性的地壳断裂**：**传统搜索引擎优化 (SEO) 与竞价广告 (PPC) 正在彻底失效**。AI 导购不会为消费者展示 10 条带赞助商标签的“蓝色链接”，而是在理解用户的复杂语境后，直接推荐并交付**唯二或唯一的最优解**。由完成 1120 万美元 Series A 融资的前沿商业智能先锋 **Azoma (`azoma.ai`，前身为 Ecomtent)** 所首创的“智能体商业优化体系 (Agentic Commerce Optimization, ACO)、5C 评估模型与数字孪生买家群模拟”，为企业级品牌在 Agentic 时代的生存与主权确立了行业基准：
+
+### 34.1 传统 SEO 的死亡：从“抢占蓝色链接”到“赢得唯一推荐候选”
+* **“赢家通吃”推荐语境**：当用户向手机语音或个人 Agent 输入复合需求（如“推荐一款适合干性敏感肌、冬季高山滑雪用、带矿物防晒且成分纯素的面霜”）时，AI 决策链条会在几秒钟内过滤掉 99% 的竞品；
+* **非结构化黑盒淘汰**：大量优质产品被大模型无情剔除，并非因为产品力不足，而是由于参数残缺、未在模型训练语料中建立多维属性图谱、或被模型根据过时网页产生了致命事实幻觉；
+* **归因盲区与 GMV 割裂**：传统商家无法监控第三方 AI 助手的推荐概率（Share of Model, SoM），更无法得知自己在哪一道提示词约束中被无声“刷掉”。
+
+### 34.2 Azoma 核心范式：Agentic Commerce Optimization (ACO) 与 5C 框架
+Azoma 联合数字货架学会（DSI）确立了企业级 ACO 优化的五大支柱（The 5 Cs Framework）：
+1. **完整性 (Completeness)**：按照大模型向量嵌入与 RAG 检索的底层逻辑，全维度补全商品物理参数、测试数值与使用边界，杜绝“因信息缺失被首轮淘汰”；
+2. **语境化 (Context)**：将冰冷的货架参数转化为问答式真实生活语境向量（Conversational Embeddings），对齐长尾意图提示；
+3. **权威引用源 (Citations)**：逆向测绘大模型偏好的外部可信度信源（包括 Reddit r/BuyItForLife 真实讨论、专业实验室检测报告、YouTube 深度拆解视频），构建外部声量网络；
+4. **事实纠错 (Correctness)**：全天候扫描主流模型对品牌商品的回答，毫秒级捕捉“成分含麸质”、“不耐高温”等虚假幻觉，下发机器校验工单；
+5. **客户获取 (Customer Acquisition)**：无缝桥接智能体推荐与底层交易履约，打通跨渠道 Agentic GMV 归因。
+
+### 34.3 数字孪生买家画像群模拟 (Digital Twin Shopper Swarms)
+ZenZoma 深度吸收了 Azoma 获得专利保护的“合成买家模拟”技术：
+* **千人千面合成买家代理**：生成涵盖极端预算型、成分苛求型、环保至上型、极速履约型等不同属性的数百个 AI 虚拟买家画像；
+* **全平台提示词抗压压力测试**：每日向 ChatGPT、Claude、Gemini、Rufus 和 Sparky 自动化发起上万次全真自然语言导购测试，精确绘制品牌与竞品的 **模型声量份额 (Share of Model, SoM)** 动态消长雷达；
+* **淘汰归因归纳**：精确输出报表，如“在 32% 的滑雪护肤场景中，因未显式标明抗冻融温度参数而在第 2 轮被剔除”。
+
+### 34.4 大模型虚假事实嗅探与自动化修正补丁
+* **事实溯源对抗**：当侦测到模型输出关于商品的负面事实幻觉时，ZenZoma 自动提取工厂质检单与第三方检验报告（Lab Assays）；
+* **Schema.org 与 agents.json 动态热补丁**：实时编译包含权威真理声明的 `/.well-known/agents.json` 与 JSON-LD 结构化补丁，主动触发各大模型抓取端点与 RAG 索引刷新，实现对大模型生成内容的“外科手术式纠偏”。
+
+### 34.5 ZenZoma 技能落地：企业级 ACO 与合成买家模拟智能体
+GenPark 生态深度解构 Azoma 的企业级 ACO 体系，正式发布：  
+**`zenzoma-ai-skill` (ZenZoma 禅域·企业级智能体商业优化与合成买家模拟智能体)**：
+* 全面部署 5C 优化体系（完整度、语境化、引用源、正确性、商机转化），重塑品牌在 AI 导购时代的不可替代性；
+* 调度万级规模数字孪生买家画像群，全天候压力测试跨模型声量份额 (SoM) 与胜出率；
+* 精准归因淘汰原因，将大模型决策过程转化为可行动的商品图谱优化建议；
+* 毫秒级嗅探 LLM 事实幻觉，自动生成高权重结构化修正补丁固化品牌真理；
+* 赋能商家实现从传统蓝色链接搜索向 Agentic 时代智能体专属推荐的无缝跃迁。  
+👉 规范：[`skills/zenzoma-ai-skill/SKILL.md`](skills/zenzoma-ai-skill/SKILL.md)
 
 ---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*

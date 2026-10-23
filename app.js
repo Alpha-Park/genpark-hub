@@ -376,6 +376,14 @@ const SKILLS_DATABASE = [
         logo: '📜'
     },
     {
+        id: 'zenzoma-ai-skill',
+        name: 'zenzoma-ai-skill',
+        description: 'Enterprise Agentic Commerce Optimization (ACO) and Synthetic Shopper Simulation engine distilled from Azoma (Ecomtent). Implements the 5 Cs framework (Completeness, Context, Citations, Correctness, Customer Acquisition), Digital Twin shopper persona simulations across ChatGPT, Gemini, Rufus, and Sparky, and automated LLM hallucination correction manifests.',
+        category: 'marketing',
+        developer: '@Alpha-Park',
+        logo: '🎯'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -626,6 +634,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenmandate-ai-skill') {
         if (capInput) capInput.value = "Intent Mandate Issuer: Create cryptographically signed SD-JWT user intent mandates with strict budget caps and merchant constraints\nCart Mandate Compiler: Freeze candidate SKU selections, zip-code taxes, and landed costs into immutable SHA-256 cart digests\nPayment Mandate Broker: Dispatch binding AP2 payment tokens to merchant gateways linking cart digests to authorized payment instruments\nPre-Flight Policy Circuit Breaker: Halt execution immediately if landed price exceeds authorized max budget by even $0.01";
         if (guideInput) guideInput.value = "Keep private signing keys strictly within local hardware Secure Enclave / HSM\nRequire explicit biometric passkey confirmation for high-value transactions or initial session mandate signing\nNever transmit full unredacted customer context; apply SD-JWT selective disclosure on merchant requests\nAppend every issued mandate and settled transaction to local tamper-evident audit ledger";
+    } else if (skillId === 'zenzoma-ai-skill') {
+        if (capInput) capInput.value = "5C ACO Auditor: Benchmark enterprise SKUs against Completeness, Context, Citations, Correctness, and Acquisition\nDigital Twin Shopper Swarm: Simulate thousands of multi-archetype AI buyer personas across ChatGPT, Gemini, Rufus, and Sparky\nHallucination Detection Radar: Continuously scan LLM outputs to catch factual model errors and deploy corrective Schema.org JSON-LD manifests\nShare of Model Forecaster: Track brand recommendation win/loss ratios against competitors and diagnose prompt elimination bottlenecks";
+        if (guideInput) guideInput.value = "Ground all catalog enrichment and correction declarations strictly in verified enterprise lab tests and CAD specs\nNever inject deceptive synthetic reviews or manipulate third-party community forums\nSchedule weekly Share of Model re-indexing to adapt dynamically to foundation model checkpoint updates\nKeep confidential wholesale pricing thresholds and internal engineering blueprints securely inside local vault";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
