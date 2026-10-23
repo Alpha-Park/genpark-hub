@@ -416,6 +416,14 @@ const SKILLS_DATABASE = [
         logo: '📐'
     },
     {
+        id: 'zenpoint-ai-skill',
+        name: 'zenpoint-ai-skill',
+        description: 'Autonomous Credit Card Category Multiplier, Loyalty Rewards Arbitrage & Transfer Partner Points Optimization Engine distilled from Point.me and Kudos. Analyzes merchant MCC codes, auto-activates card-linked cashback offers, computes Cents-Per-Point (CPP) redemption arbitrage against cash prices, and routes transactions to maximize economic yield across credit cards, airline miles, and hotel points.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '💳'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -681,6 +689,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenfit-ai-skill') {
         if (capInput) capInput.value = "3D Morphometric Body Predictor: Infer 50+ detailed anatomical vectors (chest, waist drop, shoulder slope, inseam) from lightweight statistical anchors\nGarment CAD Ease Tensor: Compute mechanical ease allowance (Garment - Body) and simulate fabric elastane stretch dynamics\nCross-Brand Vanity Sizing Normalizer: Map size variations across 15,000+ brands and calibrate subjective fit preferences (tailored vs. oversized)\nPre-Checkout Zero-Return Arbiter: Intercept apparel purchases to evaluate fit confidence percentage, vetoing high-risk misfits to slash reverse logistics";
         if (guideInput) guideInput.value = "Veto checkout automatically if fit confidence score is < 80% or if non-returnable garment is < 90%\nFactor in a +3% to +5% fabric contraction allowance for unwashed raw natural fibers (selvage denim, un-shrunk wool)\nFlag shoe width pinch hazards whenever footwear lacks wide fittings (E/EE) for users with wide foot morphology\nStage precise alteration suggestions (e.g., sleeve hemming) on intermediate 80-94% fit confidence items";
+    } else if (skillId === 'zenpoint-ai-skill') {
+        if (capInput) capInput.value = "Merchant MCC Radar: Pre-screen merchant category codes to route checkout to the card yielding maximum category multipliers\nCard-Linked Offer Auto-Stacker: Automatically detect and clip targeted Amex, Chase, and Citi merchant cashback promos in <100ms\nCents-Per-Point Arbitrageur: Dynamically compute CPP conversion hurdles to decide between cash checkout vs. airline/hotel award redemptions\nTransfer Partner Route Compiler: Map points across 30+ airline frequent flyer and hotel programs, harvesting active transfer bonus multipliers";
+        if (guideInput) guideInput.value = "Enforce strict redemption hurdle lock (never burn Chase UR < 1.5¢, Amex MR < 1.6¢, or Bilt < 1.8¢)\nBlacklist cards with foreign transaction fees on cross-border merchant checkouts\nAlert user if high-ticket purchase pushes individual card credit utilization above 30%\nVerify live airline award seat availability before initiating non-reversible bank-to-airline points transfers";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
