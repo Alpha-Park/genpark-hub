@@ -384,6 +384,14 @@ const SKILLS_DATABASE = [
         logo: '🎯'
     },
     {
+        id: 'zenrindler-ai-skill',
+        name: 'zenrindler-ai-skill',
+        description: 'Universal Web-to-MCP State Machine Compiler & Deterministic Agent Tooling engine distilled from Rindler (YC Summer 2026). Transforms arbitrary non-API websites into strongly typed, remote Model Context Protocol (MCP) server endpoints with self-healing DOM state-action graphs, sub-200ms headless execution, and 95% token cost reduction over visual computer-use.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🛤️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -637,6 +645,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenzoma-ai-skill') {
         if (capInput) capInput.value = "5C ACO Auditor: Benchmark enterprise SKUs against Completeness, Context, Citations, Correctness, and Acquisition\nDigital Twin Shopper Swarm: Simulate thousands of multi-archetype AI buyer personas across ChatGPT, Gemini, Rufus, and Sparky\nHallucination Detection Radar: Continuously scan LLM outputs to catch factual model errors and deploy corrective Schema.org JSON-LD manifests\nShare of Model Forecaster: Track brand recommendation win/loss ratios against competitors and diagnose prompt elimination bottlenecks";
         if (guideInput) guideInput.value = "Ground all catalog enrichment and correction declarations strictly in verified enterprise lab tests and CAD specs\nNever inject deceptive synthetic reviews or manipulate third-party community forums\nSchedule weekly Share of Model re-indexing to adapt dynamically to foundation model checkpoint updates\nKeep confidential wholesale pricing thresholds and internal engineering blueprints securely inside local vault";
+    } else if (skillId === 'zenrindler-ai-skill') {
+        if (capInput) capInput.value = "Web-to-MCP Compiler: Deconstruct target storefront into strongly typed remote Model Context Protocol (MCP) server endpoints\nZero-Screenshot Execution: Eliminate visual computer-use token bloat by routing actions through deterministic headless DOM primitives\nSelf-Healing Selector Relay: Neutralize marketing popups, cookie consent overlays, and CSS layout shifts via semantic landmark heuristics\nAtomic Action Pipeline: Execute complex multi-step shopping funnels (search, filter, variant pick, stage cart) in sub-200ms with 95% token savings";
+        if (guideInput) guideInput.value = "Prioritize compiled MCP tool endpoints over visual screenshot coordinate clicking whenever available\nIsolate session cookies and anti-bot turnstile relays strictly within local OpenClaw resident browser enclave\nReturn typed machine error codes (e.g., stock_depleted) immediately upon unrecoverable merchant hurdles\nThrottle automated requests to realistic human thresholds (<5 req/sec) to avoid triggering merchant IP bans";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";

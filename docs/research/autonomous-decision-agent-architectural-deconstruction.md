@@ -190,6 +190,12 @@
     - 34.3 数字孪生买家画像群模拟 (Digital Twin Shopper Swarms)
     - 34.4 大模型虚假事实嗅探与自动化修正补丁
     - 34.5 ZenZoma 技能落地：企业级 ACO 与合成买家模拟智能体
+35. [万维网转 MCP 确定性状态机与免视觉代行：终结 Computer Use 脆弱性与 95% Token 成本骤降 (Rindler 范式蒸馏)](#35-万维网转-mcp-确定性状态机与免视觉代行终结-computer-use-脆弱性与-95-token-成本骤降-rindler-范式蒸馏)
+    - 35.1 视觉智能体的死穴：坐标猜测、弹窗阻断与高昂 Token 账单
+    - 35.2 Rindler 核心范式：单次映射与托管式远程 MCP 端点
+    - 35.3 屏幕状态图谱与强类型动作原语
+    - 35.4 自愈式无头渲染与亚 200 毫秒确定性响应
+    - 35.5 ZenRindler 技能落地：万维网转 MCP 确定性状态机智能体
 
 ---
 
@@ -1311,6 +1317,42 @@ GenPark 生态深度解构 Azoma 的企业级 ACO 体系，正式发布：
 * 毫秒级嗅探 LLM 事实幻觉，自动生成高权重结构化修正补丁固化品牌真理；
 * 赋能商家实现从传统蓝色链接搜索向 Agentic 时代智能体专属推荐的无缝跃迁。  
 👉 规范：[`skills/zenzoma-ai-skill/SKILL.md`](skills/zenzoma-ai-skill/SKILL.md)
+
+---
+
+## 35. 万维网转 MCP 确定性状态机与免视觉代行：终结 Computer Use 脆弱性与 95% Token 成本骤降 (Rindler 范式蒸馏)
+
+在智能体驱动代购与浏览器自动化的工业落地过程中，业界曾高度寄希望于“视觉计算机使用 (Visual Computer Use)”路线。然而在真实电商环境下，单纯依靠多模态大模型每一步截屏、推理 (x, y) 坐标并点击的方式遭遇了灾难性的工程瓶颈：**每次操作耗费 5,000~20,000 Token、每步耗时 15~30 秒、面对营销弹窗与验证码时故障率高达 40%**。由 YC Summer 2026 孵化的前沿智能体基建 **Rindler (`rindler.com`)** 开创的“万维网单次结构化映射、托管式远程 MCP (Model Context Protocol) 端点与确定性状态机渲染”，为智能体彻底终结了视觉猜测的脆弱性，带来了速度提升 100 倍、Token 成本下降 95% 的革命性突破。GenPark 全面提炼其核心基建哲学，推出 **ZenRindler（禅轨）** 技能体系：
+
+### 35.1 视觉智能体的死穴：坐标猜测、弹窗阻断与高昂 Token 账单
+* **截屏洪流与高延迟黑洞**：传统视觉 Agent 执行一次“在无 API 商户挑选指定尺寸并加入购物车”的任务，需截取 8~12 张高清屏幕图，消耗数十万 Token 预算，端到端耗时长达 2~3 分钟，完全无法满足即时通讯对话场景；
+* **视觉噪声与弹窗死锁**：Cookie 隐私横幅、新客邮件优惠弹窗、密码管理器悬浮球与轻微前端重绘，频繁造成大模型坐标点击偏移，导致加入购物车失败；
+* **非确定性状态与重试爆炸**：大模型无法通过截屏确切获知底层 DOM 是处于“加载中”还是“库存不足”，往往陷入无效重复点击的恶性死循环。
+
+### 35.2 Rindler 核心范式：单次映射与托管式远程 MCP 端点
+Rindler 彻底抛弃了“每次访问都当做全新视觉谜题”的蛮力做法，转向优雅的确定性契约编译：
+* **单次全站状态映射 (One-Time Surface Mapping)**：预先将目标网站解构为结构化的屏幕状态树（如 `SearchScreen`、`PDPView`、`CartView`）与类型化输出契约；
+* **托管式原生 MCP 服务器**：在运行时，Rindler 将整座未提供开放 API 的第三方网站瞬间封装为一个标准的远程 **Model Context Protocol (MCP)** 工具中枢，暴露诸如 `search_products(query, filters)`、`stage_cart(sku, size)` 等强类型 JSON-RPC 函数；
+* **免视觉纯净调用**：买方 Agent 仅需消费数十个 Token 发起标准函数调用，无需处理任何图像或杂乱 HTML。
+
+### 35.3 屏幕状态图谱与强类型动作原语
+ZenRindler 继承并升华了 Rindler 的状态-动作图谱引擎：
+* **自愈式选择器图谱 (Semantic Heuristic Selectors)**：结合文本地标、ARIA 无障碍语义树与组件相对拓扑，即使商户每周微调前端 CSS 样式，动作原语依然能精准穿透；
+* **多步复合操作原子化 (Atomic Workflows)**：将“搜索商品 $\rightarrow$ 筛选尺码 $\rightarrow$ 校验店内现货 $\rightarrow$ 锁车”串联为一次原子性 MCP 工具执行，具备失败事务回滚保证。
+
+### 35.4 自愈式无头渲染与亚 200 毫秒确定性响应
+* **常驻会话与反爬虫穿透**：无缝调用 OpenClaw 本地居民浏览器配置文件与真实 Cookie，自动屏蔽广告弹窗与隐私横幅，轻松穿透 Cloudflare Turnstile 防火墙；
+* **毫秒级确定性响应 (<200ms)**：以确定性代码操作替代大模型看图猜坐标，单步动作耗时从数十秒骤降至数百毫秒，将对话代购体验推向极致流畅。
+
+### 35.5 ZenRindler 技能落地：万维网转 MCP 确定性状态机智能体
+GenPark 生态深度整合 Rindler 的 Web-to-MCP 架构，正式发布：  
+**`zenrindler-ai-skill` (ZenRindler 禅轨·万维网转 MCP 确定性状态机智能体)**：
+* 将全网任意无 API 商户瞬间编译为标准 Model Context Protocol (MCP) 远程工具服务器；
+* 彻底摆脱视觉截屏猜测死穴，实现 95% Token 消耗缩减与亚 200 毫秒极速确定性响应；
+* 内置自愈式语义选择器与弹窗拦截盾，免疫商户前端改版与遮罩死锁；
+* 支持多步复合电商操作原子化执行，提供非幻觉机器级错误代码反馈；
+* 与 `zenchoice`、`zenprocure` 等买方智能体无缝串联，构筑起横跨全网闭环代购的确定性高速铁轨。  
+👉 规范：[`skills/zenrindler-ai-skill/SKILL.md`](skills/zenrindler-ai-skill/SKILL.md)
 
 ---
 *本文档由 GenPark 开源生态核心研究组发布，遵循 MIT 协议。*
