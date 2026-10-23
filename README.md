@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-33%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-36%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -45,6 +45,9 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - 🪪 **Sovereign AI Context Passport**: User-owned portable sizing, allergy, taste vectors, and ZK preference proofs across multiple agents.
 - 🤝 **Autonomous Algorithmic Negotiation**: Levels the playing field against merchant dynamic pricing bots with BATNA boundary modeling, game-theoretic bargaining rounds, and multi-issue concession trading.
 - 🌲 **Autonomous Subscription & Chargeback Shield**: Audits recurring zombie fees, penetrates dark-pattern cancellation funnels, enforces FTC Click-to-Cancel rules, and auto-compiles FCBA refund packages.
+- 📞 **Autonomous Outbound PSTN Voice Procurement**: Smashes the offline API void by dialing local retail counters, pharmacies, and desks with sub-600ms turn-taking, behind-the-counter holds, and live messenger audio handoff.
+- ⚡ **Dual-Surface Omnichannel Merchant Engine**: Simultaneously renders emotion-rich adaptive visual PDPs for humans and sub-300-token structured context endpoints for buyer AI agents with zero-hallucination engineering specs.
+- 📜 **Cryptographic Intent Mandates & AP2 Payment Rails**: Eliminates LLM probabilistic payment risk with signed three-tier mandates (IntentMandate, CartMandate, PaymentMandate), SD-JWT selective disclosure, and passkey biometric anchoring.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -78,6 +81,9 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Portable Context Sovereignty & AI Passport (Egoist Machines Distillation)**: Reclaiming personal context from cloud silos with portable sizing, taste vectors, zero-knowledge claims, and "Sign in with ZenPass" protocol.
 - **Bilateral Algorithmic Negotiation & Bargaining (Nibble & Pactum Distillation)**: Smashes static pricing monopolies with game-theoretic concession protocols, BATNA reservation limits, and anti-gouging defenses.
 - **Autonomous Subscription Audit & Dark-Pattern Cancellation (Pine AI Distillation)**: Smashes negative-option billing traps, zero-usage refund recovery, and FCBA chargeback arbitration.
+- **Autonomous PSTN Voice Telephony & Offline Procurement (Bland & Retell Distillation)**: Smashes the 'offline API void' across non-digital local stores with sub-600ms speech-to-speech turn-taking, behind-the-counter holds, and live messenger drop-in handoff.
+- **Dual-Surface Merchant Architecture & Real-Time Objection Disassembly (Kinect Distillation)**: Solves the human emotion vs. machine token dichotomy with dual-surface storefront rendering, factory CAD truth graphs, and M2M buyer agent negotiation.
+- **Cryptographic Intent Mandates & AP2 Protocol (Google AP2 & Agentcard Distillation)**: Mathematically verifiable Proof-of-Intent (PoI), three-tier signed mandates (Intent/Cart/Payment), SD-JWT privacy proofs, and multi-rail network token/passkey settlement.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -113,6 +119,9 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 28. **Portable Context Sovereignty & AI Passport**: Solves the multi-agent cold-start dilemma by keeping personal sizing, tastes, and budgets in a user-owned local enclave with zero-knowledge scoped handshakes.
 29. **Autonomous Algorithmic Negotiation & Bargaining**: Engages merchant haggle-bots in automated game-theoretic bargaining rounds, trading non-price concessions to secure maximum discounts without exceeding budget ceilings.
 30. **Autonomous Subscription Audit & Dark-Pattern Cancellation**: Automatically penetrates obfuscated cancellation funnels, cites FTC Click-to-Cancel statutes, and compiles FCBA evidence packets to recover accidental recurring charges.
+31. **Autonomous PSTN Telephony & In-Store Stock Holds**: Dials physical phone lines to verify on-shelf inventory, traverses IVRs, and secures retail holds with live messenger audio handoff.
+32. **Dual-Surface Omnichannel Engine & Objection Resolver**: Dynamically splits storefront delivery into human visual storytelling and machine-readable context cards with zero-hallucination engineering specs.
+33. **Cryptographic Intent Mandate & Agent Payments Protocol (AP2)**: Anchors autonomous payments in tamper-evident SD-JWT and passkey credentials, halting checkout if landed price exceeds budget ceiling by $0.01.
 
 ---
 
@@ -146,6 +155,9 @@ Based on our architectural research, we officially released the **Agentic Commer
 | 🪪 [`zenpass-ai-skill`](skills/zenpass-ai-skill/SKILL.md) | **ZenPass (禅牒)** | Sovereign AI context passport, portable sizing & taste profile, scoped permission broker, and ZK preference proofs. |
 | 🤝 [`zenpact-ai-skill`](skills/zenpact-ai-skill/SKILL.md) | **ZenPact (禅约)** | Bilateral algorithmic negotiation agent, BATNA reservation modeling, multi-issue concession trading, and anti-gouging shield. |
 | 🌲 [`zenpine-ai-skill`](skills/zenpine-ai-skill/SKILL.md) | **ZenPine (禅松)** | Autonomous subscription auditor, dark-pattern cancellation driver, zero-usage refund recovery, and FCBA chargeback shield. |
+| 📞 [`zenvoice-ai-skill`](skills/zenvoice-ai-skill/SKILL.md) | **ZenVoice (禅语)** | Autonomous outbound PSTN voice procurement, sub-600ms speech turn-taking, behind-the-counter physical hold extraction, and live messenger drop-in handoff. |
+| ⚡ [`zenkinect-ai-skill`](skills/zenkinect-ai-skill/SKILL.md) | **ZenKinect (禅动)** | Dual-surface omnichannel merchant engine, human adaptive PDP storytelling, sub-300-token machine catalog, and real-time objection resolver. |
+| 🔏 [`zenmandate-ai-skill`](skills/zenmandate-ai-skill/SKILL.md) | **ZenMandate (禅符)** | Cryptographic intent mandate engine, Google AP2 protocol integration, three-tier signed mandates, and pre-flight budget circuit breakers. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -182,6 +194,9 @@ GenPark comes bundled with production-grade skills:
 | 🪪 [`zenpass-ai-skill`](skills/zenpass-ai-skill/SKILL.md) | **Personal Agent / Identity & Context Sovereignty** | Distilled from Egoist Machines. User-owned AI passport, cross-agent context portability, zero-knowledge claims, and audit ledger. |
 | 🤝 [`zenpact-ai-skill`](skills/zenpact-ai-skill/SKILL.md) | **Commerce / Dynamic Bargaining & Negotiation** | Distilled from Nibble & Pactum. Game-theoretic automated bargaining, BATNA reservation pricing, non-price concession trading, and anti-urgency shields. |
 | 🌲 [`zenpine-ai-skill`](skills/zenpine-ai-skill/SKILL.md) | **Personal Finance / Subscription & Consumer Protection** | Distilled from Pine AI. Zombie subscription discovery, FTC Click-to-Cancel automation, zero-usage refund recovery, and retention bill discount negotiation. |
+| 📞 [`zenvoice-ai-skill`](skills/zenvoice-ai-skill/SKILL.md) | **Commerce / PSTN Voice Telephony** | Distilled from Bland AI & Retell AI. Outbound phone dialing, sub-600ms speech turn-taking, physical store shelf verification, and DTMF payments. |
+| ⚡ [`zenkinect-ai-skill`](skills/zenkinect-ai-skill/SKILL.md) | **Commerce / Dual-Surface Merchant Engine** | Distilled from Kinect (YC Spring 2026). Dual human/machine storefront synthesizer, real-time objection resolver, and brand truth knowledge graph. |
+| 🔏 [`zenmandate-ai-skill`](skills/zenmandate-ai-skill/SKILL.md) | **Commerce / Cryptographic Mandates & AP2** | Distilled from Google Agent Payments Protocol (AP2) and Agentcard. Three-tier signed mandates, SD-JWT selective disclosure, and passkey delegation. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |

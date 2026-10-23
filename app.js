@@ -352,6 +352,30 @@ const SKILLS_DATABASE = [
         logo: '🌲'
     },
     {
+        id: 'zenvoice-ai-skill',
+        name: 'zenvoice-ai-skill',
+        description: 'Autonomous outbound PSTN voice procurement and physical desk telephony engine distilled from Bland AI and Retell AI. Smashes the offline API void across brick-and-mortar retail, local pharmacies, and service desks via sub-600ms speech turn-taking, in-store stock hold negotiation, and live messenger drop-in handoff.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '📞'
+    },
+    {
+        id: 'zenkinect-ai-skill',
+        name: 'zenkinect-ai-skill',
+        description: 'Dual-surface omnichannel merchant engine and real-time objection resolver distilled from Kinect (YC Spring 2026). Dynamically splits storefronts into human-facing adaptive visual PDP storytelling and machine-facing low-token agent context endpoints with zero-hallucination engineering specs.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '⚡'
+    },
+    {
+        id: 'zenmandate-ai-skill',
+        name: 'zenmandate-ai-skill',
+        description: 'Cryptographic Intent Mandate & Agent Payments Protocol (AP2) engine distilled from Google Agentic Commerce AP2 and Agentcard. Enforces mathematical proof-of-intent, SD-JWT selective disclosure, three-tier mandate lifecycles (IntentMandate, CartMandate, PaymentMandate), passkey biometric delegation, and multi-rail payment execution without probabilistic hallucinations.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '📜'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -593,6 +617,15 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpine-ai-skill') {
         if (capInput) capInput.value = "Recurring Audit Radar: Parse transaction streams and bank feeds to flag dormant zombie subscriptions\nDark-Pattern Cancellation Driver: Autonomously penetrate multi-step cancellation mazes and retention surveys\nFTC Click-to-Cancel Enforcer: Cite federal/EU statutory cooling-off rights to legally nullify cancellation phone calls\nZero-Usage Refund Demander: Break merchant 'no-refund' boilerplates using verified non-usage telemetry and auto-compile FCBA chargeback packages";
         if (guideInput) guideInput.value = "Always require explicit human approval card on paired messenger before executing service cancellations\nNever fabricate or exaggerate non-usage activity logs in legal dispute demands\nEncrypt all bank statements, transaction histories, and card identifiers strictly in local Secure Enclave\nTrack merchant refund clearing and escalate to credit card issuer chargeback if unpaid after 7 business days";
+    } else if (skillId === 'zenvoice-ai-skill') {
+        if (capInput) capInput.value = "PSTN Telephony Orchestrator: Dispatch outbound telephone calls to brick-and-mortar storefronts, pharmacies, and service desks\nSub-Second Voice Engine: Maintain conversational turn-taking latency below 600ms with dynamic noise suppression and interruption handling\nOffline Inventory Extractor: Interrogate retail clerks to verify physical on-shelf stock and lock behind-the-counter hold confirmations\nLive Whisper & Takeover Gate: Stream real-time call transcription to paired WhatsApp/Telegram with 1-tap live human phone takeover";
+        if (guideInput) guideInput.value = "Limit automated redials to a maximum of 3 attempts with exponential backoff (5m, 15m, 45m)\nAlways disclose AI identity when required by state or federal recording consent statutes\nEncrypt all call audio recordings and transcripts locally inside OpenClaw vault with user-owned keys\nTrigger immediate live call handoff if store clerk requests complex personal identification or express human intervention";
+    } else if (skillId === 'zenkinect-ai-skill') {
+        if (capInput) capInput.value = "Dual-Surface Synthesizer: Dynamically split storefront into sub-300-token machine catalog and human-facing adaptive visual PDP\nReal-Time Objection Resolver: Detect hesitation micro-patterns (dwell time, size toggling) and inject authentic proof cards before bounce\nBrand Truth Knowledge Graph: Ingest factory CAD packs, garment shrinkage specs, and QA logs for zero-hallucination answers\nM2M Buyer Agent Interface: Expose standardized machine endpoints for automated stock-hold vouchers and buyer agent price agreements";
+        if (guideInput) guideInput.value = "Enforce deterministic accuracy; return unspecified_by_merchant if garment technical pack data is missing\nMaintain machine context endpoint latency under 30ms via edge CDN caching for external buyer agents\nBlend reassurance cards naturally into the vertical scroll stream without intrusive full-screen modal takeovers\nCapture shopper interaction telemetry anonymously without storing biometric keystroke dynamics or PII";
+    } else if (skillId === 'zenmandate-ai-skill') {
+        if (capInput) capInput.value = "Intent Mandate Issuer: Create cryptographically signed SD-JWT user intent mandates with strict budget caps and merchant constraints\nCart Mandate Compiler: Freeze candidate SKU selections, zip-code taxes, and landed costs into immutable SHA-256 cart digests\nPayment Mandate Broker: Dispatch binding AP2 payment tokens to merchant gateways linking cart digests to authorized payment instruments\nPre-Flight Policy Circuit Breaker: Halt execution immediately if landed price exceeds authorized max budget by even $0.01";
+        if (guideInput) guideInput.value = "Keep private signing keys strictly within local hardware Secure Enclave / HSM\nRequire explicit biometric passkey confirmation for high-value transactions or initial session mandate signing\nNever transmit full unredacted customer context; apply SD-JWT selective disclosure on merchant requests\nAppend every issued mandate and settled transaction to local tamper-evident audit ledger";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
