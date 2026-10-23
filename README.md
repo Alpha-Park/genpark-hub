@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-39%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-40%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -51,6 +51,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - 🎯 **Enterprise Agentic Commerce Optimization (ACO) & Synthetic Swarms**: Deploys the 5 Cs framework (Completeness, Context, Citations, Correctness, Acquisition) and digital twin buyer persona swarms to benchmark and maximize Share of Model (SoM).
 - 🛤️ **Universal Web-to-MCP State Machine Compiler**: Compiles non-API web platforms into typed remote MCP servers, replacing brittle visual Computer Use with sub-200ms headless execution and 95% token savings.
 - 🧳 **Autonomous Travel & Experiential Commerce**: Synthesizes multi-modal spatial-temporal travel itineraries, automates wholesale GDS/NDC arbitrage, tracks real-time disruption rebooking, and settles group expenses via AP2 split mandates.
+- 🥫 **Autonomous Domestic Pantry & Zero-Waste Grocery**: Digital twin pantry depletion modeling, nutritional macro-constraint linear solver, cross-recipe perishable amortization, and 1-click federated grocery fulfillment.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -90,6 +91,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Enterprise Agentic Commerce Optimization & Synthetic Shopper Swarms (Azoma Distillation)**: Transitioning from SEO to the 5 Cs of ACO, digital twin buyer persona simulations, and automated LLM hallucination correction manifests.
 - **Universal Web-to-MCP & Deterministic Tooling (Rindler Distillation)**: Smashes visual Computer Use token bloat by compiling arbitrary websites into remote Model Context Protocol (MCP) server endpoints with sub-200ms headless execution.
 - **Autonomous Multi-Modal Travel & Disruption Recovery (Mindtrip & Layla Distillation)**: Spatial-temporal constraint satisfaction networks, wholesale GDS/NDC rate lock arbitrage, ADS-B telemetry disruption rebooking, and collaborative multi-party AP2 split mandates.
+- **Autonomous Domestic Pantry Depletion & Zero-Waste Grocery (Hungryroot & Jow Distillation)**: Digital twin kitchen inventory curves, macro-nutritional linear constraint satisfaction (CSP), cross-meal perishable ingredient amortization, and federated delivery knapsack routing.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -131,6 +133,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 34. **Enterprise Agentic Commerce Optimization (ACO) & Synthetic Shopper Simulation**: Deploys multi-archetype digital twin buyer personas against foundation models to audit Share of Model (SoM) and issues cryptographic truth patches for model hallucinations.
 35. **Universal Web-to-MCP State Machine Compiler**: Deconstructs complex web storefronts once into strongly typed remote MCP server tools, executing actions in sub-200ms with 95% token savings.
 36. **Autonomous Multi-Modal Travel & Experiential Commerce Orchestration**: Solves spatiotemporal itinerary constraints (MCT/jetlag/POI windows), locks GDS/NDC wholesale tariffs, auto-reroutes disruptions via interline agreements, and arbitrates group expenses via cryptographic AP2 split mandates.
+37. **Autonomous Domestic Pantry & Zero-Waste Grocery Replenishment**: Ingests e-receipts to maintain living kitchen inventory state machines, balances macro-nutritional targets under weeknight time bounds, clusters perishables to eliminate food waste, and stages federated cart fulfillment via Sunday morning HITL cards.
 
 ---
 
@@ -170,6 +173,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | 🎯 [`zenzoma-ai-skill`](skills/zenzoma-ai-skill/SKILL.md) | **ZenZoma (禅域)** | Enterprise Agentic Commerce Optimization (ACO) engine, 5 Cs framework, digital twin shopper swarm simulation, and LLM hallucination correction. |
 | 🛤️ [`zenrindler-ai-skill`](skills/zenrindler-ai-skill/SKILL.md) | **ZenRindler (禅轨)** | Universal Web-to-MCP compiler, deterministic DOM state machine, sub-200ms headless execution, and visual Computer Use replacement. |
 | 🧳 [`zentrip-ai-skill`](skills/zentrip-ai-skill/SKILL.md) | **ZenTrip (禅履)** | Autonomous multi-modal travel itinerary orchestrator, GDS/NDC wholesale rate lock, ADS-B flight disruption recovery, and cryptographic AP2 group split-mandates. |
+| 🥫 [`zenpantry-ai-skill`](skills/zenpantry-ai-skill/SKILL.md) | **ZenPantry (禅仓)** | Autonomous domestic pantry inventory engine, macro-nutritional constraint solver, cross-recipe perishable amortization, and federated grocery cart fulfillment. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -212,6 +216,7 @@ GenPark comes bundled with production-grade skills:
 | 🎯 [`zenzoma-ai-skill`](skills/zenzoma-ai-skill/SKILL.md) | **Marketing / Agentic Commerce Optimization (ACO)** | Distilled from Azoma (Ecomtent). 5 Cs ACO framework, synthetic buyer persona stress-testing, automated LLM hallucination correction manifests, and Share of Model analytics. |
 | 🛤️ [`zenrindler-ai-skill`](skills/zenrindler-ai-skill/SKILL.md) | **Commerce / Web-to-MCP Infrastructure** | Distilled from Rindler (YC Summer 2026). Turns non-API websites into strongly typed remote MCP servers, self-healing selector graphs, and 95% token savings. |
 | 🧳 [`zentrip-ai-skill`](skills/zentrip-ai-skill/SKILL.md) | **Commerce / Experiential & Travel** | Distilled from Mindtrip & Layla AI. Spatial-temporal constraint itinerary synthesis, GDS/NDC wholesale arbitrage, autonomous disruption rebooking, and Google AP2 split-payment mandates. |
+| 🥫 [`zenpantry-ai-skill`](skills/zenpantry-ai-skill/SKILL.md) | **Personal Agent / Domestic & Grocery** | Distilled from Hungryroot & Jow. Digital twin pantry depletion tracker, macro-nutritional recipe solver, cross-meal perishable amortization, and federated delivery knapsack routing. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |

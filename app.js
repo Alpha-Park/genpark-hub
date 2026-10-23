@@ -400,6 +400,14 @@ const SKILLS_DATABASE = [
         logo: '🧳'
     },
     {
+        id: 'zenpantry-ai-skill',
+        name: 'zenpantry-ai-skill',
+        description: 'Autonomous Domestic Pantry Depletion Modeling, Nutritional Macro Constraint Solver & Zero-Waste Grocery Replenishment Engine distilled from Hungryroot and Jow. Models kitchen inventory depletion curves, optimizes weekly dinner plans under dietary/allergen constraints, clusters perishables to eliminate food waste, and stages federated 1-click grocery fulfillment.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🥫'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -659,6 +667,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zentrip-ai-skill') {
         if (capInput) capInput.value = "Spatial-Temporal Constraint Engine: Synthesize end-to-end multi-modal itineraries resolving minimum connection times (MCT), jetlag, and operating hours\nGDS & NDC Wholesale Arbitrageur: Query direct airline NDC and GDS channels for wholesale tariffs with 24-hr fare freeze and post-booking price drop tracking\nIn-Trip Disruption Recovery Sentinel: Continuously monitor ADS-B air telemetry to automatically trigger interline rebooking and hotel voucher locks\nMulti-Party Consensus & Split AP2 Mandates: Harmonize group travel preferences via A2A mesh and dispatch cryptographically signed proportional payment mandates";
         if (guideInput) guideInput.value = "Explicitly highlight non-refundable or non-changeable tariffs in bold amber and require one-tap user approval\nTerminate booking immediately if mandatory destination visa requirements or passport 6-month validity thresholds are breached\nLock individual AP2 payment mandate bounds so cumulative sum strictly equals total wholesale master invoice (deviation < $0.01)\nDynamically reschedule outdoor itinerary items to verified indoor cultural venues when local precipitation exceeds 60%";
+    } else if (skillId === 'zenpantry-ai-skill') {
+        if (capInput) capInput.value = "Digital Twin Pantry State Machine: Ingest online grocery e-receipts and delivery manifests to model household stock depletion velocity\nNutritional Macro CSP Solver: Formulate multi-objective linear constraints balancing daily protein/carb/fat targets and <25-minute weeknight prep times\nZero-Waste Perishable Amortizer: Cluster fresh herbs and produce across multiple weekly meals to reduce domestic food waste by 60%\nFederated Grocery Knapsack Fulfillment: Map ingredient lines to store SKUs across Instacart, Whole Foods, and Kroger while optimizing free-delivery tiers";
+        if (guideInput) guideInput.value = "Enforce strict zero-tolerance circuit breaker against any allergen blacklist items (peanuts, gluten, shellfish)\nSuppress re-ordering of non-perishable staples whenever digital twin inventory indicates remaining capacity > 30%\nStage weekly replenishment plans as interactive WhatsApp/Telegram cards on Sunday mornings for single-tap user approval\nNever permit automated substitutions for dairy or nut-free alternatives without verified user consent";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
