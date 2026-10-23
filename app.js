@@ -392,6 +392,14 @@ const SKILLS_DATABASE = [
         logo: '🛤️'
     },
     {
+        id: 'zentrip-ai-skill',
+        name: 'zentrip-ai-skill',
+        description: 'Autonomous Multi-Modal Travel Itinerary Synthesis, Real-Time GDS/NDC Arbitrage, In-Trip Disruption Recovery & Cryptographic Split-Mandate Engine distilled from Mindtrip and Layla AI. Orchestrates complex spatial-temporal travel constraints, dynamic flight/hotel bookings, automated flight delay rebooking, and multi-party AP2 group expense settlement.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🧳'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -648,6 +656,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenrindler-ai-skill') {
         if (capInput) capInput.value = "Web-to-MCP Compiler: Deconstruct target storefront into strongly typed remote Model Context Protocol (MCP) server endpoints\nZero-Screenshot Execution: Eliminate visual computer-use token bloat by routing actions through deterministic headless DOM primitives\nSelf-Healing Selector Relay: Neutralize marketing popups, cookie consent overlays, and CSS layout shifts via semantic landmark heuristics\nAtomic Action Pipeline: Execute complex multi-step shopping funnels (search, filter, variant pick, stage cart) in sub-200ms with 95% token savings";
         if (guideInput) guideInput.value = "Prioritize compiled MCP tool endpoints over visual screenshot coordinate clicking whenever available\nIsolate session cookies and anti-bot turnstile relays strictly within local OpenClaw resident browser enclave\nReturn typed machine error codes (e.g., stock_depleted) immediately upon unrecoverable merchant hurdles\nThrottle automated requests to realistic human thresholds (<5 req/sec) to avoid triggering merchant IP bans";
+    } else if (skillId === 'zentrip-ai-skill') {
+        if (capInput) capInput.value = "Spatial-Temporal Constraint Engine: Synthesize end-to-end multi-modal itineraries resolving minimum connection times (MCT), jetlag, and operating hours\nGDS & NDC Wholesale Arbitrageur: Query direct airline NDC and GDS channels for wholesale tariffs with 24-hr fare freeze and post-booking price drop tracking\nIn-Trip Disruption Recovery Sentinel: Continuously monitor ADS-B air telemetry to automatically trigger interline rebooking and hotel voucher locks\nMulti-Party Consensus & Split AP2 Mandates: Harmonize group travel preferences via A2A mesh and dispatch cryptographically signed proportional payment mandates";
+        if (guideInput) guideInput.value = "Explicitly highlight non-refundable or non-changeable tariffs in bold amber and require one-tap user approval\nTerminate booking immediately if mandatory destination visa requirements or passport 6-month validity thresholds are breached\nLock individual AP2 payment mandate bounds so cumulative sum strictly equals total wholesale master invoice (deviation < $0.01)\nDynamically reschedule outdoor itinerary items to verified indoor cultural venues when local precipitation exceeds 60%";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
