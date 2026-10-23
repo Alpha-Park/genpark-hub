@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-42%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-43%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -54,6 +54,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - 🥫 **Autonomous Domestic Pantry & Zero-Waste Grocery**: Digital twin pantry depletion modeling, nutritional macro-constraint linear solver, cross-recipe perishable amortization, and 1-click federated grocery fulfillment.
 - 📐 **Autonomous 3D Sizing & Zero-Return Fit Arbiter**: Synthesizes 50+ body morphometric dimensions, computes garment CAD ease matrices across 15,000+ brands, neutralizes vanity sizing, and slashes apparel return rates below 3%.
 - 💳 **Autonomous Loyalty Points & Rewards Arbitrage**: Pre-payment MCC identification, card-linked offer auto-activation, Cents-Per-Point (CPP) valuation arbitrage, and 30+ airline/hotel transfer partner optimization.
+- 🎁 **Autonomous Social Gifting & Addressless Delivery**: Relational milestone tracking, lifestyle taboo safeguards, addressless magic gift link dispatch, and silent equal-value swaps.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -96,6 +97,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Autonomous Domestic Pantry Depletion & Zero-Waste Grocery (Hungryroot & Jow Distillation)**: Digital twin kitchen inventory curves, macro-nutritional linear constraint satisfaction (CSP), cross-meal perishable ingredient amortization, and federated delivery knapsack routing.
 - **Autonomous Garment Sizing & 3D Morphometry Fit Arbiter (Bold Metrics & True Fit Distillation)**: Statistical shape 3D body estimation, garment CAD ease allowance matrices, cross-brand vanity sizing normalizer, and pre-checkout zero-return risk gates.
 - **Autonomous Credit Card Multipliers & Loyalty Points Arbitrage (Point.me & Kudos Distillation)**: Real-time MCC radar, automated card-linked offer (CLO) stacking, Cents-Per-Point (CPP) valuation hurdles, and 30+ frequent flyer transfer partner routing.
+- **Autonomous Social Gifting & Addressless Checkout (Goody & Giftpack AI Distillation)**: Relational milestone dual-horizon radar, lifestyle/allergen taboo safeguards, addressless magic links, and recipient equal-value silent swaps.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -140,6 +142,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 37. **Autonomous Domestic Pantry & Zero-Waste Grocery Replenishment**: Ingests e-receipts to maintain living kitchen inventory state machines, balances macro-nutritional targets under weeknight time bounds, clusters perishables to eliminate food waste, and stages federated cart fulfillment via Sunday morning HITL cards.
 38. **Autonomous Cross-Brand Garment Sizing & 3D Fit Arbitration**: Synthesizes 50+ body anthropometric vectors from lightweight demographic anchors, models garment CAD mechanical ease against textile elasticity, normalizes vanity sizing across 15,000+ brands, and vetoes high-risk apparel checkouts to compress return rates from 40% to under 3%.
 39. **Autonomous Card Category Multiplier & Loyalty Points Arbitrage**: Pre-screens merchant MCC codes, auto-activates Amex/Chase card-linked offers for triple-stacked cash back, calculates Cents-Per-Point (CPP) redemption arbitrage against cash fares, and navigates 30+ airline transfer partner bonus promotions.
+40. **Autonomous Social Gifting & Addressless Recipient Checkout**: Anticipates relationship milestones (T-14/T-7), enforces dietary/lifestyle taboo shields, dispatches zero-address magic unboxing links, empowers recipients to silently swap items for equal value, and settles payment via AP2 conditional holds.
 
 ---
 
@@ -182,6 +185,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | 🥫 [`zenpantry-ai-skill`](skills/zenpantry-ai-skill/SKILL.md) | **ZenPantry (禅仓)** | Autonomous domestic pantry inventory engine, macro-nutritional constraint solver, cross-recipe perishable amortization, and federated grocery cart fulfillment. |
 | 📐 [`zenfit-ai-skill`](skills/zenfit-ai-skill/SKILL.md) | **ZenFit (禅适)** | Autonomous 3D morphometric body vector predictor, garment CAD ease distribution arbiter, 15,000+ brand vanity sizing normalizer, and pre-checkout zero-return fit gate. |
 | 💳 [`zenpoint-ai-skill`](skills/zenpoint-ai-skill/SKILL.md) | **ZenPoint (禅铢)** | Autonomous credit card category multiplier router, card-linked offer auto-stacker, Cents-Per-Point (CPP) valuation arbiter, and loyalty transfer partner optimizer. |
+| 🎁 [`zengift-ai-skill`](skills/zengift-ai-skill/SKILL.md) | **ZenGift (禅礼)** | Autonomous social gifting engine, relationship milestone sentinel, addressless magic unboxing link generator, and recipient silent equal-value swap protection. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -227,6 +231,7 @@ GenPark comes bundled with production-grade skills:
 | 🥫 [`zenpantry-ai-skill`](skills/zenpantry-ai-skill/SKILL.md) | **Personal Agent / Domestic & Grocery** | Distilled from Hungryroot & Jow. Digital twin pantry depletion tracker, macro-nutritional recipe solver, cross-meal perishable amortization, and federated delivery knapsack routing. |
 | 📐 [`zenfit-ai-skill`](skills/zenfit-ai-skill/SKILL.md) | **Commerce / Apparel Sizing & Fit** | Distilled from Bold Metrics & True Fit. 50+ point 3D body morphometry predictor, garment CAD ease allowance matrix, cross-brand vanity sizing normalizer, and zero-return pre-checkout gatekeeper. |
 | 💳 [`zenpoint-ai-skill`](skills/zenpoint-ai-skill/SKILL.md) | **Personal Finance / Loyalty & Rewards** | Distilled from Point.me & Kudos. Pre-checkout MCC identification, automated card-linked offer auto-clipping, Cents-Per-Point (CPP) cash arbitrage, and 30+ airline/hotel transfer partner routing. |
+| 🎁 [`zengift-ai-skill`](skills/zengift-ai-skill/SKILL.md) | **Personal Agent / Social & Gifting** | Distilled from Goody & Giftpack AI. Relationship milestone tracker, addressless unboxing link dispatch, dietary/lifestyle taboo filters, and recipient equal-value swap protection. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |

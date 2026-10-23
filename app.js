@@ -424,6 +424,14 @@ const SKILLS_DATABASE = [
         logo: '💳'
     },
     {
+        id: 'zengift-ai-skill',
+        name: 'zengift-ai-skill',
+        description: 'Autonomous Social Gifting, Relationship Milestone Sentinel & Addressless Privacy-First Gifting Engine distilled from Goody and Giftpack AI. Tracks personal relationship milestones, synthesizes hyper-personalized gift recommendations under dietary/lifestyle safeguards, dispatches zero-address magic gift links via WhatsApp/Telegram/email, and allows recipients to select their delivery address, size/color variant, or equal-value swaps before payment commitment.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🎁'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -692,6 +700,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpoint-ai-skill') {
         if (capInput) capInput.value = "Merchant MCC Radar: Pre-screen merchant category codes to route checkout to the card yielding maximum category multipliers\nCard-Linked Offer Auto-Stacker: Automatically detect and clip targeted Amex, Chase, and Citi merchant cashback promos in <100ms\nCents-Per-Point Arbitrageur: Dynamically compute CPP conversion hurdles to decide between cash checkout vs. airline/hotel award redemptions\nTransfer Partner Route Compiler: Map points across 30+ airline frequent flyer and hotel programs, harvesting active transfer bonus multipliers";
         if (guideInput) guideInput.value = "Enforce strict redemption hurdle lock (never burn Chase UR < 1.5¢, Amex MR < 1.6¢, or Bilt < 1.8¢)\nBlacklist cards with foreign transaction fees on cross-border merchant checkouts\nAlert user if high-ticket purchase pushes individual card credit utilization above 30%\nVerify live airline award seat availability before initiating non-reversible bank-to-airline points transfers";
+    } else if (skillId === 'zengift-ai-skill') {
+        if (capInput) capInput.value = "Relational Milestone Sentinel: Monitor personal calendar dates to trigger T-14 and T-7 curated gifting proposals directly in WhatsApp/Telegram\nSocial Taboo Safeguard Shield: Automatically cross-reference dietary, allergy, and sobriety constraints (alcohol, nuts, gluten, wool)\nAddressless Magic Link Engine: Generate encrypted unwrapping links allowing recipients to privately input shipping addresses and choose custom variants\nSilent Equal-Value Swap Protector: Allow recipients to 1-click swap gifts for equivalent-value catalog items without notifying sender\nStaged AP2 Settlement: Hold pre-authorized payment mandates and execute settlement only upon verified recipient claim (14-day auto-release)";
+        if (guideInput) guideInput.value = "Flag corporate etiquette and compliance risks for gifts exceeding $100 to professional clients or colleagues\nEnforce strict age-verification gate for any gift containing alcoholic components on both sender and recipient interfaces\nNever disclose recipient physical shipping addresses or private variant choices to the sender daemon\nRelease pre-authorized payment holds immediately if magic gift link remains unclaimed past 14 calendar days";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
