@@ -408,6 +408,14 @@ const SKILLS_DATABASE = [
         logo: '🥫'
     },
     {
+        id: 'zenfit-ai-skill',
+        name: 'zenfit-ai-skill',
+        description: 'Autonomous Cross-Brand Garment Sizing, 3D Morphometric Body Vector Prediction & Zero-Return Fit Arbiter distilled from Bold Metrics and True Fit. Computes 50+ anatomical body measurements from lightweight anchors, calculates garment CAD ease distribution matrices across 15,000+ fashion brands, neutralizes vanity sizing deviations, and acts as a pre-checkout sizing gatekeeper to guarantee 99.2% fit confidence.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '📐'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -670,6 +678,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpantry-ai-skill') {
         if (capInput) capInput.value = "Digital Twin Pantry State Machine: Ingest online grocery e-receipts and delivery manifests to model household stock depletion velocity\nNutritional Macro CSP Solver: Formulate multi-objective linear constraints balancing daily protein/carb/fat targets and <25-minute weeknight prep times\nZero-Waste Perishable Amortizer: Cluster fresh herbs and produce across multiple weekly meals to reduce domestic food waste by 60%\nFederated Grocery Knapsack Fulfillment: Map ingredient lines to store SKUs across Instacart, Whole Foods, and Kroger while optimizing free-delivery tiers";
         if (guideInput) guideInput.value = "Enforce strict zero-tolerance circuit breaker against any allergen blacklist items (peanuts, gluten, shellfish)\nSuppress re-ordering of non-perishable staples whenever digital twin inventory indicates remaining capacity > 30%\nStage weekly replenishment plans as interactive WhatsApp/Telegram cards on Sunday mornings for single-tap user approval\nNever permit automated substitutions for dairy or nut-free alternatives without verified user consent";
+    } else if (skillId === 'zenfit-ai-skill') {
+        if (capInput) capInput.value = "3D Morphometric Body Predictor: Infer 50+ detailed anatomical vectors (chest, waist drop, shoulder slope, inseam) from lightweight statistical anchors\nGarment CAD Ease Tensor: Compute mechanical ease allowance (Garment - Body) and simulate fabric elastane stretch dynamics\nCross-Brand Vanity Sizing Normalizer: Map size variations across 15,000+ brands and calibrate subjective fit preferences (tailored vs. oversized)\nPre-Checkout Zero-Return Arbiter: Intercept apparel purchases to evaluate fit confidence percentage, vetoing high-risk misfits to slash reverse logistics";
+        if (guideInput) guideInput.value = "Veto checkout automatically if fit confidence score is < 80% or if non-returnable garment is < 90%\nFactor in a +3% to +5% fabric contraction allowance for unwashed raw natural fibers (selvage denim, un-shrunk wool)\nFlag shoe width pinch hazards whenever footwear lacks wide fittings (E/EE) for users with wide foot morphology\nStage precise alteration suggestions (e.g., sleeve hemming) on intermediate 80-94% fit confidence items";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
