@@ -440,12 +440,44 @@ const SKILLS_DATABASE = [
         logo: '🛡️'
     },
     {
+        id: 'zenauto-ai-skill',
+        name: 'zenauto-ai-skill',
+        description: 'Autonomous Automotive Procurement, Days-on-Lot Inventory Telemetry, Deceptive Dealer Add-On Stripper, MMR Wholesale Auction Benchmarking & Binding Out-the-Door (OTD) Price Negotiation Engine distilled from CarEdge and CoPilot. Isolates dealer floorplan aging leverage, audits factory Monroney window stickers, eliminates predatory dealer fees, protects trade-in equity, and pits regional dealerships against each other via anonymous RFQs.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🚗'
+    },
+    {
         id: 'zenvital-ai-skill',
         name: 'zenvital-ai-skill',
         description: 'Autonomous Biomarker Nutrition, Bioavailability Form Audit & Longevity Supplement Procurement Engine distilled from Function Health and InsideTracker. Synthesizes 100+ longitudinal lab biomarkers, audits chemical bioavailability, verifies USP/NSF third-party purity, eliminates absorption antagonisms, and synchronizes supplement procurement with 180-day blood re-test cadences.',
         category: 'commerce',
         developer: '@Alpha-Park',
         logo: '🧬'
+    },
+    {
+        id: 'zenfix-ai-skill',
+        name: 'zenfix-ai-skill',
+        description: 'Autonomous Home Maintenance, Diagnostic Repair & Appliance Lifecycle Commerce Engine distilled from Frontdoor, Streem & iFixit. Multimodal visual/acoustic fault isolation, exploded OEM CAD schematic resolution, 50% economic repairability lifecycle arbitration, RSMeans standardized labor rate audit, direct-to-part wholesale procurement, and AP2 milestone escrow pay-on-proof.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🔧'
+    },
+    {
+        id: 'zentap-ai-skill',
+        name: 'zentap-ai-skill',
+        description: 'Visa Trusted Agent Protocol (TAP) & RFC 9421 Cryptographic HTTP Message Signature Engine. Eliminates false-positive bot blocks, verifies agent identity via open registries, binds requests to human IntentMandates, and unlocks frictionless merchant CDN fast-tracks.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🔏'
+    },
+    {
+        id: 'zen402-ai-skill',
+        name: 'zen402-ai-skill',
+        description: 'HTTP 402 Machine-Native Micropayments & On-Chain Resource Settlement Engine distilled from Linux Foundation x402 and Coinbase. Autonomous handling of 402 Payment Required challenges, sub-cent stablecoin micropayments (USDC on Base/Solana), and instant pay-per-call API access without subscriptions.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🪙'
     },
     {
         id: 'zenbridge-ai-skill',
@@ -722,9 +754,21 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenward-ai-skill') {
         if (capInput) capInput.value = "Checkout Warranty Upsell Suppressor: Intercept predatory 80%-margin retailer warranty popups and verify cardholder complimentary extended warranties\nLiving Vault of Ownership: Bind receipts, serial numbers, and warranty horizons to alert users at T-60 and T-30 days before OEM expiry\nCPSC & OEM Safety Recall Sentinel: Continuously monitor global recall registries (CPSC, NHTSA, RAPEX) to trigger free remedy replacements\n1-Click Claim Dossier Compiler: Assemble itemized receipts, card statement line items, serial photos, and repair diagnostic sheets to file claims in 60s";
         if (guideInput) guideInput.value = "Strictly reject ungrounded or fraudulent damage estimates; require verified diagnostic sheets from authorized service centers\nAutomatically redact unrelated line items on monthly credit card billing statements prior to insurance submission\nPrioritize 0-deductible credit card extended warranty claims over homeowner insurance to protect user loss history\nEnforce statutory consumer rights (Magnuson-Moss, EU 2-year guarantee) before paying out of pocket";
+    } else if (skillId === 'zenauto-ai-skill') {
+        if (capInput) capInput.value = "Days-on-Lot Leverage Radar: Monitor regional dealer inventory aging (>60d) and Market Days Supply (MDS >80d) to maximize buyer negotiation leverage\nMonroney Window Sticker Deconstruction: Cross-reference factory window stickers against dealer proposals to identify and strip deceptive add-ons ($1,500 ceramic coatings, $895 nitrogen fills, $995 doc fees)\nMMR Wholesale Auction Arbiter: Benchmark trade-ins against real-time Manheim Market Report (MMR) auction transactions to decouple trade-in value from new car pricing\nAnonymous Multi-Dealer RFQ Engine: Issue standardized quote requests with ephemeral aliases to 5-15 regional dealers within 150 miles demanding itemized Out-the-Door (OTD) price sheets\nGame-Theoretic OTD Counter-Bidding: Run structured bilateral counter-offer rounds across competing dealer quotes to drive price down to wholesale regional floor";
+        if (guideInput) guideInput.value = "Strictly forbid discussing monthly payments or financing terms until the net Out-The-Door (OTD) purchase price has been signed and locked\nMandate immediate negotiation termination if a dealership refuses to strip non-factory dealer installed accessories\nRequire independent trade-in purchase agreements decoupled from new vehicle acquisition to prevent equity dilution\nTrigger human approval card on WhatsApp/Telegram with full fee breakdown before authorizing binding deposit";
     } else if (skillId === 'zenvital-ai-skill') {
         if (capInput) capInput.value = "Biomarker Telemetry Synthesis: Ingest Quest/Labcorp panels, genetics, and wearable data to map systemic nutrient deficiencies and optimal longevity ranges\nBioavailability Form Auditor: Evaluate nutrient chemical forms to eliminate low-absorption compounds (e.g. Magnesium Oxide) in favor of high-bioavailability chelates (Glycinate, Threonate)\nNutrient Antagonism & Circadian Arbiter: Eliminate absorption competition (Zinc vs. Copper, Iron vs. Calcium) and partition supplements into morning, afternoon, and evening protocols\nUSP/NSF Purity Gatekeeper: Filter out heavy metal contaminants, unverified proprietary blends, and low-grade fillers via third-party certification databases\nDynamic Titration & Retest Procurement: Tie bottle fulfillment quantities to 180-day blood draw milestones and auto-titrate dosages based on longitudinal delta vectors";
         if (guideInput) guideInput.value = "Strictly veto mega-dosing of fat-soluble vitamins (A, D, E, K) that exceed established clinical toxicity upper limits without recent lab confirmation\nEnforce strict pharmaceutical contraindication screening (e.g. Vitamin K with Warfarin, St. John's Wort with SSRIs)\nSeparate competitive mineral pairs (Zinc/Copper, Calcium/Iron) by at least 2 hours in daily protocol scheduling\nTrigger 180-day follow-up lab test notifications prior to automatically re-ordering ongoing maintenance dosages";
+    } else if (skillId === 'zenfix-ai-skill') {
+        if (capInput) capInput.value = "Multimodal Fault Diagnostic: Ingest model plate OCR, error codes, and acoustic recordings to isolate appliance failure root causes\nExploded OEM CAD Resolver: Cross-reference 5M+ industrial parts schematics to pinpoint exact OEM part numbers and certified alternatives\n50% Economic Lifecycle Arbiter: Calculate depreciated asset value vs. repair cost to issue definitive Repair vs. Replace decisions\nRSMeans Labor Rate Auditor: Deconstruct contractor lump-sum bids and benchmark against regional trade prevailing wage tables to stop price gouging\nDirect-to-Part Wholesale: Enable direct consumer procurement of verified OEM/aftermarket components bypassing 200% trade markup\nAP2 Milestone Escrow: Hold contractor funds in cryptographic escrow and release payment only upon verified multimodal proof-of-completion";
+        if (guideInput) guideInput.value = "Enforce mandatory safety disconnect and licensed trade referral for 240V, high-voltage capacitors, or natural gas connections\nMandate itemized labor and parts breakdown from contractors; reject all ungrounded lump-sum repair estimates\nPrioritize UL/CSA-certified high-durability aftermarket parts for non-critical mechanical items to maximize cost savings\nRequire post-repair thermal, pressure, or operational cycle verification before releasing funds from AP2 escrow";
+    } else if (skillId === 'zentap-ai-skill') {
+        if (capInput) capInput.value = "RFC 9421 HTTP Message Signer: Generate asymmetric Ed25519 and ECDSA cryptographic signatures across HTTP methods, target URIs, authorities, and content digests\nAgent Registry Resolver: Broadcast and resolve public keys via open agent registries, enabling merchant edge firewalls to authenticate agents in <5ms\nConsumer Mandate Attestation: Bind signed HTTP requests directly to verified human IntentMandate tokens proving authorized purchasing authority\nEdge CDN Fast-Track Negotiator: Upgrade standard browser sessions into certified machine buyer sessions, bypassing CAPTCHAs and unlocking dedicated /agentic/ endpoints";
+        if (guideInput) guideInput.value = "Store private signing keys strictly within local hardware security enclave; never export keys or telemetry off-device\nRefuse to attach TAP signature headers to outbound HTTP calls lacking an active, spend-capped user IntentMandate\nMaintain sub-5ms cryptographic signing overhead to preserve seamless real-time shopping speeds\nFall back gracefully to resident browser automation if merchant edge gateways lack TAP support";
+    } else if (skillId === 'zen402-ai-skill') {
+        if (capInput) capInput.value = "HTTP 402 Challenge Handler: Automatically intercept HTTP 402 Payment Required status codes and parse structured payment challenge headers (network, token, amount, recipient)\nProgrammatic Stablecoin Signer: Execute sub-second, sub-cent USDC micropayments over Base, Solana, and Polygon using local embedded keypairs\nPayment Proof Dispatcher: Re-issue authenticated requests with cryptographic x402 payment proof headers to immediately unlock premium feeds\nMachine Economy Budget Governor: Enforce strict per-call ($0.05 max) and daily session ($2.00 max) spending caps backed by local tamper-proof ledgers";
+        if (guideInput) guideInput.value = "Strictly veto any micropayment request that exceeds the predefined per-call budget cap without explicit user approval\nVerify recipient contract addresses against verified machine API registry whitelists to prevent drain attacks\nRecord every on-chain micropayment in local append-only cryptographic ledger (~/.openclaw/vault/x402_payments.ledger)\nAutomatically cancel payment challenges if quote validity TTL has expired before transaction dispatch";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
