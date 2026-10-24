@@ -480,6 +480,30 @@ const SKILLS_DATABASE = [
         logo: '🪙'
     },
     {
+        id: 'zenbill-ai-skill',
+        name: 'zenbill-ai-skill',
+        description: 'Autonomous Medical Bill Audit, CPT/HCPCS Upcoding Stripper, CMS Price Transparency MRF Benchmarking & No Surprises Act Legal Arbitration Engine distilled from Goodbill, Turquoise Health & Healthcare Bluebook. Ingests itemized hospital bills, detects unbundled codes and phantom room charges, cross-references federal machine-readable price files, evaluates IRS Section 501(r) non-profit hospital charity care write-offs, and compiles statutory dispute packages.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🏥'
+    },
+    {
+        id: 'zentax-ai-skill',
+        name: 'zentax-ai-skill',
+        description: 'Autonomous Property Tax Assessment Appeal, Automated Mass Appraisal (AMA) Error Detection, Comparable Sales ML Adjustment & Uniform Equity Arbitration Engine distilled from Ownwell & TaxProper. Ingests county tax parcel records, detects building characteristic discrepancies, runs paired sales comparable adjustments, computes assessment-to-market equity ratios, and compiles formal Appraisal Review Board (ARB) appeal packets.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🏛️'
+    },
+    {
+        id: 'zenforge-ai-skill',
+        name: 'zenforge-ai-skill',
+        description: 'Autonomous Hardware Engineering BOM Procurement, Multi-Distributor Real-Time Pricing Synthesis, Pin-Compatible Component Alternate Arbitrage & Lifecycle Obsolescence (EOL/NRND) Sentinel distilled from Waybill (YC S26). Ingests engineering BOMs (Altium, KiCad), queries live distributor stocks (DigiKey, Mouser, LCSC), resolves stockouts via parametric drop-in alternates, and optimizes multi-vendor shipments into minimum-cost freight knapsacks.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '⚡'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -769,6 +793,15 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zen402-ai-skill') {
         if (capInput) capInput.value = "HTTP 402 Challenge Handler: Automatically intercept HTTP 402 Payment Required status codes and parse structured payment challenge headers (network, token, amount, recipient)\nProgrammatic Stablecoin Signer: Execute sub-second, sub-cent USDC micropayments over Base, Solana, and Polygon using local embedded keypairs\nPayment Proof Dispatcher: Re-issue authenticated requests with cryptographic x402 payment proof headers to immediately unlock premium feeds\nMachine Economy Budget Governor: Enforce strict per-call ($0.05 max) and daily session ($2.00 max) spending caps backed by local tamper-proof ledgers";
         if (guideInput) guideInput.value = "Strictly veto any micropayment request that exceeds the predefined per-call budget cap without explicit user approval\nVerify recipient contract addresses against verified machine API registry whitelists to prevent drain attacks\nRecord every on-chain micropayment in local append-only cryptographic ledger (~/.openclaw/vault/x402_payments.ledger)\nAutomatically cancel payment challenges if quote validity TTL has expired before transaction dispatch";
+    } else if (skillId === 'zenbill-ai-skill') {
+        if (capInput) capInput.value = "CPT/HCPCS Code Deconstruction: Ingest multi-page itemized hospital bills and EOBs to map every line item to 5-digit procedure and revenue codes\nUpcoding & Unbundling Sentry: Apply CMS NCCI bundling edits to strip fragmented supply charges and audit emergency room severity levels\nCMS Price Transparency MRF Benchmark: Cross-reference hospital federal machine-readable files to benchmark chargemaster prices against discounted cash and median negotiated rates\nNo Surprises Act Statutory Radar: Detect illegal out-of-network balance billing for emergency or ancillary hospital services and trigger federal PPDR disputes\nIRS 501(r) Charity Care Write-Off: Match household income to hospital Financial Assistance Policies (FAP) to mandate 50-100% debt forgiveness\nMedicare 150% Settlement Compiler: Compile formal certified dispute dossiers offering 150% of Medicare fee schedule to settle unpaid balances";
+        if (guideInput) guideInput.value = "Redact all patient medical history, clinical diagnostic notes, and SSNs in local Secure Enclave memory; never leak PHI off-device\nMandate official itemized bills with standard CPT/HCPCS codes before initiating dispute routines; reject summary balance-due statements\nVerify statutory dispute notification deadlines (30-60 days) to prevent premature collections agency reporting\nPrioritize IRS 501(r) non-profit charity care write-offs before cash settlement offers to maximize statutory debt elimination";
+    } else if (skillId === 'zentax-ai-skill') {
+        if (capInput) capInput.value = "County Tax Parcel Ingestion: Extract parcel numbers, assessed land/improvement values, millage rates, and protest filing countdown clocks\nAMA Characteristic Defect Audit: Detect county property database errors in square footage, room counts, building grade, and effective age\nML Comparable Sales Adjustment Grid: Select arms-length neighborhood sales and apply paired regression adjustment matrices for lot size, age, and condition\nUniform & Equal Equity Ratio Arbiter: Analyze assessment-to-market ratios across peer properties to substantiate constitutional unequal appraisal claims\nDeferred Maintenance Deduction: Compile contractor bids and photographic proof of foundation cracks, aging roofs, and structural defects into cost-to-cure deductions\nAutomated ARB Appeal Dossier: Assemble state-compliant protest petitions, comparable sales grids, and legal briefs for appraisal review boards";
+        if (guideInput) guideInput.value = "Strictly enforce county statutory appeal filing deadlines; verify postmark and online timestamp rules to prevent rights forfeiture\nIn equal and uniform jurisdictions, always advance the equity argument alongside market value claims to maximize reduction probability\nRequire contractor repair bids to be licensed, itemized, and dated within 90 days of the assessment lien date\nAudit and verify that all entitled statutory exemptions (Homestead cap, senior, disability) are actively applied to property records";
+    } else if (skillId === 'zenforge-ai-skill') {
+        if (capInput) capInput.value = "Engineering BOM Normalizer: Ingest Altium, KiCad, and Excel BOMs to extract MPNs, reference designators, package footprints, and tolerance constraints\nMulti-Distributor Stock Radar: Simultaneously query live stock counts, cut-tape/reel packaging, MOQs, and volume price breaks across DigiKey, Mouser, LCSC, Arrow, and Newark\nPin-Compatible Alternate Arbiter: Search parametric component datasheets to isolate 100% pin-compatible, drop-in replacement parts matching voltage, ESR, and thermal specs\nLifecycle & Obsolescence Sentinel: Screen BOM line items against manufacturer PCN/EOL/NRND notices and lead-time spikes exceeding 26 weeks\nFreight Knapsack & HS Tariff Compiler: Classify electronic parts into Harmonized Tariff Schedule (HTS) codes and optimize multi-vendor orders into minimum-cost split shipments";
+        if (guideInput) guideInput.value = "Strictly forbid substituting safety-critical components (power MOSFETs, fuses, isolation transformers) without verified identical thermal and voltage ratings\nVeto any component flagged as NRND (Not Recommended for New Designs) or EOL (End of Life) for production batch runs\nVerify distributor packaging formats (Cut Tape vs. Tape & Reel) against assembly line SMT feeder requirements before purchase\nRequire human approval card on WhatsApp/Telegram with full landed cost breakdown before releasing multi-vendor POs";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
