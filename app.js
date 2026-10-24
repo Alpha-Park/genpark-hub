@@ -512,6 +512,14 @@ const SKILLS_DATABASE = [
         logo: '⚡'
     },
     {
+        id: 'zenmux-ai-skill',
+        name: 'zenmux-ai-skill',
+        description: 'Autonomous MCP Tool Capability Marketplace, Runtime Dynamic Tool Router, Pay-per-Call Universal Wallet & Fault-Tolerant Circuit Breaker Multiplexer distilled from Amorphic Labs (Agentmuxer, YC S26). Connects personal decision agents to on-demand external tools with zero SaaS subscription setup, pay-per-call micro-debits, and sub-50ms multi-provider fallback.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🎛️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -813,6 +821,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpower-ai-skill') {
         if (capInput) capInput.value = "Wholesale Spot Tariff Radar: Ingest day-ahead hourly electricity spot prices and grid carbon intensity across CAISO, ERCOT, Nord Pool, and Octopus APIs to identify negative pricing slots\nDER Knapsack Optimizer: Solve linear optimization models to coordinate battery ESS charging, heat pumps, and smart appliances into sub-cent windows\nBidirectional EV (V2H/V2G) Arbiter: Discharge stored EV battery energy during extreme peak grid stress events ($2.00-$9.00/kWh) while preserving departure range\nSolar PV Generation Forecaster: Ingest NOAA meteorological satellite irradiance vectors to align high-draw appliances with peak rooftop generation\nSREC & Grid Export Settle Engine: Track clean solar generation behind the meter, mint SREC attribute certificates, and reconcile net-metering utility statements";
         if (guideInput) guideInput.value = "Enforce strict 20% minimum blackout emergency reserve shield on all residential storage assets\nLimit battery depth-of-discharge (DoD) to optimal electro-chemical lifespan boundaries (15%-85% daily cycling)\nGuarantee EV reaches target departure state-of-charge (SoC >= 80%) at least 2 hours before user commute\nRequire interactive WhatsApp/Telegram approval card before executing live high-volume V2G export transactions";
+    } else if (skillId === 'zenmux-ai-skill') {
+        if (capInput) capInput.value = "Unified MCP Capability Gateway: Expose hundreds of on-demand external tools (stealth proxies, OCR, vertical domain APIs) through a single standard local MCP endpoint\nPay-per-Call Universal Wallet: Execute sub-cent micro-debit settlements per successful call from local prepaid wallet, eliminating unused monthly SaaS subscriptions\nPareto Latency/Cost Benchmark Router: Dynamically benchmark live provider QoS (p95 latency, price, success rate) and route requests to optimal providers\nAdaptive Sub-50ms Circuit Breaker: Automatically trip on 3 consecutive 4xx/5xx errors or latency spikes, cascading to warm standby secondary providers\nSchema Contract & Injection Sandbox: Enforce strict JSON Schema validation and strip malicious prompt injection payloads from external tool outputs";
+        if (guideInput) guideInput.value = "Enforce strict $0.10 USD maximum per-call expenditure ceiling before executing any external tool invocation\nFreeze automated tool multiplexing if cumulative daily session spend exceeds $5.00 USD without explicit user top-up\nRequire explicit biometric or OTP confirmation before unlocking high-risk capabilities (code execution or credential injection)\nAlert user via WhatsApp/Telegram if upstream provider failovers exceed 3 consecutive cascades";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";

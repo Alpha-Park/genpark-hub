@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-53%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-54%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -65,6 +65,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - 🏥 **Autonomous Medical Bill Audit & Legal Dispute Sentry**: Ingests hospital itemized bills, strips CPT/HCPCS upcoding and unbundled supplies, indexes CMS price transparency MRF cash rates, enforces No Surprises Act protections, and activates IRS 501(r) non-profit charity write-offs.
 - 🏛️ **Autonomous Property Tax Appeal & Equalization Arbiter**: Detects automated mass appraisal (AMA) characteristic defects, constructs paired comparable sales regression grids, arbitrates constitutional uniform and equal tax ratios, and compiles formal Appraisal Review Board appeal petitions.
 - ⚡ **Autonomous Dynamic Energy Arbitrage & Microgrid Dispatch**: Ingests day-ahead wholesale spot power tariffs (CAISO/ERCOT/Octopus Kraken), harvests negative pricing, manages home ESS/EV bidirectional (V2H/V2G) exports, and mints SRECs.
+- 🎛️ **Autonomous MCP Tool Capability Marketplace & Dynamic Router**: Accesses hundreds of on-demand external capabilities (stealth scraping, OCR, domain APIs) via a single MCP gateway, pay-per-call universal wallet, and sub-50ms circuit-breaker failover.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -118,6 +119,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Autonomous Medical Bill Audit & Hospital Fee Arbitration (Goodbill & Turquoise Health Distillation)**: Itemized CPT/HCPCS deconstruction, CMS price transparency MRF cash rate benchmarking, No Surprises Act balance billing violations, IRS 501(r) charity care write-offs, and Medicare 150% legal settlement packages.
 - **Autonomous Property Tax Appeal & Tax Equalization (Ownwell & TaxProper Distillation)**: Automated Mass Appraisal (AMA) error correction, ML comparable sales adjustment grids, constitutional "uniform and equal" equity ratio arbitration, and cost-to-cure deferred maintenance deductions.
 - **Autonomous Dynamic Energy Arbitrage & Residential Microgrid Dispatch (Octopus Energy Kraken & Enphase Distillation)**: Real-time wholesale spot tariff telemetry, negative electricity price harvesting, multi-asset DER knapsack dispatch (battery ESS, EV, heat pump), V2H/V2G peak demand response export arbitrage, and SREC green credit settlement.
+- **Autonomous MCP Tool Capability Marketplace & Dynamic Routing (Amorphic Labs Agentmuxer Distillation)**: Unified Model Context Protocol (MCP) tool gateway, pay-per-call universal wallet micro-debits, QoS multi-provider Pareto routing, and adaptive sub-50ms circuit-breaker failover.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -173,6 +175,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 48. **Autonomous Medical Bill Audit & No Surprises Act Arbiter**: Ingests itemized hospital bills, cross-references federal CMS Price Transparency Machine-Readable Files (MRFs) to identify unbundled and upcoded CPT charges, asserts federal No Surprises Act protections against out-of-network emergency surprise billing, and unlocks mandatory IRS 501(r) charity care debt forgiveness.
 49. **Autonomous Property Tax Assessment Appeal & Equalization Engine**: Audits county tax roll records to detect Automated Mass Appraisal (AMA) building measurement errors, builds arms-length comparable sales paired regression adjustment grids, leverages constitutional "Equal & Uniform" equity ratios to lower assessments during market peaks, and compiles formal Appraisal Review Board (ARB) appeal packets.
 50. **Autonomous Dynamic Energy Arbitrage & Residential Microgrid Settle Engine**: Connects to wholesale electricity spot markets (CAISO, ERCOT, Nord Pool, Octopus Kraken) to detect negative electricity tariff windows and extreme peak price spikes, schedules distributed energy resources (home battery ESS, heat pumps, smart appliances) via linear knapsack optimization, executes bidirectional vehicle-to-grid (V2G/V2H) power exports at 10x-50x wholesale premiums, and settles SREC environmental attribute certificates.
+51. **Autonomous MCP Tool Capability Marketplace & Multi-Provider Dynamic Routing Engine**: Unifies on-demand external agent capabilities under a single MCP interface, eliminates SaaS subscription sprawl with pay-per-call micro-debits, solves dynamic cost-latency Pareto routing, and executes sub-50ms circuit-breaker failovers to warm standby providers with zero workflow disruption.
 
 ---
 
@@ -226,6 +229,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | 🏥 [`zenbill-ai-skill`](skills/zenbill-ai-skill/SKILL.md) | **ZenBill (禅医)** | Autonomous medical bill audit, CPT/HCPCS upcoding & unbundling stripper, CMS hospital price transparency MRF benchmark, No Surprises Act balance billing arbiter, and IRS 501(r) charity care debt write-off. |
 | 🏛️ [`zentax-ai-skill`](skills/zentax-ai-skill/SKILL.md) | **ZenTax (禅税)** | Autonomous property tax assessment appeal, Automated Mass Appraisal (AMA) error detector, comparable sales ML regression grid, constitutional uniform and equal tax ratio arbiter, and ARB petition compiler. |
 | ⚡ [`zenpower-ai-skill`](skills/zenpower-ai-skill/SKILL.md) | **ZenPower (禅能)** | Autonomous dynamic energy arbitrage, wholesale spot tariff optimizer, home battery & bidirectional EV (V2H/V2G) dispatch engine, and SREC clean energy credit settle arbiter. |
+| 🎛️ [`zenmux-ai-skill`](skills/zenmux-ai-skill/SKILL.md) | **ZenMux (禅枢)** | Autonomous MCP tool capability marketplace, dynamic multi-provider routing, pay-per-call universal wallet, adaptive circuit breaker, and schema injection sandbox. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -282,6 +286,7 @@ GenPark comes bundled with production-grade skills:
 | 🏥 [`zenbill-ai-skill`](skills/zenbill-ai-skill/SKILL.md) | **Personal Finance / Healthcare & Billing** | Distilled from Goodbill & Turquoise Health. Itemized CPT/HCPCS deconstruction, CMS price transparency MRF cash rate benchmarking, No Surprises Act dispute arbitration, and IRS 501(r) non-profit charity write-offs. |
 | 🏛️ [`zentax-ai-skill`](skills/zentax-ai-skill/SKILL.md) | **Personal Finance / Real Estate & Tax** | Distilled from Ownwell & TaxProper. Automated Mass Appraisal (AMA) error detection, comparable sales ML regression grids, constitutional uniform & equal tax ratio arbiter, and formal ARB appeal dossiers. |
 | ⚡ [`zenpower-ai-skill`](skills/zenpower-ai-skill/SKILL.md) | **Energy & Sustainability / Smart Grid** | Distilled from Octopus Energy (Kraken) & Enphase. Real-time wholesale spot tariff radar (CAISO/ERCOT), negative pricing harvesting, home battery/EV V2H/V2G dispatch, and SREC credit settlement. |
+| 🎛️ [`zenmux-ai-skill`](skills/zenmux-ai-skill/SKILL.md) | **Agent Infrastructure / MCP & Tools** | Distilled from Amorphic Labs (Agentmuxer, YC S26). Unified MCP gateway, pay-per-call universal wallet, QoS multi-provider Pareto routing, and adaptive sub-50ms circuit-breaker failover. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |
