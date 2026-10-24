@@ -504,6 +504,14 @@ const SKILLS_DATABASE = [
         logo: '⚡'
     },
     {
+        id: 'zenpower-ai-skill',
+        name: 'zenpower-ai-skill',
+        description: 'Autonomous Dynamic Energy Arbitrage, Real-Time Wholesale Spot Tariff Optimization (RTP/TOU), Distributed Residential Battery Dispatch & Bidirectional EV (V2H/V2G) Grid Settle Engine distilled from Octopus Energy (Kraken) and Enphase Energy.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '⚡'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -802,6 +810,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenforge-ai-skill') {
         if (capInput) capInput.value = "Engineering BOM Normalizer: Ingest Altium, KiCad, and Excel BOMs to extract MPNs, reference designators, package footprints, and tolerance constraints\nMulti-Distributor Stock Radar: Simultaneously query live stock counts, cut-tape/reel packaging, MOQs, and volume price breaks across DigiKey, Mouser, LCSC, Arrow, and Newark\nPin-Compatible Alternate Arbiter: Search parametric component datasheets to isolate 100% pin-compatible, drop-in replacement parts matching voltage, ESR, and thermal specs\nLifecycle & Obsolescence Sentinel: Screen BOM line items against manufacturer PCN/EOL/NRND notices and lead-time spikes exceeding 26 weeks\nFreight Knapsack & HS Tariff Compiler: Classify electronic parts into Harmonized Tariff Schedule (HTS) codes and optimize multi-vendor orders into minimum-cost split shipments";
         if (guideInput) guideInput.value = "Strictly forbid substituting safety-critical components (power MOSFETs, fuses, isolation transformers) without verified identical thermal and voltage ratings\nVeto any component flagged as NRND (Not Recommended for New Designs) or EOL (End of Life) for production batch runs\nVerify distributor packaging formats (Cut Tape vs. Tape & Reel) against assembly line SMT feeder requirements before purchase\nRequire human approval card on WhatsApp/Telegram with full landed cost breakdown before releasing multi-vendor POs";
+    } else if (skillId === 'zenpower-ai-skill') {
+        if (capInput) capInput.value = "Wholesale Spot Tariff Radar: Ingest day-ahead hourly electricity spot prices and grid carbon intensity across CAISO, ERCOT, Nord Pool, and Octopus APIs to identify negative pricing slots\nDER Knapsack Optimizer: Solve linear optimization models to coordinate battery ESS charging, heat pumps, and smart appliances into sub-cent windows\nBidirectional EV (V2H/V2G) Arbiter: Discharge stored EV battery energy during extreme peak grid stress events ($2.00-$9.00/kWh) while preserving departure range\nSolar PV Generation Forecaster: Ingest NOAA meteorological satellite irradiance vectors to align high-draw appliances with peak rooftop generation\nSREC & Grid Export Settle Engine: Track clean solar generation behind the meter, mint SREC attribute certificates, and reconcile net-metering utility statements";
+        if (guideInput) guideInput.value = "Enforce strict 20% minimum blackout emergency reserve shield on all residential storage assets\nLimit battery depth-of-discharge (DoD) to optimal electro-chemical lifespan boundaries (15%-85% daily cycling)\nGuarantee EV reaches target departure state-of-charge (SoC >= 80%) at least 2 hours before user commute\nRequire interactive WhatsApp/Telegram approval card before executing live high-volume V2G export transactions";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
