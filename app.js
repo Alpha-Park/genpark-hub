@@ -432,6 +432,14 @@ const SKILLS_DATABASE = [
         logo: '🎁'
     },
     {
+        id: 'zenward-ai-skill',
+        name: 'zenward-ai-skill',
+        description: 'Autonomous Warranty Guardian, Credit Card Purchase Protection Arbitrage & 1-Click Repair Claim Engine distilled from Mulberry and Extend. Neutralizes predatory retail checkout warranty upsells, indexes manufacturer and credit card complimentary extended warranty coverages, monitors CPSC product recalls, and compiles automated evidence packets to recover 100% repair or replacement reimbursements.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🛡️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -703,6 +711,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zengift-ai-skill') {
         if (capInput) capInput.value = "Relational Milestone Sentinel: Monitor personal calendar dates to trigger T-14 and T-7 curated gifting proposals directly in WhatsApp/Telegram\nSocial Taboo Safeguard Shield: Automatically cross-reference dietary, allergy, and sobriety constraints (alcohol, nuts, gluten, wool)\nAddressless Magic Link Engine: Generate encrypted unwrapping links allowing recipients to privately input shipping addresses and choose custom variants\nSilent Equal-Value Swap Protector: Allow recipients to 1-click swap gifts for equivalent-value catalog items without notifying sender\nStaged AP2 Settlement: Hold pre-authorized payment mandates and execute settlement only upon verified recipient claim (14-day auto-release)";
         if (guideInput) guideInput.value = "Flag corporate etiquette and compliance risks for gifts exceeding $100 to professional clients or colleagues\nEnforce strict age-verification gate for any gift containing alcoholic components on both sender and recipient interfaces\nNever disclose recipient physical shipping addresses or private variant choices to the sender daemon\nRelease pre-authorized payment holds immediately if magic gift link remains unclaimed past 14 calendar days";
+    } else if (skillId === 'zenward-ai-skill') {
+        if (capInput) capInput.value = "Checkout Warranty Upsell Suppressor: Intercept predatory 80%-margin retailer warranty popups and verify cardholder complimentary extended warranties\nLiving Vault of Ownership: Bind receipts, serial numbers, and warranty horizons to alert users at T-60 and T-30 days before OEM expiry\nCPSC & OEM Safety Recall Sentinel: Continuously monitor global recall registries (CPSC, NHTSA, RAPEX) to trigger free remedy replacements\n1-Click Claim Dossier Compiler: Assemble itemized receipts, card statement line items, serial photos, and repair diagnostic sheets to file claims in 60s";
+        if (guideInput) guideInput.value = "Strictly reject ungrounded or fraudulent damage estimates; require verified diagnostic sheets from authorized service centers\nAutomatically redact unrelated line items on monthly credit card billing statements prior to insurance submission\nPrioritize 0-deductible credit card extended warranty claims over homeowner insurance to protect user loss history\nEnforce statutory consumer rights (Magnuson-Moss, EU 2-year guarantee) before paying out of pocket";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
