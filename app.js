@@ -440,6 +440,14 @@ const SKILLS_DATABASE = [
         logo: '🛡️'
     },
     {
+        id: 'zenvital-ai-skill',
+        name: 'zenvital-ai-skill',
+        description: 'Autonomous Biomarker Nutrition, Bioavailability Form Audit & Longevity Supplement Procurement Engine distilled from Function Health and InsideTracker. Synthesizes 100+ longitudinal lab biomarkers, audits chemical bioavailability, verifies USP/NSF third-party purity, eliminates absorption antagonisms, and synchronizes supplement procurement with 180-day blood re-test cadences.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🧬'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -714,6 +722,9 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenward-ai-skill') {
         if (capInput) capInput.value = "Checkout Warranty Upsell Suppressor: Intercept predatory 80%-margin retailer warranty popups and verify cardholder complimentary extended warranties\nLiving Vault of Ownership: Bind receipts, serial numbers, and warranty horizons to alert users at T-60 and T-30 days before OEM expiry\nCPSC & OEM Safety Recall Sentinel: Continuously monitor global recall registries (CPSC, NHTSA, RAPEX) to trigger free remedy replacements\n1-Click Claim Dossier Compiler: Assemble itemized receipts, card statement line items, serial photos, and repair diagnostic sheets to file claims in 60s";
         if (guideInput) guideInput.value = "Strictly reject ungrounded or fraudulent damage estimates; require verified diagnostic sheets from authorized service centers\nAutomatically redact unrelated line items on monthly credit card billing statements prior to insurance submission\nPrioritize 0-deductible credit card extended warranty claims over homeowner insurance to protect user loss history\nEnforce statutory consumer rights (Magnuson-Moss, EU 2-year guarantee) before paying out of pocket";
+    } else if (skillId === 'zenvital-ai-skill') {
+        if (capInput) capInput.value = "Biomarker Telemetry Synthesis: Ingest Quest/Labcorp panels, genetics, and wearable data to map systemic nutrient deficiencies and optimal longevity ranges\nBioavailability Form Auditor: Evaluate nutrient chemical forms to eliminate low-absorption compounds (e.g. Magnesium Oxide) in favor of high-bioavailability chelates (Glycinate, Threonate)\nNutrient Antagonism & Circadian Arbiter: Eliminate absorption competition (Zinc vs. Copper, Iron vs. Calcium) and partition supplements into morning, afternoon, and evening protocols\nUSP/NSF Purity Gatekeeper: Filter out heavy metal contaminants, unverified proprietary blends, and low-grade fillers via third-party certification databases\nDynamic Titration & Retest Procurement: Tie bottle fulfillment quantities to 180-day blood draw milestones and auto-titrate dosages based on longitudinal delta vectors";
+        if (guideInput) guideInput.value = "Strictly veto mega-dosing of fat-soluble vitamins (A, D, E, K) that exceed established clinical toxicity upper limits without recent lab confirmation\nEnforce strict pharmaceutical contraindication screening (e.g. Vitamin K with Warfarin, St. John's Wort with SSRIs)\nSeparate competitive mineral pairs (Zinc/Copper, Calcium/Iron) by at least 2 hours in daily protocol scheduling\nTrigger 180-day follow-up lab test notifications prior to automatically re-ordering ongoing maintenance dosages";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";

@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
-[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-44%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
+[![Skills Registry](https://img.shields.io/badge/Skills%20Registry-45%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Alpha-Park/genpark-hub/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=gold)](https://github.com/Alpha-Park/genpark-hub)
 [![GitHub Forks](https://img.shields.io/github/forks/Alpha-Park/genpark-hub?style=for-the-badge&logo=github&color=orange)](https://github.com/Alpha-Park/genpark-hub/network/members)
@@ -56,6 +56,7 @@ GenPark is an open-source, local-first personal AI assistant framework powered b
 - 💳 **Autonomous Loyalty Points & Rewards Arbitrage**: Pre-payment MCC identification, card-linked offer auto-activation, Cents-Per-Point (CPP) valuation arbitrage, and 30+ airline/hotel transfer partner optimization.
 - 🎁 **Autonomous Social Gifting & Addressless Delivery**: Relational milestone tracking, lifestyle taboo safeguards, addressless magic gift link dispatch, and silent equal-value swaps.
 - 🛡️ **Autonomous Warranty Guardian & Claim Arbitrage**: Neutralizes predatory checkout warranty upsells, indexes manufacturer and credit card complimentary extended warranties, monitors CPSC recalls, and files 60-second claim dossiers.
+- 🧬 **Autonomous Biomarker Nutrition & Longevity Sourcing**: Ingests 100+ longitudinal lab biomarkers, audits compound bioavailability and USP/NSF purity, eliminates nutrient conflicts, and dynamically titrates dosages.
 - 🧩 **Extensible Skills Architecture**: Plug-and-play modular skills defined in standard `SKILL.md` format.
 
 ---
@@ -100,6 +101,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 - **Autonomous Credit Card Multipliers & Loyalty Points Arbitrage (Point.me & Kudos Distillation)**: Real-time MCC radar, automated card-linked offer (CLO) stacking, Cents-Per-Point (CPP) valuation hurdles, and 30+ frequent flyer transfer partner routing.
 - **Autonomous Social Gifting & Addressless Checkout (Goody & Giftpack AI Distillation)**: Relational milestone dual-horizon radar, lifestyle/allergen taboo safeguards, addressless magic links, and recipient equal-value silent swaps.
 - **Autonomous Warranty Protection & Claim Arbitrage (Mulberry & Extend Distillation)**: Retail warranty upsell suppression, complimentary credit card extended warranty arbitrage, CPSC recall sentinel, and 60-second automated claim compilation.
+- **Autonomous Biomarker Nutrition & Longevity Supplementation (Function Health & InsideTracker Distillation)**: 100+ lab marker synthesis, bioavailability chemical form auditing, third-party lab purity verification (NSF/USP), circadian timing isolation, and 180-day retest titration.
 
 📖 **Read the full architectural research report**:  
 👉 [**自主个人决策与代购 Agent 架构解构与能力蒸馏**](docs/research/autonomous-decision-agent-architectural-deconstruction.md)
@@ -146,6 +148,7 @@ We conducted an exhaustive architectural deconstruction analyzing the state-of-t
 39. **Autonomous Card Category Multiplier & Loyalty Points Arbitrage**: Pre-screens merchant MCC codes, auto-activates Amex/Chase card-linked offers for triple-stacked cash back, calculates Cents-Per-Point (CPP) redemption arbitrage against cash fares, and navigates 30+ airline transfer partner bonus promotions.
 40. **Autonomous Social Gifting & Addressless Recipient Checkout**: Anticipates relationship milestones (T-14/T-7), enforces dietary/lifestyle taboo shields, dispatches zero-address magic unboxing links, empowers recipients to silently swap items for equal value, and settles payment via AP2 conditional holds.
 41. **Autonomous Warranty Guardian & Protection Claim Arbitrage**: Vetoes predatory 80%-margin retail warranty upsells, activates credit card complimentary extended warranties (+1 year) and purchase protection ($10k cap), monitors global CPSC recalls, and compiles multi-source proof dossiers to recover 100% repair reimbursements.
+42. **Autonomous Biomarker-to-Nutrient Longevity Sourcing Engine**: Translates 100+ clinical blood biomarkers and wearable telemetry into bioavailable nutrient formulations, filters for NSF/USP third-party verified purity, prevents nutrient absorption antagonisms, and synchronizes dosages with 180-day blood re-testing cadences.
 
 ---
 
@@ -190,6 +193,7 @@ Based on our architectural research, we officially released the **Agentic Commer
 | 💳 [`zenpoint-ai-skill`](skills/zenpoint-ai-skill/SKILL.md) | **ZenPoint (禅铢)** | Autonomous credit card category multiplier router, card-linked offer auto-stacker, Cents-Per-Point (CPP) valuation arbiter, and loyalty transfer partner optimizer. |
 | 🎁 [`zengift-ai-skill`](skills/zengift-ai-skill/SKILL.md) | **ZenGift (禅礼)** | Autonomous social gifting engine, relationship milestone sentinel, addressless magic unboxing link generator, and recipient silent equal-value swap protection. |
 | 🛡️ [`zenward-ai-skill`](skills/zenward-ai-skill/SKILL.md) | **ZenWard (禅佑)** | Autonomous warranty guardian, credit card purchase protection arbiter, CPSC product recall sentinel, and 60-second repair reimbursement claim compiler. |
+| 🧬 [`zenvital-ai-skill`](skills/zenvital-ai-skill/SKILL.md) | **ZenVital (禅元)** | Autonomous biomarker nutrition engine, bioavailability chemical form auditor, NSF/USP lab purity verifier, and 180-day blood retest supplement titration scheduler. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **ZenBridge (桥联)** | Hybrid Personal Agent Protocol (PAP) OAuth client + Resident Browser adaptive fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **ZenPeer (跨体协行)** | Encrypted Agent-to-Agent (A2A) peer negotiation for group buying arbitrage, zero-knowledge bookings, and split billing. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Aegis Guard (行前护盾)** | Active Detective runtime anti-hallucination interceptor and PII address/credential redaction firewall. |
@@ -237,6 +241,7 @@ GenPark comes bundled with production-grade skills:
 | 💳 [`zenpoint-ai-skill`](skills/zenpoint-ai-skill/SKILL.md) | **Personal Finance / Loyalty & Rewards** | Distilled from Point.me & Kudos. Pre-checkout MCC identification, automated card-linked offer auto-clipping, Cents-Per-Point (CPP) cash arbitrage, and 30+ airline/hotel transfer partner routing. |
 | 🎁 [`zengift-ai-skill`](skills/zengift-ai-skill/SKILL.md) | **Personal Agent / Social & Gifting** | Distilled from Goody & Giftpack AI. Relationship milestone tracker, addressless unboxing link dispatch, dietary/lifestyle taboo filters, and recipient equal-value swap protection. |
 | 🛡️ [`zenward-ai-skill`](skills/zenward-ai-skill/SKILL.md) | **Personal Finance / Asset Protection & Warranty** | Distilled from Mulberry & Extend. Retail checkout warranty upsell suppressor, credit card extended warranty indexing, CPSC safety recall monitor, and automated claim filing. |
+| 🧬 [`zenvital-ai-skill`](skills/zenvital-ai-skill/SKILL.md) | **Health / Biomarkers & Longevity** | Distilled from Function Health & InsideTracker. 100+ blood biomarker ingestion, bioavailability chemical form audit, USP/NSF purity filter, and circadian nutrient timing scheduler. |
 | 🌉 [`zenbridge-ai-skill`](skills/zenbridge-ai-skill/SKILL.md) | **Commerce / Protocol** | Personal Agent Protocol (PAP) OAuth handshake with resident browser fallback. |
 | 🤝 [`zenpeer-ai-skill`](skills/zenpeer-ai-skill/SKILL.md) | **Personal Agent / Collaboration** | Agent-to-Agent (A2A) peer negotiation, collective buying arbitrage, and privacy-preserving bookings. |
 | 🛡️ [`aegis-guard-skill`](skills/aegis-guard-skill/SKILL.md) | **Security & Guardrails** | Pre-execution active hallucination interceptor and token-level PII address/card leakage shield. |
