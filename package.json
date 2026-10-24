@@ -1,0 +1,28 @@
+{
+  "name": "genpark-next-features",
+  "version": "1.0.0",
+  "description": "Next-Generation Core Features for GenPark: Autonomous Wallet Guard, Cross-Store Basket Optimizer, Counterfactual Review Authenticator, and Circle Community Trend Radar.",
+  "main": "src/index.js",
+  "bin": {
+    "genpark": "bin/genpark-cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "node bin/genpark-cli.js",
+    "mcp": "node mcp/server.js"
+  },
+  "keywords": [
+    "genpark",
+    "openclaw",
+    "agent-skills",
+    "ecommerce-agent",
+    "wallet-guard",
+    "basket-optimizer",
+    "review-authenticator",
+    "circle-trend-radar",
+    "mcp-server"
+  ],
+  "author": "GenPark <135203240+alphaparkinc@users.noreply.github.com>",
+  "license": "MIT"
+}

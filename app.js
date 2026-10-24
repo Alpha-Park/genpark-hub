@@ -520,6 +520,38 @@ const SKILLS_DATABASE = [
         logo: '🎛️'
     },
     {
+        id: 'zenproof-ai-skill',
+        name: 'zenproof-ai-skill',
+        description: 'Autonomous Proof-of-Human Delegation, Zero-Knowledge Biometric Unicity Proofs, Anti-Sybil Semaphore Nullifiers & CAPTCHA-Bypass Protocol distilled from World ID for Agents (AgentKit, World ID 4.0 & AgentBook). Empowers personal agents to prove unique human authorization, bypass edge WAF CAPTCHAs, and guarantee 1-person-1-drop allocation privacy.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '👁️‍🗨️'
+    },
+    {
+        id: 'zensure-ai-skill',
+        name: 'zensure-ai-skill',
+        description: 'Autonomous Insurance Policy Re-Shopping, Declarations Page (Dec-Page) OCR Ingestion, Algorithmic Price Optimization Surcharge Neutralizer, Mid-Term Switching & Pro-Rata Refund Engine distilled from CoverageCat and Jerry. Ingests P&C policy declaration pages, normalizes coverage limits (100k/300k/100k, deductibles), queries multi-carrier rating APIs for identical loss-leader tiers, automatically executes mid-term carrier switching, and reclaims unearned pro-rata premium refunds.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🛡️'
+    },
+    {
+        id: 'zenplea-ai-skill',
+        name: 'zenplea-ai-skill',
+        description: 'Autonomous Consumer Debt Lawsuit Defense, Summons & Complaint OCR, Statute of Limitations (SOL) Affirmative Defense, Debt Buyer Chain-of-Title Sentry & Formal Court Answer Filing Engine distilled from SoloSuit, DoNotPay & Dispute. Ingests debt collection court summons, verifies time-barred statutory debt expiration, challenges third-party standing (Midland/Portfolio/Encore), compiles formal court-compliant verified answers with affirmative defenses, and weaponizes FDCPA violations into debt dismissals.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '⚖️'
+    },
+    {
+        id: 'zenpet-ai-skill',
+        name: 'zenpet-ai-skill',
+        description: 'Autonomous Companion Animal Health Profile, Veterinary Prescription Direct-Sourcing & Insurance Claim Dispute Sentinel distilled from Chewy Pharmacy, Dutch, Wisdom Panel & Lemonade Pet. Parses veterinary SOAP notes, audits active pharmacological bioequivalence, eliminates clinic drug markups (40%-65% savings), screens breed genetic mutations (MDR1/HCM/IVDD), automates pet insurance claim compilation, and provides emergency triage decisioning.',
+        category: 'commerce',
+        developer: '@Alpha-Park',
+        logo: '🐾'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -824,6 +856,18 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenmux-ai-skill') {
         if (capInput) capInput.value = "Unified MCP Capability Gateway: Expose hundreds of on-demand external tools (stealth proxies, OCR, vertical domain APIs) through a single standard local MCP endpoint\nPay-per-Call Universal Wallet: Execute sub-cent micro-debit settlements per successful call from local prepaid wallet, eliminating unused monthly SaaS subscriptions\nPareto Latency/Cost Benchmark Router: Dynamically benchmark live provider QoS (p95 latency, price, success rate) and route requests to optimal providers\nAdaptive Sub-50ms Circuit Breaker: Automatically trip on 3 consecutive 4xx/5xx errors or latency spikes, cascading to warm standby secondary providers\nSchema Contract & Injection Sandbox: Enforce strict JSON Schema validation and strip malicious prompt injection payloads from external tool outputs";
         if (guideInput) guideInput.value = "Enforce strict $0.10 USD maximum per-call expenditure ceiling before executing any external tool invocation\nFreeze automated tool multiplexing if cumulative daily session spend exceeds $5.00 USD without explicit user top-up\nRequire explicit biometric or OTP confirmation before unlocking high-risk capabilities (code execution or credential injection)\nAlert user via WhatsApp/Telegram if upstream provider failovers exceed 3 consecutive cascades";
+    } else if (skillId === 'zenproof-ai-skill') {
+        if (capInput) capInput.value = "ZK Proof-of-Human Delegator: Generate Groth16 zero-knowledge proofs asserting agent execution is authorized by an Orb-verified unique living human\nScoped Action Nullifier Sentry: Compute deterministic, unlinkable Poseidon nullifier hashes to mathematically enforce 1-person-1-drop allocation rules\nWAF Fast-Pass Header Handshake: Dispatch Sec-Proof-Of-Human and X-WorldID headers to Cloudflare and Akamai edge workers to bypass CAPTCHAs in <10ms\nAgentBook On-Chain Rotator: Maintain ephemeral agent signing keypairs registered on World Chain with automated 24-hour TTL expiration\nAnti-Sybil Flash Sale Arbiter: Claim high-demand allocations during limited GPU and ticket drops without exposing biometric data or identity";
+        if (guideInput) guideInput.value = "Never export master World ID identity secrets or biometric hashes; retain credentials in user OS Secure Enclave\nPrompt user for biometric confirmation via World App or WhatsApp before unlocking nullifiers for transactions > $500 USD\nAutomatically revoke and wipe ephemeral session signing keys after 24 hours to prevent unauthorized replay\nRefuse to proceed if merchant verification level demands Orb verification and the human identity tier only supports Device";
+    } else if (skillId === 'zensure-ai-skill') {
+        if (capInput) capInput.value = "Dec-Page OCR Ingestion: Extract bodily injury, property damage, deductibles, and custom endorsements into normalized coverage envelopes\nMulti-Carrier Rating Arbitrage: Query 50+ carrier APIs with normalized driver risk profiles to discover identical-coverage loss-leader tiers\nLoyalty Surcharge Sentry: Audit renewal rate drift (Delta R > 5%) at T-45 days to eliminate algorithmic price optimization penalties\nMid-Term Switching Autopilot: Legally cancel inflated policies mid-term with zero coverage gaps and bind replacement policies instantly\nPro-Rata Refund Recovery: Calculate unearned premium to the exact day and enforce statutory 100% pro-rata refund disbursement";
+        if (guideInput) guideInput.value = "Strictly forbid downgrading liability limits or raising deductibles solely to display artificially lower premium quotes\nEnsure the new replacement policy binder is fully active and verified before issuing cancellation notice to the prior carrier\nAutomatically coordinate mortgagee clause updates and escrow disbursement notifications for homeowners policies\nStore driver license and CLUE claims history strictly in local hardware-backed enclave";
+    } else if (skillId === 'zenplea-ai-skill') {
+        if (capInput) capInput.value = "Summons & Complaint OCR: Ingest process service documents, extracting court jurisdiction, case docket numbers, and 20-30 day filing deadlines\nStatute of Limitations (SOL) Arbiter: Cross-reference date of default against state-specific time-barred debt limits (3-6 years) for dismissal with prejudice\nLack of Standing Sentry: Challenge third-party debt buyer assignments, demanding original signed loan contracts and complete unredacted ledgers\nCertified Court Answer Generator: Formulate verified Answers with structured paragraph pleadings (Admit, Deny, Lack of Knowledge) and 12+ affirmative defenses\nFDCPA Counter-Arbitrage: Weaponize debt collection violations ($1,000 statutory damages per count) into complete lawsuit dismissals or zero-liability walkaways";
+        if (guideInput) guideInput.value = "Prioritize jurisdictional answer deadlines above all else to strictly prevent automatic default judgments\nNever admit alleged balances prematurely; utilize 'Deny for Lack of Knowledge' to place the burden of proof onto the plaintiff\nFormulate and attach a formal Certificate of Service verifying that an identical copy was served to plaintiff counsel via USPS Certified Mail\nRetain all case dockets, credit reports, and defense filings strictly in local Secure Enclave memory";
+    } else if (skillId === 'zenpet-ai-skill') {
+        if (capInput) capInput.value = "Veterinary SOAP & Rx OCR: Ingest clinical exam notes, invoices, and prescriptions to parse active compounds, dosages, and diagnostic codes\nPharmacological Equivalence Arbiter: Cross-reference FDA-approved generic salts to eliminate clinic pharmacy markups (40%-65% savings) via certified PetRx hubs\nBreed Genetic Contraindication Shield: Ingest Wisdom Panel/Embark DNA profiles to flag lethal MDR1 mutations against ivermectin/loperamide and screen breed risks\nPet Insurance Claim Compiler: Reconcile medical history against policy terms, pre-existing condition exclusions, and deductible limits to auto-file itemized claims\nEmergency Clinical Triage Decision Tree: Evaluate critical symptoms (GDV bloat, urethral obstruction, respiratory distress) to route immediately to 24/7 emergency centers";
+        if (guideInput) guideInput.value = "Strictly forbid autonomous pharmaceutical substitutions without verified identical active salt, concentration, and route of administration\nMandate immediate emergency hospital dispatch if triage algorithms detect life-threatening red-flag indicators\nVerify AVMA-compliant veterinary prescription transfer requirements before routing orders to external certified pharmacies\nStore pet medical history, vaccination records, and microchip IDs securely in local hardware-backed vault";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
