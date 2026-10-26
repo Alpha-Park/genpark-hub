@@ -552,6 +552,22 @@ const SKILLS_DATABASE = [
         logo: '🐾'
     },
     {
+        id: 'zenclaim-ai-skill',
+        name: 'zenclaim-ai-skill',
+        description: 'Autonomous Airline Flight Delay, Cancellation Compensation & Passenger Rights Arbitrage Agent distilled from AirHelp, Flightright & ClaimCompass. Parses PNR & boarding passes, cross-references ADS-B telemetry and METAR weather records to dismantle fraudulent airline weather excuses, calculates EU261 €600, US DOT mandatory cash refunds, and Montreal Convention baggage compensations, enforces voucher rejection, and dispatches formal statutory demand letters directly to airline compliance portals.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '✈️'
+    },
+    {
+        id: 'zenlease-ai-skill',
+        name: 'zenlease-ai-skill',
+        description: 'Autonomous Housing Tenant Rights, Security Deposit Recovery & Habitability Repair Enforcement Agent distilled from Tenantcube, JustFix, RentersRights.ai & Roost. Enforces statutory deposit return deadlines (14-30 days), audits deductions against normal wear-and-tear using HUD useful life depreciation tables, triggers bad-faith treble damages (2x-3x), generates certified pre-litigation demand notices, and enforces habitability notices to cure.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🏠'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -868,6 +884,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenpet-ai-skill') {
         if (capInput) capInput.value = "Veterinary SOAP & Rx OCR: Ingest clinical exam notes, invoices, and prescriptions to parse active compounds, dosages, and diagnostic codes\nPharmacological Equivalence Arbiter: Cross-reference FDA-approved generic salts to eliminate clinic pharmacy markups (40%-65% savings) via certified PetRx hubs\nBreed Genetic Contraindication Shield: Ingest Wisdom Panel/Embark DNA profiles to flag lethal MDR1 mutations against ivermectin/loperamide and screen breed risks\nPet Insurance Claim Compiler: Reconcile medical history against policy terms, pre-existing condition exclusions, and deductible limits to auto-file itemized claims\nEmergency Clinical Triage Decision Tree: Evaluate critical symptoms (GDV bloat, urethral obstruction, respiratory distress) to route immediately to 24/7 emergency centers";
         if (guideInput) guideInput.value = "Strictly forbid autonomous pharmaceutical substitutions without verified identical active salt, concentration, and route of administration\nMandate immediate emergency hospital dispatch if triage algorithms detect life-threatening red-flag indicators\nVerify AVMA-compliant veterinary prescription transfer requirements before routing orders to external certified pharmacies\nStore pet medical history, vaccination records, and microchip IDs securely in local hardware-backed vault";
+    } else if (skillId === 'zenclaim-ai-skill') {
+        if (capInput) capInput.value = "Multi-modal PNR & E-Ticket Parser: Ingest booking confirmation codes, flight segments, fare rules, and baggage claim tags\nADS-B Telemetry & Weather Rebuttal Engine: Correlate aircraft tail number flight paths and METAR historical observations to refute airline 'extraordinary weather' excuses\nStatutory Multi-Jurisdiction Compensation Solver: Compute mandatory cash payouts under EU261/UK261 (€250-€600), US DOT Title 14 CFR Part 260 full cash refunds, and Montreal Convention 1,288 SDR baggage limits\nVoucher Downgrade Shield: Reject depreciating airline travel credits; strictly enforce unencumbered cash or original payment method refunds\nCertified Statutory Demand Generator: Draft and dispatch formal legal notices of claim with strict 14-day settlement windows directly to carrier regulatory portals";
+        if (guideInput) guideInput.value = "Mandate verification of ADS-B historical flight logs and airport METAR observations before accepting airline claims of extraordinary weather circumstances\nStrictly prohibit passenger acceptance of lowball travel voucher credits without explicit informed consent and disclosure of statutory cash rights\nVerify all flight distance calculations using Great Circle formula to guarantee maximum statutory tier payout under EU261\nEnsure all passenger PNR, passport numbers, and payout bank IBAN/ACH credentials are encrypted in local secure storage";
+    } else if (skillId === 'zenlease-ai-skill') {
+        if (capInput) capInput.value = "Multimodal Move-In/Move-Out Inspection Audit: Analyze timestamped photos and walkthrough videos with EXIF metadata to classify normal wear-and-tear vs damage\nStatutory Accounting Timeline Enforcement: Track state postmark deadlines (NY 14d, CA 21d, TX 30d) to trigger total forfeiture of deductions if missed\nHUD Useful Life Depreciation Engine: Audit replacement charges for carpet, paint, and appliances against statutory amortization tables to eliminate full replacement fraud\nBad-Faith Treble Damages Escalator: Assert statutory 2x to 3x punitive damage multipliers under state landlord-tenant codes to compel rapid pre-trial settlement\nWarranty of Habitability Notice Generator: Issue formal statutory 14-day notices to cure for heating, plumbing, or mold violations, unlocking repair-and-deduct remedies";
+        if (guideInput) guideInput.value = "Strictly distinguish between normal wear-and-tear and tenant-caused property damage using state civil code definitions and judicial precedents\nAutomatically assert immediate forfeiture of landlord deduction rights whenever the statutory accounting deadline has elapsed without itemized receipts\nVerify useful life depreciation calculations for all billed capital assets using HUD standard amortization schedules\nEncrypt lease contracts, landlord contact information, and bank settlement routing numbers in local hardware-backed vault";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
