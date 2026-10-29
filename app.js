@@ -568,6 +568,22 @@ const SKILLS_DATABASE = [
         logo: '🏠'
     },
     {
+        id: 'zenlink-ai-skill',
+        name: 'zenlink-ai-skill',
+        description: 'Autonomous Telecom & Broadband Fee Stripping, Retentions Negotiation & Service SLA Enforcement Agent distilled from Rocket Money, Billshark & Cushion. Audits monthly ISP statements, detects expired promotional discounts and hidden fee creep, strips unauthorized modem rental charges under TVPA § 642, logs 24/7 network throughput telemetry to claim SLA breach billing credits, and executes chat/IVR retentions desk negotiation.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '📡'
+    },
+    {
+        id: 'zenloan-ai-skill',
+        name: 'zenloan-ai-skill',
+        description: 'Autonomous Federal & Private Student Loan Repayment Optimization, Public Service Loan Forgiveness (PSLF) Certification & Servicer Dispute Agent distilled from Summer, Savi & Chipper. Ingests NSLDS data files, simulates Income-Driven Repayment (IDR/SAVE/PAYE) plans with MFS vs MFJ tax filing arbitrage, audits 120-month PSLF payment ledgers to catch servicer clerical errors, generates digital employer certification forms (ECF), and files formal CFPB regulatory dispute dossiers.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🎓'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -890,6 +906,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenlease-ai-skill') {
         if (capInput) capInput.value = "Multimodal Move-In/Move-Out Inspection Audit: Analyze timestamped photos and walkthrough videos with EXIF metadata to classify normal wear-and-tear vs damage\nStatutory Accounting Timeline Enforcement: Track state postmark deadlines (NY 14d, CA 21d, TX 30d) to trigger total forfeiture of deductions if missed\nHUD Useful Life Depreciation Engine: Audit replacement charges for carpet, paint, and appliances against statutory amortization tables to eliminate full replacement fraud\nBad-Faith Treble Damages Escalator: Assert statutory 2x to 3x punitive damage multipliers under state landlord-tenant codes to compel rapid pre-trial settlement\nWarranty of Habitability Notice Generator: Issue formal statutory 14-day notices to cure for heating, plumbing, or mold violations, unlocking repair-and-deduct remedies";
         if (guideInput) guideInput.value = "Strictly distinguish between normal wear-and-tear and tenant-caused property damage using state civil code definitions and judicial precedents\nAutomatically assert immediate forfeiture of landlord deduction rights whenever the statutory accounting deadline has elapsed without itemized receipts\nVerify useful life depreciation calculations for all billed capital assets using HUD standard amortization schedules\nEncrypt lease contracts, landlord contact information, and bank settlement routing numbers in local hardware-backed vault";
+    } else if (skillId === 'zenlink-ai-skill') {
+        if (capInput) capInput.value = "Multimodal Statement Decompiler: Parse telecom and ISP PDF bills to break down line-item rates, promo expiration dates, and hidden surcharges\nCustomer-Owned Equipment Audit: Verify third-party DOCSIS 3.1 modem MAC addresses to strike off illegal $15/mo rental fees under TVPA § 642\n24/7 Network SLA Telemetry Daemon: Continuously log peak-hour throughput, latency, and packet loss to substantiate carrier SLA breach claims\nHyper-Local Competitor Pricing Radar: Query local broadband APIs using ZIP codes to establish unbeatable BATNA alternatives\nAutonomous Retentions Negotiation Engine: Deploy structured bargaining scripts directly to carrier retentions chat channels to lock new-customer rates";
+        if (guideInput) guideInput.value = "Strictly forbid accepting carrier bundle upsells without explicit user cost-benefit confirmation\nVerify customer-owned hardware MAC registration against billing statements before asserting federal TVPA equipment fee violations\nEnsure continuous background network benchmarks run during non-disruptive idle windows\nStore ISP account numbers, billing addresses, and portal session tokens strictly in local encrypted keychain";
+    } else if (skillId === 'zenloan-ai-skill') {
+        if (capInput) capInput.value = "Multi-Tranche NSLDS Data Ingestion: Ingest and standardize federal loan records, interest accrual statuses, and servicer portfolios\nIncome-Driven Repayment Simulator: Compute discretionary income equations across SAVE, PAYE, and IBR programs against Federal Poverty Guidelines\nTax Filing Status Arbitrage: Model household tax liability vs loan repayment savings under Married Filing Separately (MFS) to drive monthly payments to $0\nPSLF 120-Payment Ledger Audit: Reconcile 10-year transaction histories against servicer ledgers to identify and restore uncredited qualifying payments\nCFPB & FSA Ombudsman Dispute Sentry: Compile legally binding administrative complaint dossiers under 12 U.S.C. § 5531 against bad-faith servicer practices";
+        if (guideInput) guideInput.value = "Verify non-profit 501(c)(3) or governmental employer eligibility via IRS EIN database before certifying PSLF qualifying employment\nEnsure comprehensive simulation of tax consequences before recommending Married Filing Separately (MFS) filing switches\nStrictly prohibit autonomous loan consolidation without evaluating loss of pre-existing qualifying payment counts under statutory rules\nProtect borrower Social Security Numbers, FSA IDs, and tax return records with zero-knowledge local enclave storage";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
