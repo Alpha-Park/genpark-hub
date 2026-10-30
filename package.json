@@ -1,7 +1,7 @@
 {
-  "name": "genpark-next-features",
+  "name": "@alpha-park/genpark-hub",
   "version": "1.0.0",
-  "description": "Next-Generation Core Features for GenPark: Autonomous Wallet Guard, Cross-Store Basket Optimizer, Counterfactual Review Authenticator, and Circle Community Trend Radar.",
+  "description": "Production-grade Autonomous Decision, Procurement & Personal Agent Skills Platform (62 Modular Packs), MCP Tools, and Native Runtime.",
   "main": "src/index.js",
   "bin": {
     "genpark": "bin/genpark-cli.js"
@@ -9,20 +9,32 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.js",
+    "test:parity": "node scripts/verify-parity.js",
+    "check": "node --test tests/*.test.js && node -c app.js && node scripts/verify-parity.js",
     "start": "node bin/genpark-cli.js",
     "mcp": "node mcp/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alpha-Park/genpark-hub.git"
   },
   "keywords": [
     "genpark",
     "openclaw",
     "agent-skills",
+    "decision-agents",
     "ecommerce-agent",
     "wallet-guard",
     "basket-optimizer",
     "review-authenticator",
     "circle-trend-radar",
-    "mcp-server"
+    "mcp-server",
+    "model-context-protocol"
   ],
-  "author": "GenPark <135203240+alphaparkinc@users.noreply.github.com>",
-  "license": "MIT"
+  "author": "Alpha-Park Inc. <135203240+alphaparkinc@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alpha-Park/genpark-hub/issues"
+  },
+  "homepage": "https://github.com/Alpha-Park/genpark-hub#readme"
 }

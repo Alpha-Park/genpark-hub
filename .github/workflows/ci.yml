@@ -1,0 +1,34 @@
+name: GenPark Hub CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    name: Test & Parity Verification
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [20.x, 22.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Run Core Module Unit Tests
+        run: npm test
+
+      - name: Validate app.js Syntax
+        run: node -c app.js
+
+      - name: Verify 3-Way Skills Parity (Disk, app.js, README.md)
+        run: npm run test:parity

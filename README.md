@@ -3,6 +3,7 @@
 > **The Private Personal AI Assistant Ecosystem That Actually Does Things.**  
 > Native multi-messenger integration (WhatsApp, Telegram, Slack, iMessage), resident browser computer-use, and modular skills platform.
 
+[![CI](https://github.com/Alpha-Park/genpark-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/Alpha-Park/genpark-hub/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw Gateway](https://img.shields.io/badge/Gateway-v2.6.4%20Active-emerald.svg)](https://github.com/Alpha-Park/genpark-hub)
 [![Skills Registry](https://img.shields.io/badge/Skills%20Registry-62%20Modular%20Packs-violet.svg)](#skills-registry-catalog)
