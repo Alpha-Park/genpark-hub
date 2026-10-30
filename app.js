@@ -584,6 +584,22 @@ const SKILLS_DATABASE = [
         logo: '🎓'
     },
     {
+        id: 'zenflex-ai-skill',
+        name: 'zenflex-ai-skill',
+        description: 'Autonomous FSA/HSA Use-It-Or-Lose-It Forfeiture Salvage, Retroactive Claiming & IRS § 213(d) Health Spend Arbitrage Agent distilled from FSA Store, Bountiful & Silvernest. Monitors balance forfeiture cliffs, mines past-year order receipts (Amazon, Target) for retroactive cash reimbursements, generates Letters of Medical Necessity (LMN), and optimizes knapsack procurement of 100% eligible medical hardware.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '💳'
+    },
+    {
+        id: 'zenticket-ai-skill',
+        name: 'zenticket-ai-skill',
+        description: 'Autonomous Municipal Traffic & Parking Citation Defense, Speed/Red-Light Camera Calibration Challenge & Written Trial by Declaration Dismissal Agent distilled from DoNotPay, Off The Record & WinIt. Scans citations, audits MUTCD street signage compliance, challenges uncalibrated speed camera radar logs and shortened yellow lights, and compiles formal Trial by Written Declaration (TR-205) court dismissal packages.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🚗'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -912,6 +928,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenloan-ai-skill') {
         if (capInput) capInput.value = "Multi-Tranche NSLDS Data Ingestion: Ingest and standardize federal loan records, interest accrual statuses, and servicer portfolios\nIncome-Driven Repayment Simulator: Compute discretionary income equations across SAVE, PAYE, and IBR programs against Federal Poverty Guidelines\nTax Filing Status Arbitrage: Model household tax liability vs loan repayment savings under Married Filing Separately (MFS) to drive monthly payments to $0\nPSLF 120-Payment Ledger Audit: Reconcile 10-year transaction histories against servicer ledgers to identify and restore uncredited qualifying payments\nCFPB & FSA Ombudsman Dispute Sentry: Compile legally binding administrative complaint dossiers under 12 U.S.C. § 5531 against bad-faith servicer practices";
         if (guideInput) guideInput.value = "Verify non-profit 501(c)(3) or governmental employer eligibility via IRS EIN database before certifying PSLF qualifying employment\nEnsure comprehensive simulation of tax consequences before recommending Married Filing Separately (MFS) filing switches\nStrictly prohibit autonomous loan consolidation without evaluating loss of pre-existing qualifying payment counts under statutory rules\nProtect borrower Social Security Numbers, FSA IDs, and tax return records with zero-knowledge local enclave storage";
+    } else if (skillId === 'zenflex-ai-skill') {
+        if (capInput) capInput.value = "Forfeiture Cliff Sentinel: Monitor December 31 / March 15 deadlines and statutory $640 carryover ceilings to prevent employer fund confiscation\nPast-Year Receipt Mining: Scan Amazon, Target, and pharmacy purchases against IRS § 213(d) UPC databases for instant retroactive cash reimbursement\nLetter of Medical Necessity Generator: Pre-populate ICD-10 clinical diagnoses and compile compliant LMN justification packets for telehealth clinician sign-off\nKnapsack Surplus Optimizer: Solve multi-merchant knapsack allocations for expiring balances across high-utility medical and first-aid essentials";
+        if (guideInput) guideInput.value = "Verify 100% product eligibility against IRS Publication 502 and CARES Act § 3702 before staging automated checkout orders\nPrioritize retroactive reimbursement claims for past purchases before deploying new capital on surplus product baskets\nEnsure all generated LMN documentation cites valid ICD-10 medical indications supported by health records\nStore FSA administrator login tokens and employee payroll deductions securely in local hardware-backed vault";
+    } else if (skillId === 'zenticket-ai-skill') {
+        if (capInput) capInput.value = "Multimodal Citation Ingestion: Parse ticket violation codes, officer badge IDs, and mandatory contest deadlines (21-30 days)\nMUTCD Street Signage Audit: Analyze photo evidence with GPS EXIF metadata to identify obscured signage, non-compliant mounting height, and faded curb paint\nRadar Calibration & Yellow Light Audit: Challenge speed camera tuning fork calibration logs and verify minimum yellow light clearance intervals\nTrial by Written Declaration Generator: Compile California TR-205 and state-equivalent formal court briefs with legal precedents and evidence exhibits";
+        if (guideInput) guideInput.value = "Strictly verify mandatory citation contest deadlines to prevent statutory late fee escalations or default judgments\nCross-reference street photography EXIF timestamps and GPS tags against municipal traffic engineering GIS registries\nEnsure speed measurement challenges cite state vehicle codes and NHTSA radar calibration standards\nProtect driver license numbers, vehicle registration records, and citation payment tokens in local secure enclave";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
