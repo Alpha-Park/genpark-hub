@@ -600,6 +600,22 @@ const SKILLS_DATABASE = [
         logo: '🚗'
     },
     {
+        id: 'zenvat-ai-skill',
+        name: 'zenvat-ai-skill',
+        description: 'Autonomous Cross-Border Travel VAT Refund Arbitrage, Digital Customs Barcode Validation & Zero-Fee Repatriation Agent distilled from Utu, Wevat & Planet. Ingests travel receipts, eliminates 35%-50% airport refund middleman fees, generates electronic customs barcodes (PABLO/DIVA/OTIRE/Japan QR) for 1-second kiosk terminal scans, bundles multi-store receipts to beat thresholds, and repatriates 100% of statutory VAT.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🛍️'
+    },
+    {
+        id: 'zenlemon-ai-skill',
+        name: 'zenlemon-ai-skill',
+        description: 'Autonomous Automotive Lemon Law Buyback Enforcement, Dealership Repair Order (RO) OCR Audit & Manufacturer Repurchase Arbitration Agent distilled from Lemonade, Krohn & Moss, MyLemon & CarEdge. Deconstructs dealership repair invoices into unified defect lineages, tracks cumulative Days Out of Service (30-day threshold), computes 50-state statutory buyback formulas with frozen first-repair mileage offsets, and files pre-litigation repurchase demands.',
+        category: 'finance',
+        developer: '@Alpha-Park',
+        logo: '🍋'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -934,6 +950,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenticket-ai-skill') {
         if (capInput) capInput.value = "Multimodal Citation Ingestion: Parse ticket violation codes, officer badge IDs, and mandatory contest deadlines (21-30 days)\nMUTCD Street Signage Audit: Analyze photo evidence with GPS EXIF metadata to identify obscured signage, non-compliant mounting height, and faded curb paint\nRadar Calibration & Yellow Light Audit: Challenge speed camera tuning fork calibration logs and verify minimum yellow light clearance intervals\nTrial by Written Declaration Generator: Compile California TR-205 and state-equivalent formal court briefs with legal precedents and evidence exhibits";
         if (guideInput) guideInput.value = "Strictly verify mandatory citation contest deadlines to prevent statutory late fee escalations or default judgments\nCross-reference street photography EXIF timestamps and GPS tags against municipal traffic engineering GIS registries\nEnsure speed measurement challenges cite state vehicle codes and NHTSA radar calibration standards\nProtect driver license numbers, vehicle registration records, and citation payment tokens in local secure enclave";
+    } else if (skillId === 'zenvat-ai-skill') {
+        if (capInput) capInput.value = "Multi-Store Basket Aggregator: Group disparate boutique receipts across an entire trip to surpass national single-store VAT refund thresholds\nDigital Customs Barcode Generator: Issue certified PABLO, DIVA, and OTIRE 2D barcodes for 1-second airport kiosk departure scanning\nMiddleman Fee Stripping: Eliminate 35%-50% predatory airport operator commissions (Global Blue/Planet) and predatory DCC FX markups\nLoyalty Miles Boost Arbitrage: Provide automated conversion of statutory VAT refunds into airline frequent flyer miles at 125%-140% bonus value";
+        if (guideInput) guideInput.value = "Verify non-resident visa and passport departure eligibility under EU Council Directive 2006/112/EC before compiling tax-free dossiers\nMandate successful kiosk scan confirmation (green PABLO/DIVA attestation) before releasing settlement payouts\nEnforce direct currency repatriation to prevent secondary dynamic currency conversion (DCC) fee skimming\nEncrypt traveler passport numbers, flight PNRs, and bank account credentials in local hardware-backed vault";
+    } else if (skillId === 'zenlemon-ai-skill') {
+        if (capInput) capInput.value = "Dealership Repair Order OCR & Normalization: Parse service invoices to link fragmented dealer complaint descriptions into unified chronic defect lineages\nCumulative Days Out of Service Tracker: Tally total calendar repair days (including parts delays) against state 30-day statutory thresholds\nStatutory Buyback Formula Calculator: Compute full refund of down payments, monthly installments, taxes, and fees minus statutory mileage offset frozen at first repair\nCertified Pre-Litigation Buyback Demand Engine: Auto-compile court-ready lemon law demand dossiers directly to automaker general counsel portals";
+        if (guideInput) guideInput.value = "Strictly verify statutory lemon law presumption thresholds (3-4 repair attempts or 30 days out of service) under relevant state codes\nEnsure vehicle mileage offset is strictly calculated based on mileage at the very first repair attempt\nCross-reference OBD-II diagnostic trouble codes (DTCs) and freeze-frame data to dismantle dealership 'could not duplicate' claims\nProtect vehicle VIN, purchase finance contracts, and owner personal identifying information in local secure enclave";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
