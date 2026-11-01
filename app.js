@@ -648,6 +648,22 @@ const SKILLS_DATABASE = [
         logo: '🛡️'
     },
     {
+        id: 'zendme-ai-skill',
+        name: 'zendme-ai-skill',
+        description: 'Autonomous Durable Medical Equipment (DME) CPAP/CGM Insurance Denial Defense, Modem Telemetry Compliance Auditor, HCPCS Resupply Fee Sentry & Prior Authorization Arbiter distilled from Aeroflow, AdaptHealth, Apria, OSCAR, and SleepHQ. Audits raw SD card sleep/glucose telemetry for Medicare 70% 4-hour compliance, eliminates 500% markups on replacement supplies (A7030-A7038) against the CMS DMEPOS Fee Schedule, terminates phantom auto-ship subscriptions, and compiles ACA § 2719 prior authorization appeal dossiers.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🩺'
+    },
+    {
+        id: 'zenfuneral-ai-skill',
+        name: 'zenfuneral-ai-skill',
+        description: 'Autonomous Funeral Home Price Transparency, FTC Funeral Rule 16 CFR Part 453 Unbundling, Direct-to-Consumer Casket Price Arbitrage & Embalming Anti-Gouging Arbiter distilled from Lantern, Parting, Empathy, Titan Casket, and Funeral Consumers Alliance. Unbundles bloated funeral package quotes against General Price Lists (GPL), enforces federal prohibitions against third-party casket handling fees (saving $3,000-$6,000 via Costco/Titan Casket), debunks false claims of mandatory chemical embalming, and audits pre-need funeral trusts.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🕊️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -1000,6 +1016,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenwarranty-ai-skill') {
         if (capInput) capInput.value = "Contract Ambiguity & Exclusion Audit: Deconstruct service contract terms and riders under the Contra Proferentem doctrine to invalidate pretextual 'pre-existing condition' and 'lack of maintenance' claim denials\nTechnician Report Physical Cross-Examiner: Ingest contractor diagnostic notes and photos to detect technical contradictions, refrigerant pressure anomalies, and third-party administrator steering\nDOE SEER2 & EPA 608 Parity Mandate: Enforce federal energy efficiency standards and refrigerant compatibility rules to require complete matched indoor/outdoor split-system replacements\nRSMeans Fair Cash-Out & Bad-Faith Dossier: Calculate true replacement costs using RSMeans regional labor/materials indices and generate ready-to-file State Department of Insurance bad-faith complaint packets";
         if (guideInput) guideInput.value = "Cross-reference closing home inspection reports to shift the burden of proof back to the home warranty provider for pre-existing claims\nVerify that technician diagnostic findings align with fundamental thermodynamic and mechanical failure physics\nEnforce statutory matching obligations under DOE 2023 SEER2 standards whenever obsolete components cannot be legally sourced\nIssue formal pre-litigation notice citing state unfair claims settlement practices acts before filing regulatory complaints";
+    } else if (skillId === 'zendme-ai-skill') {
+        if (capInput) capInput.value = "Modem Compliance Telemetry Auditor: Ingest raw SD card and cloud telemetry (ResMed/Philips/Dexcom) to prove Medicare 70% 4-hour compliance and block repossession\nCMS HCPCS Resupply Sentry: Benchmark replacement supplies (A7030, A7034, A7038) against CMS DMEPOS Fee Schedules and strip unlawful balance billing\nPhantom Auto-Ship Neutralizer: Enforce affirmative patient re-order confirmation rules to reject unsolicited shipments and halt unauthorized credit card billing\nACA § 2719 Clinical Appeal Compiler: Synthesize PSG sleep studies and AHI metrics into expedited internal and external IRO prior authorization appeal dossiers";
+        if (guideInput) guideInput.value = "Strictly verify the 30-day rolling compliance window (at least 4 hours/night on 70% of days within the initial 90 days)\nDemand itemized CMS HCPCS codes before authorizing payment for replacement resupply packages\nImmediately issue formal billing dispute notices upon detecting unsolicited automatic supply shipments\nCite Section 2719 of the Affordable Care Act and ERISA § 503 for all commercial insurance prior authorization denials";
+    } else if (skillId === 'zenfuneral-ai-skill') {
+        if (capInput) capInput.value = "General Price List (GPL) Unbundling Engine: Extract and deconstruct all-inclusive funeral package quotes into transparent, statutory a la carte line items\nFTC Funeral Rule Sentry: Enforce 16 CFR Part 453 prohibitions against third-party casket handling fees and misrepresentations of mandatory embalming\nDirect-to-Consumer Casket Arbitrage: Match showroom models against DTC manufacturers (Titan Casket/Costco) saving $3,000-$6,000 with mandatory zero-fee acceptance directives\nPre-Need Trust Portability Audit: Audit prepaid funeral arrangements for state statutory interest accrual, cancellation rights, and cross-state portability";
+        if (guideInput) guideInput.value = "Demand unbundled General Price Lists (GPL) before discussing packaged ceremonial offerings\nStrictly enforce 16 CFR § 453.4(b)(1) prohibiting any third-party casket receiving or handling surcharges\nRefute chemical embalming requirements under state sanitary codes, asserting refrigeration for short-term viewing\nRetain copies of all signed statements of funeral goods and services selected to detect post-service billing creep";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
