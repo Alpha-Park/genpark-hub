@@ -616,6 +616,22 @@ const SKILLS_DATABASE = [
         logo: '🍋'
     },
     {
+        id: 'zenhoa-ai-skill',
+        name: 'zenhoa-ai-skill',
+        description: 'Autonomous Homeowners Association (HOA) Violation Fine Dispute, CC&R Bylaws Audit & Selective Enforcement Arbitration Agent distilled from TownSq, Condo Control, and DoNotPay HOA Defense. Ingests community CC&Rs, audits procedural due process (14-day notice, hearing rights), gathers neighbor photographic comparison evidence to prove selective enforcement, and generates formal hearing defense briefs to rescind predatory fines and block property liens.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🏡'
+    },
+    {
+        id: 'zenmove-ai-skill',
+        name: 'zenmove-ai-skill',
+        description: 'Autonomous Interstate Moving Fraud Defense, Binding Estimate Lock & Hostage Load Extortion Dispute Agent distilled from Bellhop, MoveBuddha, Updater, and FMCSA ProtectYourMove. Audits moving contracts and bills of lading, enforces federal FMCSA 110% rules (49 CFR § 375.407), verifies USDOT/MC operating authority and insurance telemetry, calculates volumetric cubic-feet via room photo scans to shatter fake weight overages, and dispatches emergency extortion complaints to federal DOT/OIG and state Attorney General desks to compel immediate delivery of held household goods.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🚚'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -956,6 +972,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenlemon-ai-skill') {
         if (capInput) capInput.value = "Dealership Repair Order OCR & Normalization: Parse service invoices to link fragmented dealer complaint descriptions into unified chronic defect lineages\nCumulative Days Out of Service Tracker: Tally total calendar repair days (including parts delays) against state 30-day statutory thresholds\nStatutory Buyback Formula Calculator: Compute full refund of down payments, monthly installments, taxes, and fees minus statutory mileage offset frozen at first repair\nCertified Pre-Litigation Buyback Demand Engine: Auto-compile court-ready lemon law demand dossiers directly to automaker general counsel portals";
         if (guideInput) guideInput.value = "Strictly verify statutory lemon law presumption thresholds (3-4 repair attempts or 30 days out of service) under relevant state codes\nEnsure vehicle mileage offset is strictly calculated based on mileage at the very first repair attempt\nCross-reference OBD-II diagnostic trouble codes (DTCs) and freeze-frame data to dismantle dealership 'could not duplicate' claims\nProtect vehicle VIN, purchase finance contracts, and owner personal identifying information in local secure enclave";
+    } else if (skillId === 'zenhoa-ai-skill') {
+        if (capInput) capInput.value = "Multimodal CC&R & Bylaw Ingestion: Deconstruct hundred-page association covenants, conditions, restrictions, and architectural guidelines to audit enforcement authority\nStatutory Procedural Due Process Audit: Benchmark violation notices against state HOA codes (FL § 720.305, CA Davis-Stirling, TX § 209) to invalidate fines lacking mandatory advance notice or hearing rights\nSelective Enforcement Comparison Grid: Assemble timestamped, geotagged photographic comparison grids of neighboring properties to establish disparate treatment and waiver of covenant enforcement\nCertified Hearing Brief Compiler: Synthesize formal hearing defense packets with statutory cure defenses to vacate fines and block predatory assessment property liens";
+        if (guideInput) guideInput.value = "Strictly audit violation notice postmarks and delivery dates against statutory 14-day advance notice requirements\nDemand formal appearance before an independent homeowner committee rather than board officers where provided by state law\nCompile objective photographic comparison evidence from at least 3-5 neighboring properties showing identical conditions\nStore community governing documents, deed records, and board correspondence securely in local hardware-backed vault";
+    } else if (skillId === 'zenmove-ai-skill') {
+        if (capInput) capInput.value = "USDOT & MC Telemetry Audit: Query FMCSA SAFER/L&I databases in real time to verify operating authority, active insurance, and unmask unlicensed rogue broker networks\nComputer Vision Volumetric Estimator: Analyze room photos and walkthrough videos to calculate certified cubic-foot volume and baseline weight envelopes, dismantling fraudulent scale slips\nFMCSA 110% Rule Enforcer: Assert mandatory statutory delivery under 49 CFR § 375.407 upon tender of 100% of binding estimate or 110% of non-binding estimate\nHostage Load Federal Escalation: Compile emergency multi-agency extortion dossiers (49 U.S.C. § 14915) to FMCSA, DOT OIG, State AG, and local police civil standby units to compel immediate cargo release";
+        if (guideInput) guideInput.value = "Strictly assert the federal 110% delivery rule before paying any disputed overweight or accessorial cash surcharges on delivery day\nNever pay hostage fee demands via untraceable cash, peer-to-peer apps, or wire transfer without certified delivery\nImmediately trigger FMCSA and state Attorney General emergency complaint channels upon carrier refusal to unload goods\nPreserve all pre-move written estimates, bills of lading, inventory manifests, and dispatch recordings in local secure storage";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
