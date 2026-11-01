@@ -632,6 +632,22 @@ const SKILLS_DATABASE = [
         logo: '🚚'
     },
     {
+        id: 'zensolar-ai-skill',
+        name: 'zensolar-ai-skill',
+        description: 'Autonomous Rooftop Solar PPA Contract Audit, True-Up Electric Shock Dispute, NREL PVWatts Generation Shortfall Sentry & Predatory Escalator Arbitration Engine distilled from EnergySage, Palmetto, Aurora Solar, SolarReviews Consumer Protection, and CPUC AB 1070. Audits 25-year solar PPA/lease contracts for deceptive 2.9%-3.9% compounding escalators, compares real-world inverter telemetry against NREL PVWatts solar irradiance baselines to enforce production guarantees, neutralizes surprise NEM 3.0 annual True-Up deficits, and compiles statutory rescission dossiers with CSLB complaints and UCC-3 lien removal demands.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '☀️'
+    },
+    {
+        id: 'zenwarranty-ai-skill',
+        name: 'zenwarranty-ai-skill',
+        description: 'Autonomous Home Warranty Claim Denial Dispute, Bad-Faith Insurance Audit, HVAC/Appliance SEER2 Code Parity & Fair Cash-Out Arbiter distilled from American Home Shield, Choice Home Warranty, Asurion, ClaimClinics, and NAIC Unfair Claims Settlement standards. Deconstructs boilerplate service contract exclusions under the Contra Proferentem doctrine, cross-examines contractor diagnostic reports for physical contradictions, mandates full equipment replacement under DOE 2023 SEER2 and EPA 608 matching regulations, and drafts Department of Insurance bad-faith complaints to force RSMeans-indexed cash payouts ($5,000-$15,000).',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🛡️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -978,6 +994,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenmove-ai-skill') {
         if (capInput) capInput.value = "USDOT & MC Telemetry Audit: Query FMCSA SAFER/L&I databases in real time to verify operating authority, active insurance, and unmask unlicensed rogue broker networks\nComputer Vision Volumetric Estimator: Analyze room photos and walkthrough videos to calculate certified cubic-foot volume and baseline weight envelopes, dismantling fraudulent scale slips\nFMCSA 110% Rule Enforcer: Assert mandatory statutory delivery under 49 CFR § 375.407 upon tender of 100% of binding estimate or 110% of non-binding estimate\nHostage Load Federal Escalation: Compile emergency multi-agency extortion dossiers (49 U.S.C. § 14915) to FMCSA, DOT OIG, State AG, and local police civil standby units to compel immediate cargo release";
         if (guideInput) guideInput.value = "Strictly assert the federal 110% delivery rule before paying any disputed overweight or accessorial cash surcharges on delivery day\nNever pay hostage fee demands via untraceable cash, peer-to-peer apps, or wire transfer without certified delivery\nImmediately trigger FMCSA and state Attorney General emergency complaint channels upon carrier refusal to unload goods\nPreserve all pre-move written estimates, bills of lading, inventory manifests, and dispatch recordings in local secure storage";
+    } else if (skillId === 'zensolar-ai-skill') {
+        if (capInput) capInput.value = "Multimodal PPA Contract & UCC-1 Audit: Deconstruct 40-page solar lease agreements, financing disclosures, and county UCC-1 fixture filings to uncover predatory 2.9%-3.9% annual compounding escalators and title clouds\nNREL PVWatts & Inverter Telemetry Sentry: Ingest solar inverter generation logs (Enphase/SolarEdge) and compare against NREL PVWatts v8 weather baselines to prove actionable production shortfalls\nNEM 3.0 True-Up Shock Neutralizer: Audit utility Green Button interval data to identify meter multiplier errors and simulate battery storage peak-shifting to eliminate annual deficits\nStatutory Rescission & Lien Release Engine: Auto-compile pre-arbitration rescission dossiers, CSLB licensing complaints, and formal UCC-3 financing statement termination demands";
+        if (guideInput) guideInput.value = "Strictly audit solar contract signing disclosures against state solar consumer protection standards (e.g. California AB 1070)\nVerify three-day cooling-off period disclosures under FTC Door-to-Door Sales rules (16 CFR Part 429)\nCalculate weather-normalized generation shortfalls across at least 12 continuous billing cycles before asserting material breach\nDemand mandatory UCC-3 termination statement filings within 20 statutory days of contract cancellation";
+    } else if (skillId === 'zenwarranty-ai-skill') {
+        if (capInput) capInput.value = "Contract Ambiguity & Exclusion Audit: Deconstruct service contract terms and riders under the Contra Proferentem doctrine to invalidate pretextual 'pre-existing condition' and 'lack of maintenance' claim denials\nTechnician Report Physical Cross-Examiner: Ingest contractor diagnostic notes and photos to detect technical contradictions, refrigerant pressure anomalies, and third-party administrator steering\nDOE SEER2 & EPA 608 Parity Mandate: Enforce federal energy efficiency standards and refrigerant compatibility rules to require complete matched indoor/outdoor split-system replacements\nRSMeans Fair Cash-Out & Bad-Faith Dossier: Calculate true replacement costs using RSMeans regional labor/materials indices and generate ready-to-file State Department of Insurance bad-faith complaint packets";
+        if (guideInput) guideInput.value = "Cross-reference closing home inspection reports to shift the burden of proof back to the home warranty provider for pre-existing claims\nVerify that technician diagnostic findings align with fundamental thermodynamic and mechanical failure physics\nEnforce statutory matching obligations under DOE 2023 SEER2 standards whenever obsolete components cannot be legally sourced\nIssue formal pre-litigation notice citing state unfair claims settlement practices acts before filing regulatory complaints";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
