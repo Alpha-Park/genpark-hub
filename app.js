@@ -664,6 +664,22 @@ const SKILLS_DATABASE = [
         logo: '🕊️'
     },
     {
+        id: 'zenvow-ai-skill',
+        name: 'zenvow-ai-skill',
+        description: 'Autonomous Wedding & Luxury Event Contract Audit, Non-Refundable Retainer Salvage, Liquidated Damages Penalty Stripper & Re-Booking Mitigation Sentry distilled from Zola, Wedgewood Weddings, The Knot, DoNotPay Event Defense, and Restatement (Second) of Contracts § 356. Audits venue and vendor agreements under the common law Penalty Doctrine to invalidate unconscionable 100% deposit forfeiture clauses ($10,000-$35,000), tracks public booking engines and social geotags to prove affirmative mitigation (double-dipping re-bookings), and compiles pre-litigation restitution demand packages.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '💍'
+    },
+    {
+        id: 'zenusury-ai-skill',
+        name: 'zenusury-ai-skill',
+        description: 'Autonomous Subprime Payday & Auto Title Loan Usury Invalidation, Effective APR Decompiler, Military Lending Act (MLA) 36% MAPR Shield & Predatory Repossession Defense Engine distilled from EarnIn, Dave, Brigit, CFPB Payday Rule, and National Consumer Law Center (NCLC). Decompiles disguised loan fees into true actuarial APRs (300%-650%), enforces the federal Military Lending Act 36% MAPR rate cap to render usurious contracts void ab initio, asserts state civil usury ceilings, halts cascading ACH repeat-debits, and blocks UCC Article 9 illegal auto title repossessions.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🛡️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -1022,6 +1038,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenfuneral-ai-skill') {
         if (capInput) capInput.value = "General Price List (GPL) Unbundling Engine: Extract and deconstruct all-inclusive funeral package quotes into transparent, statutory a la carte line items\nFTC Funeral Rule Sentry: Enforce 16 CFR Part 453 prohibitions against third-party casket handling fees and misrepresentations of mandatory embalming\nDirect-to-Consumer Casket Arbitrage: Match showroom models against DTC manufacturers (Titan Casket/Costco) saving $3,000-$6,000 with mandatory zero-fee acceptance directives\nPre-Need Trust Portability Audit: Audit prepaid funeral arrangements for state statutory interest accrual, cancellation rights, and cross-state portability";
         if (guideInput) guideInput.value = "Demand unbundled General Price Lists (GPL) before discussing packaged ceremonial offerings\nStrictly enforce 16 CFR § 453.4(b)(1) prohibiting any third-party casket receiving or handling surcharges\nRefute chemical embalming requirements under state sanitary codes, asserting refrigeration for short-term viewing\nRetain copies of all signed statements of funeral goods and services selected to detect post-service billing creep";
+    } else if (skillId === 'zenvow-ai-skill') {
+        if (capInput) capInput.value = "Event Contract & Penalty Clause Audit: Deconstruct venue rental agreements and vendor retainers under Restatement § 356 and UCC § 2-718 to invalidate punitive liquidated damages\nRe-Booking Mitigation Reconnaissance: Crawl public tour calendars, reservation engines, and wedding registries to prove the venue re-rented the cancelled date and eliminate claims of financial loss\nForce Majeure & Frustration Defense: Formulate affirmative excuses of performance for severe meteorological disasters, government emergency health orders, or medical crises\nRestitution Demand Package Compiler: Generate certified pre-litigation demand packets and court-ready Small Claims complaints demanding full or substantial deposit recovery";
+        if (guideInput) guideInput.value = "Verify notice timeline and compare deposit retained against actual anticipatory damages under state civil codes (e.g. Cal. Civ. Code § 1671)\nAudit public venue calendars and social media geotags to establish affirmative commercial mitigation and double-dipping\nAssert the common law duty to mitigate damages before consenting to any unilateral deposit forfeiture\nCite Restatement (Second) of Contracts § 356 rendering disproportionate liquidated damages unenforceable penalties";
+    } else if (skillId === 'zenusury-ai-skill') {
+        if (capInput) capInput.value = "TILA & True Actuarial APR Decompiler: Unmask hidden account maintenance fees, origination charges, and bi-weekly rollover compounding to reveal true 300%-650% APR interest\nMilitary Lending Act (MLA) 36% Shield: Cross-reference DoD DMDC active-duty rosters and enforce 10 U.S.C. § 987 rendering contracts exceeding 36% MAPR void ab initio\nState Usury Ceilings & Licensing Sentry: Audit state DFI small-loan licensing records and enforce statutory rate caps (36% caps in IL/CA/NY) forfeiting lender rights to collect principal\nCFPB ACH Repeat-Debit & Repo Injunction: Enforce 12 CFR Part 1041 to halt cascading bank overdraft fees and dispatch UCC Article 9 anti-repossession injunctions";
+        if (guideInput) guideInput.value = "Strictly decompile all recurring finance charges, application surcharges, and rollover penalties into true actuarial APR\nVerify covered borrower active-duty military status under 32 CFR Part 232 to immediately trigger statutory voiding remedies\nIssue formal Regulation E notices to borrower banks revoking pre-authorized ACH debits after two failed withdrawals\nAssert UCC § 9-609 breach of peace penalties against vehicle repossession dispatchers when loan contracts are legally void";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
