@@ -712,6 +712,22 @@ const SKILLS_DATABASE = [
         logo: '🎓'
     },
     {
+        id: 'zenarb-ai-skill',
+        name: 'zenarb-ai-skill',
+        description: 'Autonomous Consumer Mass Arbitration & Forced Arbitration Reverse-Leverage Engine, AAA/JAMS Administrative Filing Fee Obligation Sentinel, Pre-Dispute Statutory Notice Generator & Individual Settlement Arbiter distilled from FairShake, Level, and AAA Consumer Arbitration Rules. Flips mandatory arbitration clauses and class action waivers against corporate bad actors by compiling verified individual consumer evidence dossiers, calculating corporate upfront fee liabilities ($1.5k-$3.2k/case), and negotiating $500-$5,000 cash settlements.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '⚖️'
+    },
+    {
+        id: 'zentime-ai-skill',
+        name: 'zentime-ai-skill',
+        description: 'Autonomous Timeshare Contract Rescission, Developer Misrepresentation Forensic Audit, Direct Developer Deed-Back Surrender & Perpetual Maintenance Fee Disinheritance Engine distilled from Florida Vacation Plan and Timesharing Act (FL Stat. Ch. 721), California Vacation Ownership and Time-share Act, ARDA Consumer Protection Standards, and the Uniform Disclaimer of Property Interests Act. Ingests timeshare contracts, calculates statutory cooling-off rescission windows (3-15 days), audits high-pressure sales misrepresentations against Public Offering Statements (POS), negotiates direct zero-upfront-fee developer surrender (Deed-in-Lieu), and drafts probate liability disclaimers to shield heirs from lifelong maintenance fee escalations ($1.5k-$4k/yr).',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🏖️'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -1088,6 +1104,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zenscholar-ai-skill') {
         if (capInput) capInput.value = "Award Letter De-obfuscator: Unpack financial aid award letters, separate Parent PLUS debt from true gift aid grants, and compute 4-year true net out-of-pocket degree costs\nHEA § 479A Professional Judgment Dossier: Compile evidence-backed special circumstances appeals for unexpected income reduction, catastrophic medical expenses, or sibling tuition to recalculate FAFSA SAI\nPeer Cross-Admit Merit Arbitrage: Leverage competing scholarship offers from Carnegie-tier peer institutions to negotiate $5,000-$25,000/year institutional grant increases\nScholarship Cliff Risk Sentry: Scan award letters for perilous 3.5 GPA retention cliffs and outside-scholarship anti-stacking offset rules";
         if (guideInput) guideInput.value = "Strictly segregate all interest-bearing loans and work-study obligations from true non-repayable gift aid\nEnsure all financial circumstances submitted under HEA § 479A are 100% verified with tax returns, W-2s, or third-party documentation\nMaintain respectful, enthusiastic tone affirming target school as top choice while presenting competing merit offers\nNever submit correspondence to financial aid offices without explicit parent or student approval";
+    } else if (skillId === 'zenarb-ai-skill') {
+        if (capInput) capInput.value = "Arbitration Clause & Venue Auditor: Deconstruct merchant Terms of Service to identify designated providers (AAA, JAMS), mandatory notice periods, and small claims court carve-outs\nCorporate Fee Exposure Calculator: Compute upfront corporate filing and arbitrator hearing fee invoices ($1,500-$3,200+ per claimant) under provider rules\nStatutory Pre-Dispute Notice Compiler: Generate formal 30-day settlement demand letters with transaction audit trails, dark pattern captures, and statutory damages citations\nConforming Institutional Demand Filer: Format individual Demand for Arbitration packages ready for electronic filing if corporate negotiations stall";
+        if (guideInput) guideInput.value = "Strictly audit every consumer claim against real transaction receipts and documented platform harms; never generate unverified claims\nAccurately cite applicable arbitration provider rules (e.g. AAA Consumer Rule R-44) and fee schedule breakdowns\nEnsure all statutory pre-dispute notice cure windows (30 days) are tracked before institutional filing\nRequire user affirmative confirmation before executing binding settlement release agreements";
+    } else if (skillId === 'zentime-ai-skill') {
+        if (capInput) capInput.value = "Statutory Cooling-Off Rescission Engine: Calculate exact state-specific cancellation windows (3-15 days under FL Stat. § 721.06, CA Bus. & Prof. § 11238) and generate certified mail refund demands\nPOS Deceptive Practice Auditor: Cross-examine oral high-pressure sales pitch claims against registered Public Offering Statements (POS) for statutory fraudulent inducement\nDirect Developer Exit Negotiator: Interface directly with official developer loss mitigation programs (Wyndham Ovation, Marriott Transitions, HGV Horizons) to execute zero-fee Deed-in-Lieu of Foreclosure\nProbate Disinheritance Sentinel: Generate statutory Disclaimers of Property Interest under the Uniform Disclaimer of Property Interests Act to permanently shield heirs from inherited maintenance fees";
+        if (guideInput) guideInput.value = "Strictly verify contract execution timestamps against state statutory rescission cooling-off windows\nEnforce USPS Certified Mail with Return Receipt Requested for all statutory rescission notices to secure proof of delivery\nNever recommend third-party timeshare exit brokers charging upfront multi-thousand dollar fees\nRequire explicit owner approval before submitting deed-in-lieu surrender applications to developer loss mitigation portals";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
