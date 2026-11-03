@@ -744,6 +744,22 @@ const SKILLS_DATABASE = [
         logo: '🩺'
     },
     {
+        id: 'zencredit-ai-skill',
+        name: 'zencredit-ai-skill',
+        description: 'Autonomous Tri-Bureau Credit Report Forensic Audit, Metro 2 Format Non-Compliance Sentry, FCRA § 611/§ 623 Statutory Reinvestigation Engine, e-OSCAR 2-Digit Reduction Disqualification, and Identity Theft Fraud Block Automation distilled from the Fair Credit Reporting Act (15 U.S.C. § 1681), CDIA Metro 2 Resource Guide, CFPB Credit Reporting Directives, and NCLC consumer standards. Ingests Equifax, Experian, and TransUnion reports, uncovers re-aged zombie collections and mixed-file tradelines, bypasses automated e-OSCAR truncation, enforces data furnisher reasonable investigation mandates, and forces mandatory 4-day identity theft tradeline blocking.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '💳'
+    },
+    {
+        id: 'zenyoyo-ai-skill',
+        name: 'zenyoyo-ai-skill',
+        description: 'Autonomous Automotive Dealership "Yo-Yo Financing" & Spot Delivery Scam Defense, FTC CARS Rule Enforcement, TILA 15 U.S.C. § 1601 Truth in Lending Disclosure Lock, and Trade-In Hostage Recovery Engine distilled from the FTC CARS Rule (16 CFR Part 463), Truth in Lending Act (Regulation Z 12 CFR Part 1026), state motor vehicle dealer licensing statutes, and NCLC Automobile Fraud standards. Ingests spot delivery agreements and retail installment sales contracts (RISC), audits unilateral rescission riders, locks dealers as primary creditors holding paper, demands immediate statutory unwinds (100% down payment return), and triggers civil theft conversion demands if trade-in vehicles are held hostage.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🚗'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -1132,6 +1148,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zencare-ai-skill') {
         if (capInput) capInput.value = "ADL Clinical Evidence Auditor: Translate daily caregiver notes, nursing logs, and PT/OT records into certified 2-of-6 ADL dependencies and severe cognitive impairment ratings (MMSE/MoCA)\nElimination Period Tracker: Audit paid caregiver hours and licensed home health agency invoices to verify completion of 90-day elimination periods without carrier stalling\nOwn Occ to Any Occ Transition Shield: Cross-examine insurer vocational paper reviews against DOT job codes, disproving sedentary work capacity via treating physician RFC counter-affidavits\nERISA 180-Day Appeal Dossier Compiler: Assemble an airtight administrative record under 29 U.S.C. § 1133, locking in clinical and vocational proof before the federal evidence cutoff ($50k-$250k recovery)";
         if (guideInput) guideInput.value = "Strictly map functional dependencies to statutory NAIC and policy-defined ADL standards (hands-on or standby assistance)\nTrack the 180-day ERISA administrative appeal cutoff with zero-tolerance deadline alerts to prevent irreversible evidence lock-out\nRequire treating physician review and formal execution for all Residual Functional Capacity (RFC) counter-affirmations\nEnsure all caregiver logs and facility invoices are fully reconciled before submitting elimination period verification packets";
+    } else if (skillId === 'zencredit-ai-skill') {
+        if (capInput) capInput.value = "Tri-Bureau Cross Reconciliation: Ingest Equifax, Experian, and TransUnion reports to isolate mixed-file tradelines, balance discrepancies, and cross-bureau conflicts\nMetro 2 Compliance Auditor: Audit reported tradelines against CDIA Metro 2 specifications, uncovering unlawful Date of First Delinquency (Field 25 DOFD) re-aging past the 7-year statutory cutoff\nAnti-e-OSCAR Dispute Compiler: Draft evidence-backed dispute packages under 15 U.S.C. § 1681i requiring CRAs to transmit physical documentation to furnishers rather than 2-digit e-OSCAR codes\nIdentity Theft 4-Day Block Engine: Enforce 15 U.S.C. § 1681c-2 by packaging FTC Identity Theft Affidavits with formal block demands, compelling bureaus to purge fraudulent tradelines within 4 business days";
+        if (guideInput) guideInput.value = "Never dispute accurate, verified negative tradelines simply to inflate credit scores; all challenges must be grounded in factual inaccuracies or statutory non-compliance\nKeep Social Security Numbers and sensitive PII encrypted in local Secure Enclave without transmitting off-device\nMandate USPS Certified Mail with Return Receipt Requested for all formal dispute packages to preserve statutory 30-day timelines\nEscalate unaddressed violations directly to the CFPB Consumer Response portal after 30 days of bureau non-compliance";
+    } else if (skillId === 'zenyoyo-ai-skill') {
+        if (capInput) capInput.value = "Spot Delivery Timing Auditor: Cross-examine dealership conditional delivery agreements against state statutory notice windows (e.g. California 10-day rule) to verify expiration of cancellation rights\nTILA Creditor Lock Sentry: Audit Retail Installment Sales Contracts (RISC) under Regulation Z, establishing that dealership signature as Creditor/Seller legally binds dealer to finance vehicle at agreed APR\nTrade-In Hostage Recovery Engine: Generate formal civil theft and conversion demands requiring immediate 100% down payment refund and return of trade-in vehicle without mileage deductions\nFTC CARS Rule Violation Dossier: Compile evidence packages under 16 CFR Part 463 for deceptive financing claims, lodging complaints with state DMV dealer licensing boards and the FTC";
+        if (guideInput) guideInput.value = "Instruct buyers never to sign modified higher-APR loan paperwork or surrender keys in dealership back-rooms without down payment return\nVerify that dealership cancellation notices are in formal writing within statutory deadlines; reject oral or telephone demands\nAssert treble damages for civil theft under state law if the dealership claims to have sold the trade-in vehicle prior to financing finalization\nEnsure formal demand letters are served via certified mail upon dealership general management and dealer licensing boards";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
