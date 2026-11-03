@@ -728,6 +728,22 @@ const SKILLS_DATABASE = [
         logo: '🏖️'
     },
     {
+        id: 'zenroof-ai-skill',
+        name: 'zenroof-ai-skill',
+        description: 'Autonomous Homeowners Property Insurance Claim Lowball Audit, Xactimate Forensic Re-Engineering, Three-Trades Overhead & Profit (O&P 10/10) Enforcement, State Matching Statute Assertion, and Policy Appraisal Clause Invocation Engine distilled from United Policyholders (UPHelp), ClaimSupplementPro, Florida Matching Statute (FL Stat. § 626.9744), and IICRC S500 restoration standards. Audits insurer Xactimate estimates for omitted restoration line items, mandates 20% general contractor O&P on multi-trade claims, forces complete continuous roof and flooring replacement when materials are discontinued, and triggers binding independent appraisal to recover $10,000-$60,000 in underpaid property damages.',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🏠'
+    },
+    {
+        id: 'zencare-ai-skill',
+        name: 'zencare-ai-skill',
+        description: 'Autonomous Long-Term Care (LTC) & Long-Term Disability (LTD) Insurance Claim Denial Defense, Activities of Daily Living (ADL) Clinical Evidence Certification, 24-Month "Own Occ to Any Occ" Transition Shield, and ERISA Administrative Appeal Dossier Compiler distilled from ERISA (29 U.S.C. § 1133 / 29 C.F.R. § 2560.503-1), NAIC Long-Term Care Model Act, and Genworth/Unum/MetLife claim defense frameworks. Ingests clinical notes, certifies 2-of-6 ADL functional dependencies and cognitive impairments, audits 90-day elimination periods, refutes biased paper-review IMEs, and compiles 180-day ERISA administrative appeals ($50k-$250k benefit recovery).',
+        category: 'legal',
+        developer: '@Alpha-Park',
+        logo: '🩺'
+    },
+    {
         id: 'zenbridge-ai-skill',
         name: 'zenbridge-ai-skill',
         description: 'Hybrid Personal Agent Protocol (PAP) and Resident Browser Bridge. Standardized OAuth merchant handshake with seamless resident browser fallback.',
@@ -1110,6 +1126,12 @@ window.loadSkillToGenerator = function(skillId) {
     } else if (skillId === 'zentime-ai-skill') {
         if (capInput) capInput.value = "Statutory Cooling-Off Rescission Engine: Calculate exact state-specific cancellation windows (3-15 days under FL Stat. § 721.06, CA Bus. & Prof. § 11238) and generate certified mail refund demands\nPOS Deceptive Practice Auditor: Cross-examine oral high-pressure sales pitch claims against registered Public Offering Statements (POS) for statutory fraudulent inducement\nDirect Developer Exit Negotiator: Interface directly with official developer loss mitigation programs (Wyndham Ovation, Marriott Transitions, HGV Horizons) to execute zero-fee Deed-in-Lieu of Foreclosure\nProbate Disinheritance Sentinel: Generate statutory Disclaimers of Property Interest under the Uniform Disclaimer of Property Interests Act to permanently shield heirs from inherited maintenance fees";
         if (guideInput) guideInput.value = "Strictly verify contract execution timestamps against state statutory rescission cooling-off windows\nEnforce USPS Certified Mail with Return Receipt Requested for all statutory rescission notices to secure proof of delivery\nNever recommend third-party timeshare exit brokers charging upfront multi-thousand dollar fees\nRequire explicit owner approval before submitting deed-in-lieu surrender applications to developer loss mitigation portals";
+    } else if (skillId === 'zenroof-ai-skill') {
+        if (capInput) capInput.value = "Xactimate Scope & Line-Item Auditor: Re-engineer insurer repair estimates against independent contractor scopes to restore omitted containment, masking, floor protection, and local code upgrades\nThree-Trades O&P Enforcer: Audit repair complexity across roofing, drywall, paint, flooring, and electrical trades to legally mandate 20% General Contractor Overhead & Profit (10/10 O&P)\nContinuous Matching Statute Engine: Invoke state appearance matching regulations (FL Stat. § 626.9744) with ITEL reports to force full roof slope or open-concept continuous room replacement\nAppraisal Clause Demand Invoker: Draft binding statutory appraisal demand letters appointing independent licensed property appraisers to overturn insurer lowballs ($10k-$60k recovery)";
+        if (guideInput) guideInput.value = "Strictly audit every Xactimate estimate line-item against IICRC restoration standards and local building code mandates\nEnforce the Three-Trades Rule for mandatory 10/10 O&P whenever 3 or more distinct trades are involved in the scope\nVerify material discontinuation with ITEL laboratory or manufacturer notices before asserting state continuous matching statutes\nRequire explicit homeowner approval before serving formal Appraisal Clause demand letters upon carrier claims management";
+    } else if (skillId === 'zencare-ai-skill') {
+        if (capInput) capInput.value = "ADL Clinical Evidence Auditor: Translate daily caregiver notes, nursing logs, and PT/OT records into certified 2-of-6 ADL dependencies and severe cognitive impairment ratings (MMSE/MoCA)\nElimination Period Tracker: Audit paid caregiver hours and licensed home health agency invoices to verify completion of 90-day elimination periods without carrier stalling\nOwn Occ to Any Occ Transition Shield: Cross-examine insurer vocational paper reviews against DOT job codes, disproving sedentary work capacity via treating physician RFC counter-affidavits\nERISA 180-Day Appeal Dossier Compiler: Assemble an airtight administrative record under 29 U.S.C. § 1133, locking in clinical and vocational proof before the federal evidence cutoff ($50k-$250k recovery)";
+        if (guideInput) guideInput.value = "Strictly map functional dependencies to statutory NAIC and policy-defined ADL standards (hands-on or standby assistance)\nTrack the 180-day ERISA administrative appeal cutoff with zero-tolerance deadline alerts to prevent irreversible evidence lock-out\nRequire treating physician review and formal execution for all Residual Functional Capacity (RFC) counter-affirmations\nEnsure all caregiver logs and facility invoices are fully reconciled before submitting elimination period verification packets";
     } else if (skillId === 'zenbridge-ai-skill') {
         if (capInput) capInput.value = "PAP Discovery: Auto-resolve /.well-known/poppy.json merchant endpoints\nOAuth Broker: Scoped guest and authenticated session tokens\nDynamic Router: Dual-path routing (PAP API vs. Resident Browser fallback)\nA2B Negotiator: Counteract merchant Seller AI dynamic pricing and retention traps";
         if (guideInput) guideInput.value = "Verify PAP merchant TLS certificates and signature validity\nFall back gracefully to resident browser profile when merchants lack PAP endpoints\nRestrict OAuth permissions to minimum necessary cart and inventory scopes";
